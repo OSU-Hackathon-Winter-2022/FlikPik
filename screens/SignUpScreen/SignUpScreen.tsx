@@ -1,10 +1,10 @@
 import React from 'react';
-import { Text, View, StyleSheet, ScrollView } from 'react-native';
+import { Text, View, StyleSheet, ScrollView, Alert } from 'react-native';
 import CustomInput from '../../components/CustomInput';
 import CustomInput2 from '../../components/CustomInput2';
 import CustomButton from '../../components/CustomButton';
 import { useState } from 'react';
-import { useNavigation } from '@react-navigation/native';
+import { NavigationHelpersContext, useNavigation } from '@react-navigation/native';
 import { authentication } from '../../firebase/firebase-config';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 
@@ -25,10 +25,22 @@ const SignUpScreen = () => {
         .then((re) => {
             console.log(re);
             setIsSignedIn(true);
+            navigation.navigate('Test')
         })
         .catch((re) => {
             console.log(re);
-        })
+            Alert.alert(
+                "Registration",
+                "Please enter in an email and password to create an account",
+                [
+                    {
+                        text: "OK", onPress: () => console.log("Ok pressed"),
+                        style: "cancel"
+                    }
+                ]
+            )
+            
+        });
     };
 
     return (
