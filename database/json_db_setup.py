@@ -6,7 +6,11 @@ def parse_movie_metadata(movie_json):
     Parses movies from JSON and creates comprehensive JSON files for addition to Firebase.
     """
     data_set = dict()
-
+    genres_dict = dict()
+    actors_dict = dict()
+    decades_dict = dict()
+    movies_dict = dict()
+    
     with open(movie_json) as file:
         top_250_data = json.load(file)
 
@@ -27,14 +31,14 @@ def parse_movie_metadata(movie_json):
         formatted_title = formatted_title.replace(":","")
         movies_swipe_status[formatted_title] = False
         curr_movie["title"] = movie["title"]
-
+        movies_dict[formatted_title] = True
         # Massage genre data
         # Format is string of lowercase genres, separated by spaces
         genres_list = movie["genres"].split(", ")
         formatted_genre = ""
         for genre in genres_list:
             genre = genre.lower()
-            data_set[genre] = {"mock_user_id" : 0}
+            genres_dict[genre] = {"mock_user_id" : 0}
         movie_genres.append(genre)
         curr_movie["genres"] = movie_genres
         curr_movie["genres_text"] = movie["genres"]
@@ -61,11 +65,9 @@ def parse_movie_metadata(movie_json):
         else:
             movie_decade = movie["description"][1:4] + "0"
             movie_year = movie["description"][1:5]
-        data_set[movie_decade + "-decade"] = {"mock_user_id" : 0}
+        decades_dict[movie_decade] = {"mock_user_id" : 0}
         curr_movie["decade"] = movie_decade
         curr_movie["year"] = movie_year
-
-        data_set[formatted_title] = curr_movie
 
         # Massage rating data
         # Format is string
@@ -106,11 +108,16 @@ def parse_movie_metadata(movie_json):
         data_set[formatted_title] = curr_movie
 
         # Swiped on movies
-        data_set["swiped_on"] = list()
+        data_set["movies_swiped_on"] = list()
 
+        # Swiped on actors
+
+    data_set['decades'] = decades_dict
+    data_set['genres'] = genres_dict
+    data_set['movie_titles'] = movies_dict
     data_set['movie_swipe_state'] = movies_swipe_status
 
-    data_set['users'] = {"mock_user_id" : "user_info"}
+    data_set['users'] = {"mock_user_id" : "user_info", "movie_swipe_state" : movies_swipe_status}
 
     with open('json_data.json', 'w') as outfile:
         json.dump(data_set, outfile)
