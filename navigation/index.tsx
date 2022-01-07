@@ -114,6 +114,10 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SignInScreen from '../screens/SignInScreen';
 import SignUpScreen from '../screens/SignUpScreen';
 import HomeScreen from '../screens/HomeScreen';
+import SwipeScreen from '../screens/SwipeScreen';
+import SettingsScreen from '../screens/SettingsScreen';
+import GenreScreen from '../screens/GenreScreen';
+import ChatScreen from '../screens/ChatScreen'
 
 
 
@@ -128,6 +132,10 @@ const RootNavigation = () => {
                 <Stack.Screen name="SignIn" component={SignInScreen} />
                 <Stack.Screen name="SignUp" component={SignUpScreen} />
                 <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen name="Swipe" component={SwipeScreen} />
+                <Stack.Screen name="Settings" component={SettingsScreen} />
+                <Stack.Screen name="Genre" component={GenreScreen} />
+                <Stack.Screen name="Chat" component={ChatScreen} />
             </Stack.Navigator>
         </NavigationContainer>
   );

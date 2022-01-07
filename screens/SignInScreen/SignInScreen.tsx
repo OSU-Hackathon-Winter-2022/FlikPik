@@ -6,6 +6,7 @@ import { useState } from 'react';
 import CustomInput2 from '../../components/CustomInput2';
 import { useNavigation } from '@react-navigation/native';
 import index from '../HomeScreen';
+import Swipe from '../SwipeScreen';
 import popcornImage from '../../assets/images/popcorn_controller.jpg'
 // import Logo from '../../assets/images/popcorn.jpg';
 
@@ -24,7 +25,7 @@ const SignInScreen = () => {
         console.warn("Sign in");
         // validate user
 
-        navigation.navigate('Home')
+        navigation.navigate('Swipe')
     };
     const onForgotPasswordPressed = () => {
         console.warn('Forgot Password');
