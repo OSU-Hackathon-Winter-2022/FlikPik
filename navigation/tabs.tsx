@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "../screens/HomeScreen";
 import GenreScreen from "../screens/GenreScreen";
-import MoviesScreen from "../screens/MoviesScreen";
+import MoviesScreen from "../screens/RecommendationScreen";
 import SettingsScreen from "../screens/SettingsScreen";
 import ChatScreen from "../screens/ChatScreen";
 import SwipeScreen from "../screens/SwipeScreen";

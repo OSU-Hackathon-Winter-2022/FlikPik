@@ -117,6 +117,7 @@ import SwipeScreen from '../screens/SwipeScreen/SwipeScreen';
 import SettingsScreen from '../screens/SettingsScreen/SettingsScreen';
 import GenreScreen from '../screens/GenreScreen/GenreScreen';
 import ChatScreen from '../screens/ChatScreen/ChatScreen'
+import TestScreen from '../screens/TestScreen/TestScreen'
 
 
 
@@ -135,6 +136,7 @@ const RootNavigation = () => {
                 <Stack.Screen name="Settings" component={SettingsScreen} />
                 <Stack.Screen name="Genre" component={GenreScreen} />
                 <Stack.Screen name="Chat" component={ChatScreen} />
+                <Stack.Screen name="Test" component={TestScreen} />
             </Stack.Navigator>
         </NavigationContainer>
   );
