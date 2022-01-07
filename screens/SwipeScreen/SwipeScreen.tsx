@@ -9,7 +9,9 @@ const Swipe = () => {
 
         // <NavigationContainer independent={true}>
         <View>
+            
             <Text style={{ fontSize: 24, alignSelf: 'center'}}>swipe this</Text>
+            {/* <Tabs /> */}
         </View>
 
         // {/* </NavigationContainer> */}
