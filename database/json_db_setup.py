@@ -7,7 +7,7 @@ def parse_movie_metadata(movie_json):
     """
     data_set = dict()
     genres_dict = dict()
-    actors_dict = dict()
+    current_recommendation_scores = dict()
     decades_dict = dict()
     movies_dict = dict()
     
@@ -40,6 +40,7 @@ def parse_movie_metadata(movie_json):
             genre = genre.lower()
             genres_dict[genre] = {"mock_user_id" : 0}
         movie_genres.append(genre)
+        current_recommendation_scores[formatted_title] = 0
         curr_movie["genres"] = movie_genres
         curr_movie["genres_text"] = movie["genres"]
 
@@ -116,8 +117,7 @@ def parse_movie_metadata(movie_json):
     data_set['genres'] = genres_dict
     data_set['movie_titles'] = movies_dict
     data_set['movie_swipe_state'] = movies_swipe_status
-
-    data_set['users'] = {"mock_user_id" : "user_info", "movie_swipe_state" : movies_swipe_status}
+    data_set['users'] = {"mock_user_id" : "user_info", "movie_swipe_state" : movies_swipe_status, 'current_recommendation_scores' : current_recommendation_scores}
 
     with open('json_data.json', 'w') as outfile:
         json.dump(data_set, outfile)

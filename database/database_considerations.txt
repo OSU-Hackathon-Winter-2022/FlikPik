@@ -2,8 +2,7 @@ MVP:
     Database includes top 250 movies from IMDB by rating
     Database is fixed - no new movies will be added
     Each swipe will trigger a new calculation across the entire dataset
-    SQL db should be sufficient here, since dataset is limited (SQLite)
-
+    NoSQL db will be better for fast access and updating the recommendation tracking
 V1:
     Expanded list of movies
     More sophisticated data tracking system, so new movies will be able to run seamlessly against previous selections
