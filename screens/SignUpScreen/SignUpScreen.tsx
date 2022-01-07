@@ -60,8 +60,8 @@ const SignUpScreen = () => {
                 value={password}
                 setValue={setPassword}
                 />
-{/* 
-            <CustomInput2
+
+            {/* <CustomInput2 
                 placeholder="Repeat Password"
                 value={passwordRepeat}
                 setValue={setPasswordRepeat}

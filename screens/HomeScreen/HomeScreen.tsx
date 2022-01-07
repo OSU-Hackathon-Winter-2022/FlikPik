@@ -1,14 +1,34 @@
-import React from 'react'
-import { View, Text } from 'react-native'
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 
 const Home = () => {
     return (
         <View>
-            <Text style={{ fontSize: 24, alignSelf: 'center'}}>Home, Sweet Home</Text>
+            <Text style={styles.title}>Movie Dashboard</Text>
+
+            <Text style={styles.header}>Recomended Movies based on past matches</Text>
+
+            <Text style={styles.header}>New Matchmaking Session</Text>
         </View>
     )
-}
+};
 
-export default Home
+const styles = StyleSheet.create({
+    title: {
+        fontSize: 50,
+        justifyContent: "center",
+        alignItems: "center",
+        padding: 20,
+    },
+    header: {
+        fontSize: 30,
+
+        justifyContent: "center",
+        alignItems: "center",
+        padding: 20,
+    },
+});
+
+export default Home;
 
 
