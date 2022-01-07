@@ -27,16 +27,17 @@ const SignInScreen = () => {
         .then((re) => {
             console.log(re);
             setIsSignedIn(true);
+            navigation.navigate('Swipe')
         })
         .catch((re) => {
             console.log(re);
         })
 
-        // navigation.navigate('Swipe')
     };
-    const onForgotPasswordPressed = () => {
-        console.warn('Forgot Password');
-    };
+    // const onForgotPasswordPressed = () => {
+    //     console.warn('Forgot Password');
+    //     navigation.navigate('ForgotPassword')
+    // };
     const onSignUpPressed = () => {
         console.warn('onSignUpPressed');
         navigation.navigate('SignUp');
@@ -47,6 +48,9 @@ const SignInScreen = () => {
             <Text style={{color: '#191970', fontSize:20, fontWeight:'bold'}}>Welcome to</Text>
             <Text style={{color: '#191970', fontSize:35, fontWeight:'bold', paddingBottom:15}}>FlikPik</Text>
 
+            <Text style={{color: '#191970', fontSize:10, fontWeight:'bold'}}>Test User:</Text>
+            <Text style={{color: '#191970', fontSize:10, fontWeight:'bold'}}>email: abc@gmail.com</Text>
+            <Text style={{color: '#191970', fontSize:10, fontWeight:'bold'}}>password: 123456</Text>
             <CustomInput
                 placeholder="Email"
                 value={email}
@@ -64,11 +68,11 @@ const SignInScreen = () => {
                 onPress={onSignInPressed}
                 />
 
-            <CustomButton 
+            {/* <CustomButton 
                 text="Forgot Password?"
                 onPress={onForgotPasswordPressed}
                 type="TERTIARY"
-                />
+                /> */}
 
             <CustomButton 
                 text="Don't have an account? Sign Up"
