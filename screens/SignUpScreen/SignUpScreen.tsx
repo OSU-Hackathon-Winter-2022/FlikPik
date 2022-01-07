@@ -11,11 +11,11 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 
 const SignUpScreen = () => {
-
-    const [username, setUsername] = useState('');
+    // const [username, setUsername] = useState('');
+    // const [passwordRepeat, setPasswordRepeat] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [passwordRepeat, setPasswordRepeat] = useState('');
+    const [isSignedIn, setIsSignedIn] = useState(false);
 
     const navigation = useNavigation();
 
@@ -24,30 +24,17 @@ const SignUpScreen = () => {
         createUserWithEmailAndPassword(authentication, email, password)
         .then((re) => {
             console.log(re);
+            setIsSignedIn(true);
         })
         .catch((re) => {
             console.log(re);
         })
     };
-    const onSignInGoogle = () => {
-        console.warn('Google');
-    };
-    const onSignUpPressed = () => {
-        console.warn('onSignUpPressed');
-    };
-
-
 
     return (
         <ScrollView showsVerticalScrollIndicator={false} >
         <View style={styles.root}>
             <Text style={styles.title}>Create an account</Text>
-
-            {/* <CustomInput
-                placeholder="Username"
-                value={username}
-                setValue={setUsername}
-                /> */}
 
             <CustomInput 
                 placeholder="Email"
@@ -61,12 +48,6 @@ const SignUpScreen = () => {
                 setValue={setPassword}
                 />
 
-            {/* <CustomInput2 
-                placeholder="Repeat Password"
-                value={passwordRepeat}
-                setValue={setPasswordRepeat}
-                /> */}
-
             <CustomButton 
                 text="Register"
                 onPress={onRegisterPressed}
@@ -75,7 +56,6 @@ const SignUpScreen = () => {
             <Text style={styles.text}>
                 By registering, you confirm that you accept our Terms of Use and Privacy Policy
             </Text>
-
         </View>
         </ScrollView>
     );
@@ -95,8 +75,5 @@ const styles = StyleSheet.create({
         margin: 10,
     }
 });
-
-
-
 
 export default SignUpScreen;
