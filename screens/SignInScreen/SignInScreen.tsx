@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, TextInput, StyleSheet, useWindowDimensions, Image } from 'react-native';
+import { Text, View, TextInput, StyleSheet,useWindowDimensions, Image } from 'react-native';
 import CustomInput from '../../components/CustomInput';
 import CustomButton from '../../components/CustomButton';
 import { useState } from 'react';
@@ -8,15 +8,16 @@ import { useNavigation } from '@react-navigation/native';
 import index from '../HomeScreen';
 import Swipe from '../SwipeScreen';
 import popcornImage from '../../assets/images/popcorn_controller.jpg'
-// import Logo from '../../assets/images/popcorn.jpg';
+import { authentication } from '../../firebase/firebase-config';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 
 const SignInScreen = () => {
-
-    
-
+    // const [isSignedIn, setIsSignedIn] =useState(false);
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+
+
 
     const {height} = useWindowDimensions();
     const navigation = useNavigation();
@@ -24,7 +25,6 @@ const SignInScreen = () => {
     const onSignInPressed = () => {
         console.warn("Sign in");
         // validate user
-
         navigation.navigate('Swipe')
     };
     const onForgotPasswordPressed = () => {
@@ -38,6 +38,7 @@ const SignInScreen = () => {
 
         navigation.navigate('SignUp');
     };
+
     return (
 
         <View style={styles.root}>
@@ -45,19 +46,19 @@ const SignInScreen = () => {
             <Text style={{color: '#191970', fontSize:20, fontWeight:'bold'}}>Welcome to</Text>
             <Text style={{color: '#191970', fontSize:35, fontWeight:'bold', paddingBottom:15}}>FlikPik</Text>
 
-            <CustomInput 
-                placeholder="Username"
+            <CustomInput
+                placeholder="Email"
                 value={username}
                 setValue={setUsername}
                 />
 
-            <CustomInput2 
+            <CustomInput2
                 placeholder="Password"
                 value={password}
                 setValue={setPassword}
                 />
 
-            <CustomButton 
+            <CustomButton
                 text="Sign In"
                 onPress={onSignInPressed}
                 />
@@ -68,15 +69,15 @@ const SignInScreen = () => {
                 type="TERTIARY"
                 />
 
-            <CustomButton 
+            {/* <CustomButton 
                 text="Sign In with Google"
                 onPress={onSignInGoogle}
                 bgColor="#FAE9EA"
                 fgColor="#DD4D44"
-                />
+                /> */}
 
             <CustomButton 
-                text="Don't have an account? Create One"
+                text="Don't have an account? Sign Up"
                 onPress={onSignUpPressed}
                 type="TERTIARY"
                 />

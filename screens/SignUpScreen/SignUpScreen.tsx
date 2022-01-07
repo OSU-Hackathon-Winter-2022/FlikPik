@@ -1,9 +1,12 @@
 import React from 'react';
 import { Text, View, StyleSheet, ScrollView } from 'react-native';
 import CustomInput from '../../components/CustomInput';
+import CustomInput2 from '../../components/CustomInput2';
 import CustomButton from '../../components/CustomButton';
 import { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
+import { authentication } from '../../firebase/firebase-config';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 
 
@@ -18,26 +21,33 @@ const SignUpScreen = () => {
 
     const onRegisterPressed = () => {
         console.warn('onRegisterPressed');
+        createUserWithEmailAndPassword(authentication, email, password)
+        .then((re) => {
+            console.log(re);
+        })
+        .catch((re) => {
+            console.log(re);
+        })
     };
-
     const onSignInGoogle = () => {
         console.warn('Google');
     };
-
     const onSignUpPressed = () => {
         console.warn('onSignUpPressed');
     };
+
+
 
     return (
         <ScrollView showsVerticalScrollIndicator={false} >
         <View style={styles.root}>
             <Text style={styles.title}>Create an account</Text>
 
-            <CustomInput
+            {/* <CustomInput
                 placeholder="Username"
                 value={username}
                 setValue={setUsername}
-                />
+                /> */}
 
             <CustomInput 
                 placeholder="Email"
@@ -45,19 +55,17 @@ const SignUpScreen = () => {
                 setValue={setEmail}
                 />
 
-            <CustomInput
+            <CustomInput2
                 placeholder="Password"
                 value={password}
                 setValue={setPassword}
-                // secureTextEntry={true}
                 />
-
-            <CustomInput 
+{/* 
+            <CustomInput2
                 placeholder="Repeat Password"
                 value={passwordRepeat}
                 setValue={setPasswordRepeat}
-                // secureTextEntry={true}
-                />
+                /> */}
 
             <CustomButton 
                 text="Register"

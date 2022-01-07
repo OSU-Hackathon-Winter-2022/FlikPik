@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "231724799603",
+    "project_id": "flikpik-b440b",
+    "storage_bucket": "flikpik-b440b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231724799603:android:f699de3be95a27dbf7fc06",
+        "android_client_info": {
+          "package_name": "com.hackathon.authenticationfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231724799603-9go87cor5hnkl5d5gnkdn7em2dvofen7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6UNxvnMoEV0ypOHSL75lMHSluMxvXHHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231724799603-9go87cor5hnkl5d5gnkdn7em2dvofen7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
