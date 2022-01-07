@@ -9,47 +9,48 @@ import index from '../HomeScreen';
 import Swipe from '../SwipeScreen';
 import popcornImage from '../../assets/images/popcorn_controller.jpg'
 import { authentication } from '../../firebase/firebase-config';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
 
 const SignInScreen = () => {
-    // const [isSignedIn, setIsSignedIn] =useState(false);
-    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
-
+    const [isSignedIn, setIsSignedIn] = useState(false);
 
     const {height} = useWindowDimensions();
     const navigation = useNavigation();
 
     const onSignInPressed = () => {
-        console.warn("Sign in");
+        console.warn("Signing in");
         // validate user
-        navigation.navigate('Swipe')
+        signInWithEmailAndPassword(authentication, email, password)
+        .then((re) => {
+            console.log(re);
+            setIsSignedIn(true);
+        })
+        .catch((re) => {
+            console.log(re);
+        })
+
+        // navigation.navigate('Swipe')
     };
     const onForgotPasswordPressed = () => {
         console.warn('Forgot Password');
     };
-    const onSignInGoogle = () => {
-        console.warn('Google');
-    };
     const onSignUpPressed = () => {
         console.warn('onSignUpPressed');
-
         navigation.navigate('SignUp');
     };
 
     return (
-
         <View style={styles.root}>
-
             <Text style={{color: '#191970', fontSize:20, fontWeight:'bold'}}>Welcome to</Text>
             <Text style={{color: '#191970', fontSize:35, fontWeight:'bold', paddingBottom:15}}>FlikPik</Text>
 
             <CustomInput
                 placeholder="Email"
-                value={username}
-                setValue={setUsername}
+                value={email}
+                setValue={setEmail}
                 />
 
             <CustomInput2
@@ -69,23 +70,14 @@ const SignInScreen = () => {
                 type="TERTIARY"
                 />
 
-            {/* <CustomButton 
-                text="Sign In with Google"
-                onPress={onSignInGoogle}
-                bgColor="#FAE9EA"
-                fgColor="#DD4D44"
-                /> */}
-
             <CustomButton 
                 text="Don't have an account? Sign Up"
                 onPress={onSignUpPressed}
                 type="TERTIARY"
                 />
-            
-            <Image style={styles.popImage} source={popcornImage}/>
 
+            <Image style={styles.popImage} source={popcornImage}/>
         </View>
-        
     );
 };
 
@@ -104,8 +96,6 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
     }
 });
-
-
 
 
 export default SignInScreen;
