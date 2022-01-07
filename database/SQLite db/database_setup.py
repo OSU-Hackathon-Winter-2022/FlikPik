@@ -2,31 +2,43 @@ import sqlite3
 import json
 
 def populate_database(movie_json):
-
-    conn = conn = sqlite3.connect('top_250') 
+    conn = sqlite3.connect('top_250') 
     c = conn.cursor()
+
+    # Set up 'movies' table in db
+    c.execute('''
+                CREATE TABLE IF NOT EXISTS movies
+                (movie_id INTEGER PRIMARY KEY,
+                title TEXT,
+                metadata TEXT)
+              ''')
     
-    with open("top_250_by_rating.json") as file:
+    with open(movie_json) as file:
         top_250_data = json.load(file)
 
+    id = 1
     for movie in top_250_data["results"]:
-        parse_movie_data(movie)
-        # Massage title data
-        # Format is lowercase title with no spaces
-        
-        c.execute("""
-                CREATE TABLE IF NOT EXISTS movies
-                ([movie_id] INTEGER PRIMARY KEY,
-                [title] TEXT,
-                [data] TEST)""")
+        title, data = parse_movie_metadata(movie)
+        new_database_row = (id, title, data)
+
+        c.execute(f''' INSERT INTO movies (movie_id, title, metadata)
+                       VALUES (?, ?, ?)''', new_database_row)
+        id += 1
 
     conn.commit()
 
 
-def parse_movie_data(movie):
+def parse_movie_metadata(movie):
+    """
+    Parses movies from JSON into proper format for addition to db.
+    Sample output: "("citizenkane", "drama mystery orsonwelles 
+                    josephcotten dorothycomingore agnesmoorehead 1941")
+    """
+    # Massage title data
+    # Format is lowercase title with no spaces
     title = movie["title"]
     title_list = title.split(" ")
-    title = ""
+    title = ''
     for title_word in title_list:
         title += title_word.lower()
 
@@ -58,7 +70,8 @@ def parse_movie_data(movie):
     else:
         year = movie["description"][1:5]
 
-    # Combine data into a single string
-    # Sample entry: "citizenkane drama mystery orsonwelles josephcotten 
-    # dorothycomingore agnesmoorehead 1941"
-    return f"{genres}{actors}{year}"
+    # Combine data into a single string and return
+    return (title, f'{genres}{actors}{year}')
+
+if __name__ == "__main__":
+    populate_database("top_250_by_rating.json")
