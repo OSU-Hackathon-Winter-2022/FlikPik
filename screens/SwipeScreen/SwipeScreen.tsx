@@ -5,6 +5,10 @@ import Navigation from '../../navigation';
 import Tabs from '../../navigation/tabs';
 import { MovieSwiper } from '../../components/MovieSwiper';
 import top_movies from '../../database/top_250_by_rating.json'
+import CustomButton from '../../components/CustomButton';
+import { useState } from 'react';
+import CustomInput2 from '../../components/CustomInput2';
+import { useNavigation } from '@react-navigation/native';
 
 let topMovieProfiles = [];
 for (let movie of top_movies.results) {
@@ -42,12 +46,52 @@ while(i < 10) {
 }
 
 const Swipe = () => {
+    const navigation = useNavigation();
+
+    const onTestPress = () => {
+        console.warn('onSignUpPressed');
+        navigation.navigate('Home');
+    };
+
     return (
-        // <NavigationContainer independent={true}>
-        <MovieSwiper movies={default_movies} />
-        // {/* </NavigationContainer> */}
+
+        // <View>
+            <MovieSwiper movies={default_movies} />
+
+            // <CustomButton
+            //     text="Test1"
+            //     onPress={onTestPress}
+            //     />
+
+            // <CustomButton 
+            //     text="Test2"
+            //     onPress={onTestPress}
+            //     type="TERTIARY"
+            //     />
+        // </View>
+
+
     );
 };
+
+
+const styles = StyleSheet.create({
+    root: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        padding: 20,
+
+    },
+    popImage: {
+        width: '150%',
+        height: '30%',
+        flex: 1,
+        resizeMode: 'contain',
+    }
+});
+
+
 
 export default Swipe
 
