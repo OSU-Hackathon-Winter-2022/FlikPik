@@ -1,0 +1,3972 @@
+{
+  "theshawshankredemption": {
+    "genres": ["drama"],
+    "actors": [
+      "frankdarabont",
+      "timrobbins",
+      "morganfreeman",
+      "bobgunton",
+      "williamsadler"
+    ],
+    "decade": "1990"
+  },
+  "drama": 0,
+  "frankdarabont": 0,
+  "timrobbins": 0,
+  "morganfreeman": 0,
+  "bobgunton": 0,
+  "williamsadler": 0,
+  "1990": 0,
+  "thegodfather": {
+    "genres": ["drama"],
+    "actors": [
+      "francisfordcoppola",
+      "marlonbrando",
+      "alpacino",
+      "jamescaan",
+      "dianekeaton"
+    ],
+    "decade": "1970"
+  },
+  "crime": 0,
+  "francisfordcoppola": 0,
+  "marlonbrando": 0,
+  "alpacino": 0,
+  "jamescaan": 0,
+  "dianekeaton": 0,
+  "1970": 0,
+  "thedarkknight": {
+    "genres": ["drama"],
+    "actors": [
+      "christophernolan",
+      "christianbale",
+      "heathledger",
+      "aaroneckhart",
+      "michaelcaine"
+    ],
+    "decade": "2000"
+  },
+  "action": 0,
+  "christophernolan": 0,
+  "christianbale": 0,
+  "heathledger": 0,
+  "aaroneckhart": 0,
+  "michaelcaine": 0,
+  "2000": 0,
+  "thegodfather:partii": {
+    "genres": ["drama"],
+    "actors": [
+      "francisfordcoppola",
+      "alpacino",
+      "robertdeniro",
+      "robertduvall",
+      "dianekeaton"
+    ],
+    "decade": "1970"
+  },
+  "robertdeniro": 0,
+  "robertduvall": 0,
+  "12angrymen": {
+    "genres": ["drama"],
+    "actors": [
+      "sidneylumet",
+      "henryfonda",
+      "leejcobb",
+      "martinbalsam",
+      "johnfiedler"
+    ],
+    "decade": "1950"
+  },
+  "sidneylumet": 0,
+  "henryfonda": 0,
+  "leejcobb": 0,
+  "martinbalsam": 0,
+  "johnfiedler": 0,
+  "1950": 0,
+  "thelordoftherings:thereturnoftheking": {
+    "genres": ["drama"],
+    "actors": [
+      "peterjackson",
+      "elijahwood",
+      "viggomortensen",
+      "ianmckellen",
+      "orlandobloom"
+    ],
+    "decade": "2000"
+  },
+  "adventure": 0,
+  "peterjackson": 0,
+  "elijahwood": 0,
+  "viggomortensen": 0,
+  "ianmckellen": 0,
+  "orlandobloom": 0,
+  "pulpfiction": {
+    "genres": ["drama"],
+    "actors": [
+      "quentintarantino",
+      "johntravolta",
+      "umathurman",
+      "samuelljackson",
+      "brucewillis"
+    ],
+    "decade": "1990"
+  },
+  "quentintarantino": 0,
+  "johntravolta": 0,
+  "umathurman": 0,
+  "samuelljackson": 0,
+  "brucewillis": 0,
+  "schindler'slist": {
+    "genres": ["history"],
+    "actors": [
+      "stevenspielberg",
+      "liamneeson",
+      "ralphfiennes",
+      "benkingsley",
+      "carolinegoodall"
+    ],
+    "decade": "1990"
+  },
+  "biography": 0,
+  "history": 0,
+  "stevenspielberg": 0,
+  "liamneeson": 0,
+  "ralphfiennes": 0,
+  "benkingsley": 0,
+  "carolinegoodall": 0,
+  "inception": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "christophernolan",
+      "leonardodicaprio",
+      "josephgordon-levitt",
+      "elliotpage",
+      "kenwatanabe"
+    ],
+    "decade": "2010"
+  },
+  "sci-fi": 0,
+  "leonardodicaprio": 0,
+  "josephgordon-levitt": 0,
+  "elliotpage": 0,
+  "kenwatanabe": 0,
+  "2010": 0,
+  "spider-man:nowayhome": {
+    "genres": ["fantasy"],
+    "actors": [
+      "jonwatts",
+      "tomholland",
+      "zendaya",
+      "benedictcumberbatch",
+      "jacobbatalon"
+    ],
+    "decade": "2020"
+  },
+  "fantasy": 0,
+  "jonwatts": 0,
+  "tomholland": 0,
+  "zendaya": 0,
+  "benedictcumberbatch": 0,
+  "jacobbatalon": 0,
+  "2020": 0,
+  "sardarudham": {
+    "genres": ["drama"],
+    "actors": [
+      "shoojitsircar",
+      "vickykaushal",
+      "banitasandhu",
+      "shaunscott",
+      "stephenhogan"
+    ],
+    "decade": "2020"
+  },
+  "shoojitsircar": 0,
+  "vickykaushal": 0,
+  "banitasandhu": 0,
+  "shaunscott": 0,
+  "stephenhogan": 0,
+  "fightclub": {
+    "genres": ["drama"],
+    "actors": [
+      "davidfincher",
+      "bradpitt",
+      "edwardnorton",
+      "meatloaf",
+      "zachgrenier"
+    ],
+    "decade": "1990"
+  },
+  "davidfincher": 0,
+  "bradpitt": 0,
+  "edwardnorton": 0,
+  "meatloaf": 0,
+  "zachgrenier": 0,
+  "thelordoftherings:thefellowshipofthering": {
+    "genres": ["drama"],
+    "actors": [
+      "peterjackson",
+      "elijahwood",
+      "ianmckellen",
+      "orlandobloom",
+      "seanbean"
+    ],
+    "decade": "2000"
+  },
+  "seanbean": 0,
+  "forrestgump": {
+    "genres": ["romance"],
+    "actors": [
+      "robertzemeckis",
+      "tomhanks",
+      "robinwright",
+      "garysinise",
+      "sallyfield"
+    ],
+    "decade": "1990"
+  },
+  "romance": 0,
+  "robertzemeckis": 0,
+  "tomhanks": 0,
+  "robinwright": 0,
+  "garysinise": 0,
+  "sallyfield": 0,
+  "thelordoftherings:thetwotowers": {
+    "genres": ["drama"],
+    "actors": [
+      "peterjackson",
+      "elijahwood",
+      "ianmckellen",
+      "viggomortensen",
+      "orlandobloom"
+    ],
+    "decade": "2000"
+  },
+  "thematrix": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "lanawachowski",
+      "lillywachowski",
+      "keanureeves",
+      "laurencefishburne",
+      "carrie-annemoss",
+      "hugoweaving"
+    ],
+    "decade": "1990"
+  },
+  "lanawachowski": 0,
+  "lillywachowski": 0,
+  "keanureeves": 0,
+  "laurencefishburne": 0,
+  "carrie-annemoss": 0,
+  "hugoweaving": 0,
+  "goodfellas": {
+    "genres": ["drama"],
+    "actors": [
+      "martinscorsese",
+      "robertdeniro",
+      "rayliotta",
+      "joepesci",
+      "lorrainebracco"
+    ],
+    "decade": "1990"
+  },
+  "martinscorsese": 0,
+  "rayliotta": 0,
+  "joepesci": 0,
+  "lorrainebracco": 0,
+  "starwars:episodev-theempirestrikesback": {
+    "genres": ["fantasy"],
+    "actors": [
+      "irvinkershner",
+      "markhamill",
+      "harrisonford",
+      "carriefisher",
+      "billydeewilliams"
+    ],
+    "decade": "1980"
+  },
+  "irvinkershner": 0,
+  "markhamill": 0,
+  "harrisonford": 0,
+  "carriefisher": 0,
+  "billydeewilliams": 0,
+  "1980": 0,
+  "oneflewoverthecuckoo'snest": {
+    "genres": ["drama"],
+    "actors": [
+      "milosforman",
+      "jacknicholson",
+      "louisefletcher",
+      "michaelberryman",
+      "peterbrocco"
+    ],
+    "decade": "1970"
+  },
+  "milosforman": 0,
+  "jacknicholson": 0,
+  "louisefletcher": 0,
+  "michaelberryman": 0,
+  "peterbrocco": 0,
+  "parasite": {
+    "genres": ["thriller"],
+    "actors": [
+      "bongjoonho",
+      "kang-hosong",
+      "sun-kyunlee",
+      "yeo-jeongcho",
+      "woo-sikchoi"
+    ],
+    "decade": "2010"
+  },
+  "comedy": 0,
+  "thriller": 0,
+  "bongjoonho": 0,
+  "kang-hosong": 0,
+  "sun-kyunlee": 0,
+  "yeo-jeongcho": 0,
+  "woo-sikchoi": 0,
+  "interstellar": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "christophernolan",
+      "matthewmcconaughey",
+      "annehathaway",
+      "jessicachastain",
+      "mackenziefoy"
+    ],
+    "decade": "2010"
+  },
+  "matthewmcconaughey": 0,
+  "annehathaway": 0,
+  "jessicachastain": 0,
+  "mackenziefoy": 0,
+  "spiritedaway": {
+    "genres": ["family"],
+    "actors": [
+      "hayaomiyazaki",
+      "daveighchase",
+      "suzannepleshette",
+      "miyuirino",
+      "rumihiiragi"
+    ],
+    "decade": "2000"
+  },
+  "animation": 0,
+  "family": 0,
+  "hayaomiyazaki": 0,
+  "daveighchase": 0,
+  "suzannepleshette": 0,
+  "miyuirino": 0,
+  "rumihiiragi": 0,
+  "savingprivateryan": {
+    "genres": ["war"],
+    "actors": [
+      "stevenspielberg",
+      "tomhanks",
+      "mattdamon",
+      "tomsizemore",
+      "edwardburns"
+    ],
+    "decade": "1990"
+  },
+  "war": 0,
+  "mattdamon": 0,
+  "tomsizemore": 0,
+  "edwardburns": 0,
+  "thegreenmile": {
+    "genres": ["fantasy"],
+    "actors": [
+      "frankdarabont",
+      "tomhanks",
+      "michaelclarkeduncan",
+      "davidmorse",
+      "bonniehunt"
+    ],
+    "decade": "1990"
+  },
+  "michaelclarkeduncan": 0,
+  "davidmorse": 0,
+  "bonniehunt": 0,
+  "lifeisbeautiful": {
+    "genres": ["romance"],
+    "actors": [
+      "robertobenigni",
+      "nicolettabraschi",
+      "giorgiocantarini",
+      "giustinodurano"
+    ],
+    "decade": "1990"
+  },
+  "robertobenigni": 0,
+  "nicolettabraschi": 0,
+  "giorgiocantarini": 0,
+  "giustinodurano": 0,
+  "se7en": {
+    "genres": ["mystery"],
+    "actors": [
+      "davidfincher",
+      "morganfreeman",
+      "bradpitt",
+      "kevinspacey",
+      "andrewkevinwalker"
+    ],
+    "decade": "1990"
+  },
+  "mystery": 0,
+  "kevinspacey": 0,
+  "andrewkevinwalker": 0,
+  "thesilenceofthelambs": {
+    "genres": ["horror"],
+    "actors": [
+      "jonathandemme",
+      "jodiefoster",
+      "anthonyhopkins",
+      "lawrenceabonney",
+      "kasilemmons"
+    ],
+    "decade": "1990"
+  },
+  "horror": 0,
+  "jonathandemme": 0,
+  "jodiefoster": 0,
+  "anthonyhopkins": 0,
+  "lawrenceabonney": 0,
+  "kasilemmons": 0,
+  "starwars:episodeiv-anewhope": {
+    "genres": ["fantasy"],
+    "actors": [
+      "georgelucas",
+      "markhamill",
+      "harrisonford",
+      "carriefisher",
+      "alecguinness"
+    ],
+    "decade": "1970"
+  },
+  "georgelucas": 0,
+  "alecguinness": 0,
+  "it'sawonderfullife": {
+    "genres": ["fantasy"],
+    "actors": [
+      "frankcapra",
+      "jamesstewart",
+      "donnareed",
+      "lionelbarrymore",
+      "thomasmitchell"
+    ],
+    "decade": "1940"
+  },
+  "frankcapra": 0,
+  "jamesstewart": 0,
+  "donnareed": 0,
+  "lionelbarrymore": 0,
+  "thomasmitchell": 0,
+  "1940": 0,
+  "whiplash": {
+    "genres": ["music"],
+    "actors": [
+      "damienchazelle",
+      "milesteller",
+      "jksimmons",
+      "melissabenoist",
+      "paulreiser"
+    ],
+    "decade": "2010"
+  },
+  "music": 0,
+  "damienchazelle": 0,
+  "milesteller": 0,
+  "jksimmons": 0,
+  "melissabenoist": 0,
+  "paulreiser": 0,
+  "theintouchables": {
+    "genres": ["drama"],
+    "actors": [
+      "oliviernakache",
+      "\u00e9rictoledano",
+      "fran\u00e7oiscluzet",
+      "omarsy",
+      "anneleny",
+      "audreyfleurot"
+    ],
+    "decade": "2010"
+  },
+  "oliviernakache": 0,
+  "\u00e9rictoledano": 0,
+  "fran\u00e7oiscluzet": 0,
+  "omarsy": 0,
+  "anneleny": 0,
+  "audreyfleurot": 0,
+  "theprestige": {
+    "genres": ["thriller"],
+    "actors": [
+      "christophernolan",
+      "christianbale",
+      "hughjackman",
+      "scarlettjohansson",
+      "michaelcaine"
+    ],
+    "decade": "2000"
+  },
+  "hughjackman": 0,
+  "scarlettjohansson": 0,
+  "thedeparted": {
+    "genres": ["thriller"],
+    "actors": [
+      "martinscorsese",
+      "leonardodicaprio",
+      "mattdamon",
+      "jacknicholson",
+      "markwahlberg"
+    ],
+    "decade": "2000"
+  },
+  "markwahlberg": 0,
+  "thepianist": {
+    "genres": ["music"],
+    "actors": [
+      "romanpolanski",
+      "adrienbrody",
+      "thomaskretschmann",
+      "frankfinlay",
+      "emiliafox"
+    ],
+    "decade": "2000"
+  },
+  "romanpolanski": 0,
+  "adrienbrody": 0,
+  "thomaskretschmann": 0,
+  "frankfinlay": 0,
+  "emiliafox": 0,
+  "gladiator": {
+    "genres": ["drama"],
+    "actors": [
+      "ridleyscott",
+      "russellcrowe",
+      "joaquinphoenix",
+      "connienielsen",
+      "oliverreed"
+    ],
+    "decade": "2000"
+  },
+  "ridleyscott": 0,
+  "russellcrowe": 0,
+  "joaquinphoenix": 0,
+  "connienielsen": 0,
+  "oliverreed": 0,
+  "americanhistoryx": {
+    "genres": ["drama"],
+    "actors": [
+      "tonykaye",
+      "edwardnorton",
+      "edwardfurlong",
+      "beverlyd'angelo",
+      "jenniferlien"
+    ],
+    "decade": "1990"
+  },
+  "tonykaye": 0,
+  "edwardfurlong": 0,
+  "beverlyd'angelo": 0,
+  "jenniferlien": 0,
+  "theusualsuspects": {
+    "genres": ["mystery"],
+    "actors": [
+      "bryansinger",
+      "kevinspacey",
+      "gabrielbyrne",
+      "chazzpalminteri",
+      "stephenbaldwin"
+    ],
+    "decade": "1990"
+  },
+  "bryansinger": 0,
+  "gabrielbyrne": 0,
+  "chazzpalminteri": 0,
+  "stephenbaldwin": 0,
+  "l\u00e9on:theprofessional": {
+    "genres": ["drama"],
+    "actors": [
+      "lucbesson",
+      "jeanreno",
+      "garyoldman",
+      "natalieportman",
+      "dannyaiello"
+    ],
+    "decade": "1990"
+  },
+  "lucbesson": 0,
+  "jeanreno": 0,
+  "garyoldman": 0,
+  "natalieportman": 0,
+  "dannyaiello": 0,
+  "thelionking": {
+    "genres": ["drama"],
+    "actors": [
+      "rogerallers",
+      "robminkoff",
+      "matthewbroderick",
+      "jeremyirons",
+      "jamesearljones",
+      "whoopigoldberg"
+    ],
+    "decade": "1990"
+  },
+  "rogerallers": 0,
+  "robminkoff": 0,
+  "matthewbroderick": 0,
+  "jeremyirons": 0,
+  "jamesearljones": 0,
+  "whoopigoldberg": 0,
+  "terminator2:judgmentday": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "jamescameron",
+      "arnoldschwarzenegger",
+      "lindahamilton",
+      "edwardfurlong",
+      "robertpatrick"
+    ],
+    "decade": "1990"
+  },
+  "jamescameron": 0,
+  "arnoldschwarzenegger": 0,
+  "lindahamilton": 0,
+  "robertpatrick": 0,
+  "backtothefuture": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "robertzemeckis",
+      "michaeljfox",
+      "christopherlloyd",
+      "leathompson",
+      "crispinglover"
+    ],
+    "decade": "1980"
+  },
+  "michaeljfox": 0,
+  "christopherlloyd": 0,
+  "leathompson": 0,
+  "crispinglover": 0,
+  "onceuponatimeinthewest": {
+    "genres": ["western"],
+    "actors": [
+      "sergioleone",
+      "henryfonda",
+      "charlesbronson",
+      "claudiacardinale",
+      "jasonrobards"
+    ],
+    "decade": "1960"
+  },
+  "western": 0,
+  "sergioleone": 0,
+  "charlesbronson": 0,
+  "claudiacardinale": 0,
+  "jasonrobards": 0,
+  "1960": 0,
+  "psycho": {
+    "genres": ["thriller"],
+    "actors": [
+      "alfredhitchcock",
+      "anthonyperkins",
+      "janetleigh",
+      "veramiles",
+      "johngavin"
+    ],
+    "decade": "1960"
+  },
+  "alfredhitchcock": 0,
+  "anthonyperkins": 0,
+  "janetleigh": 0,
+  "veramiles": 0,
+  "johngavin": 0,
+  "rearwindow": {
+    "genres": ["thriller"],
+    "actors": [
+      "alfredhitchcock",
+      "jamesstewart",
+      "gracekelly",
+      "wendellcorey",
+      "thelmaritter"
+    ],
+    "decade": "1950"
+  },
+  "gracekelly": 0,
+  "wendellcorey": 0,
+  "thelmaritter": 0,
+  "casablanca": {
+    "genres": ["war"],
+    "actors": [
+      "michaelcurtiz",
+      "humphreybogart",
+      "ingridbergman",
+      "paulhenreid",
+      "clauderains"
+    ],
+    "decade": "1940"
+  },
+  "michaelcurtiz": 0,
+  "humphreybogart": 0,
+  "ingridbergman": 0,
+  "paulhenreid": 0,
+  "clauderains": 0,
+  "moderntimes": {
+    "genres": ["family"],
+    "actors": [
+      "charleschaplin",
+      "paulettegoddard",
+      "henrybergman",
+      "tinysandford"
+    ],
+    "decade": "1930"
+  },
+  "charleschaplin": 0,
+  "paulettegoddard": 0,
+  "henrybergman": 0,
+  "tinysandford": 0,
+  "1930": 0,
+  "citylights": {
+    "genres": ["romance"],
+    "actors": [
+      "charleschaplin",
+      "virginiacherrill",
+      "florencelee",
+      "harrymyers"
+    ],
+    "decade": "1930"
+  },
+  "virginiacherrill": 0,
+  "florencelee": 0,
+  "harrymyers": 0,
+  "hamilton": {
+    "genres": ["history"],
+    "actors": [
+      "thomaskail",
+      "lin-manuelmiranda",
+      "phillipasoo",
+      "leslieodomjr",
+      "ren\u00e9eelisegoldsberry"
+    ],
+    "decade": "2020"
+  },
+  "thomaskail": 0,
+  "lin-manuelmiranda": 0,
+  "phillipasoo": 0,
+  "leslieodomjr": 0,
+  "ren\u00e9eelisegoldsberry": 0,
+  "joker": {
+    "genres": ["thriller"],
+    "actors": [
+      "toddphillips",
+      "joaquinphoenix",
+      "robertdeniro",
+      "zaziebeetz",
+      "francesconroy"
+    ],
+    "decade": "2010"
+  },
+  "toddphillips": 0,
+  "zaziebeetz": 0,
+  "francesconroy": 0,
+  "ayla:thedaughterofwar": {
+    "genres": ["history"],
+    "actors": [
+      "canulkay",
+      "halenuruzunoglu",
+      "\u00e7etintekindor",
+      "ismailhacioglu",
+      "kyung-jinlee",
+      "kimseol"
+    ],
+    "decade": "2010"
+  },
+  "canulkay": 0,
+  "halenuruzunoglu": 0,
+  "\u00e7etintekindor": 0,
+  "ismailhacioglu": 0,
+  "kyung-jinlee": 0,
+  "kimseol": 0,
+  "dangal": {
+    "genres": ["drama"],
+    "actors": [
+      "niteshtiwari",
+      "aamirkhan",
+      "sakshitanwar",
+      "fatimasanashaikh",
+      "sanyamalhotra"
+    ],
+    "decade": "2010"
+  },
+  "niteshtiwari": 0,
+  "aamirkhan": 0,
+  "sakshitanwar": 0,
+  "fatimasanashaikh": 0,
+  "sanyamalhotra": 0,
+  "spider-man:intothespider-verse": {
+    "genres": ["adventure"],
+    "actors": [
+      "bobpersichetti",
+      "peterramsey",
+      "rodneyrothman",
+      "shameikmoore",
+      "jakejohnson",
+      "haileesteinfeld",
+      "mahershalaali"
+    ],
+    "decade": "2010"
+  },
+  "bobpersichetti": 0,
+  "peterramsey": 0,
+  "rodneyrothman": 0,
+  "shameikmoore": 0,
+  "jakejohnson": 0,
+  "haileesteinfeld": 0,
+  "mahershalaali": 0,
+  "avengers:endgame": {
+    "genres": ["drama"],
+    "actors": [
+      "anthonyrusso",
+      "joerusso",
+      "robertdowneyjr",
+      "chrisevans",
+      "markruffalo",
+      "chrishemsworth"
+    ],
+    "decade": "2010"
+  },
+  "anthonyrusso": 0,
+  "joerusso": 0,
+  "robertdowneyjr": 0,
+  "chrisevans": 0,
+  "markruffalo": 0,
+  "chrishemsworth": 0,
+  "avengers:infinitywar": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "anthonyrusso",
+      "joerusso",
+      "robertdowneyjr",
+      "chrishemsworth",
+      "markruffalo",
+      "chrisevans"
+    ],
+    "decade": "2010"
+  },
+  "coco": {
+    "genres": ["comedy"],
+    "actors": [
+      "leeunkrich",
+      "adrianmolina",
+      "anthonygonzalez",
+      "gaelgarc\u00edabernal",
+      "benjaminbratt",
+      "alannaubach"
+    ],
+    "decade": "2010"
+  },
+  "leeunkrich": 0,
+  "adrianmolina": 0,
+  "anthonygonzalez": 0,
+  "gaelgarc\u00edabernal": 0,
+  "benjaminbratt": 0,
+  "alannaubach": 0,
+  "djangounchained": {
+    "genres": ["western"],
+    "actors": [
+      "quentintarantino",
+      "jamiefoxx",
+      "christophwaltz",
+      "leonardodicaprio",
+      "kerrywashington"
+    ],
+    "decade": "2010"
+  },
+  "jamiefoxx": 0,
+  "christophwaltz": 0,
+  "kerrywashington": 0,
+  "thedarkknightrises": {
+    "genres": ["drama"],
+    "actors": [
+      "christophernolan",
+      "christianbale",
+      "tomhardy",
+      "annehathaway",
+      "garyoldman"
+    ],
+    "decade": "2010"
+  },
+  "tomhardy": 0,
+  "3idiots": {
+    "genres": ["drama"],
+    "actors": [
+      "rajkumarhirani",
+      "aamirkhan",
+      "madhavan",
+      "monasingh",
+      "sharmanjoshi"
+    ],
+    "decade": "2000"
+  },
+  "rajkumarhirani": 0,
+  "madhavan": 0,
+  "monasingh": 0,
+  "sharmanjoshi": 0,
+  "wall\u00b7e": {
+    "genres": ["family"],
+    "actors": [
+      "andrewstanton",
+      "benburtt",
+      "elissaknight",
+      "jeffgarlin",
+      "fredwillard"
+    ],
+    "decade": "2000"
+  },
+  "andrewstanton": 0,
+  "benburtt": 0,
+  "elissaknight": 0,
+  "jeffgarlin": 0,
+  "fredwillard": 0,
+  "memento": {
+    "genres": ["thriller"],
+    "actors": [
+      "christophernolan",
+      "guypearce",
+      "carrie-annemoss",
+      "joepantoliano",
+      "markboonejunior"
+    ],
+    "decade": "2000"
+  },
+  "guypearce": 0,
+  "joepantoliano": 0,
+  "markboonejunior": 0,
+  "indianajonesandtheraidersofthelostark": {
+    "genres": ["adventure"],
+    "actors": [
+      "stevenspielberg",
+      "harrisonford",
+      "karenallen",
+      "paulfreeman",
+      "johnrhys-davies"
+    ],
+    "decade": "1980"
+  },
+  "karenallen": 0,
+  "paulfreeman": 0,
+  "johnrhys-davies": 0,
+  "theshining": {
+    "genres": ["horror"],
+    "actors": [
+      "stanleykubrick",
+      "jacknicholson",
+      "shelleyduvall",
+      "dannylloyd",
+      "scatmancrothers"
+    ],
+    "decade": "1980"
+  },
+  "stanleykubrick": 0,
+  "shelleyduvall": 0,
+  "dannylloyd": 0,
+  "scatmancrothers": 0,
+  "apocalypsenow": {
+    "genres": ["war"],
+    "actors": [
+      "francisfordcoppola",
+      "martinsheen",
+      "marlonbrando",
+      "robertduvall",
+      "fredericforrest"
+    ],
+    "decade": "1970"
+  },
+  "martinsheen": 0,
+  "fredericforrest": 0,
+  "alien": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "ridleyscott",
+      "sigourneyweaver",
+      "tomskerritt",
+      "johnhurt",
+      "veronicacartwright"
+    ],
+    "decade": "1970"
+  },
+  "sigourneyweaver": 0,
+  "tomskerritt": 0,
+  "johnhurt": 0,
+  "veronicacartwright": 0,
+  "dr.strangeloveor:howilearnedtostopworryingandlovethebomb": {
+    "genres": ["war"],
+    "actors": [
+      "stanleykubrick",
+      "petersellers",
+      "georgecscott",
+      "sterlinghayden",
+      "keenanwynn"
+    ],
+    "decade": "1960"
+  },
+  "petersellers": 0,
+  "georgecscott": 0,
+  "sterlinghayden": 0,
+  "keenanwynn": 0,
+  "witnessfortheprosecution": {
+    "genres": ["mystery"],
+    "actors": [
+      "billywilder",
+      "tyronepower",
+      "marlenedietrich",
+      "charleslaughton",
+      "elsalanchester"
+    ],
+    "decade": "1950"
+  },
+  "billywilder": 0,
+  "tyronepower": 0,
+  "marlenedietrich": 0,
+  "charleslaughton": 0,
+  "elsalanchester": 0,
+  "pathsofglory": {
+    "genres": ["war"],
+    "actors": [
+      "stanleykubrick",
+      "kirkdouglas",
+      "ralphmeeker",
+      "adolphemenjou",
+      "georgemacready"
+    ],
+    "decade": "1950"
+  },
+  "kirkdouglas": 0,
+  "ralphmeeker": 0,
+  "adolphemenjou": 0,
+  "georgemacready": 0,
+  "sunsetblvd.": {
+    "genres": ["film-noir"],
+    "actors": [
+      "billywilder",
+      "williamholden",
+      "gloriaswanson",
+      "erichvonstroheim",
+      "nancyolson"
+    ],
+    "decade": "1950"
+  },
+  "film-noir": 0,
+  "williamholden": 0,
+  "gloriaswanson": 0,
+  "erichvonstroheim": 0,
+  "nancyolson": 0,
+  "thegreatdictator": {
+    "genres": ["war"],
+    "actors": [
+      "charleschaplin",
+      "paulettegoddard",
+      "jackoakie",
+      "reginaldgardiner"
+    ],
+    "decade": "1940"
+  },
+  "jackoakie": 0,
+  "reginaldgardiner": 0,
+  "1917": {
+    "genres": ["war"],
+    "actors": [
+      "sammendes",
+      "dean-charleschapman",
+      "georgemackay",
+      "danielmays",
+      "colinfirth"
+    ],
+    "decade": "2010"
+  },
+  "sammendes": 0,
+  "dean-charleschapman": 0,
+  "georgemackay": 0,
+  "danielmays": 0,
+  "colinfirth": 0,
+  "thehunt": {
+    "genres": ["drama"],
+    "actors": [
+      "thomasvinterberg",
+      "madsmikkelsen",
+      "thomasbolarsen",
+      "annikawedderkopp",
+      "lassefogelstr\u00f8m"
+    ],
+    "decade": "2010"
+  },
+  "thomasvinterberg": 0,
+  "madsmikkelsen": 0,
+  "thomasbolarsen": 0,
+  "annikawedderkopp": 0,
+  "lassefogelstr\u00f8m": 0,
+  "incendies": {
+    "genres": ["war"],
+    "actors": [
+      "denisvilleneuve",
+      "lubnaazabal",
+      "m\u00e9lissad\u00e9sormeaux-poulin",
+      "maximgaudette",
+      "mustafakamel"
+    ],
+    "decade": "2010"
+  },
+  "denisvilleneuve": 0,
+  "lubnaazabal": 0,
+  "m\u00e9lissad\u00e9sormeaux-poulin": 0,
+  "maximgaudette": 0,
+  "mustafakamel": 0,
+  "thefather": {
+    "genres": ["mystery"],
+    "actors": [
+      "florianzeller",
+      "anthonyhopkins",
+      "oliviacolman",
+      "markgatiss",
+      "oliviawilliams"
+    ],
+    "decade": "2020"
+  },
+  "florianzeller": 0,
+  "oliviacolman": 0,
+  "markgatiss": 0,
+  "oliviawilliams": 0,
+  "inglouriousbasterds": {
+    "genres": ["war"],
+    "actors": [
+      "quentintarantino",
+      "bradpitt",
+      "dianekruger",
+      "eliroth",
+      "m\u00e9lanielaurent"
+    ],
+    "decade": "2000"
+  },
+  "dianekruger": 0,
+  "eliroth": 0,
+  "m\u00e9lanielaurent": 0,
+  "eternalsunshineofthespotlessmind": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "michelgondry",
+      "jimcarrey",
+      "katewinslet",
+      "tomwilkinson",
+      "gerryrobertbyrne"
+    ],
+    "decade": "2000"
+  },
+  "michelgondry": 0,
+  "jimcarrey": 0,
+  "katewinslet": 0,
+  "tomwilkinson": 0,
+  "gerryrobertbyrne": 0,
+  "am\u00e9lie": {
+    "genres": ["romance"],
+    "actors": [
+      "jean-pierrejeunet",
+      "audreytautou",
+      "mathieukassovitz",
+      "rufus",
+      "lorellacravotta"
+    ],
+    "decade": "2000"
+  },
+  "jean-pierrejeunet": 0,
+  "audreytautou": 0,
+  "mathieukassovitz": 0,
+  "rufus": 0,
+  "lorellacravotta": 0,
+  "requiemforadream": {
+    "genres": ["drama"],
+    "actors": [
+      "darrenaronofsky",
+      "ellenburstyn",
+      "jaredleto",
+      "jenniferconnelly",
+      "marlonwayans"
+    ],
+    "decade": "2000"
+  },
+  "darrenaronofsky": 0,
+  "ellenburstyn": 0,
+  "jaredleto": 0,
+  "jenniferconnelly": 0,
+  "marlonwayans": 0,
+  "americanbeauty": {
+    "genres": ["drama"],
+    "actors": [
+      "sammendes",
+      "kevinspacey",
+      "annettebening",
+      "thorabirch",
+      "wesbentley"
+    ],
+    "decade": "1990"
+  },
+  "annettebening": 0,
+  "thorabirch": 0,
+  "wesbentley": 0,
+  "goodwillhunting": {
+    "genres": ["romance"],
+    "actors": [
+      "gusvansant",
+      "robinwilliams",
+      "mattdamon",
+      "benaffleck",
+      "stellanskarsg\u00e5rd"
+    ],
+    "decade": "1990"
+  },
+  "gusvansant": 0,
+  "robinwilliams": 0,
+  "benaffleck": 0,
+  "stellanskarsg\u00e5rd": 0,
+  "toystory": {
+    "genres": ["comedy"],
+    "actors": [
+      "johnlasseter",
+      "tomhanks",
+      "timallen",
+      "donrickles",
+      "jimvarney"
+    ],
+    "decade": "1990"
+  },
+  "johnlasseter": 0,
+  "timallen": 0,
+  "donrickles": 0,
+  "jimvarney": 0,
+  "braveheart": {
+    "genres": ["history"],
+    "actors": [
+      "melgibson",
+      "sophiemarceau",
+      "patrickmcgoohan",
+      "angusmacfadyen"
+    ],
+    "decade": "1990"
+  },
+  "melgibson": 0,
+  "sophiemarceau": 0,
+  "patrickmcgoohan": 0,
+  "angusmacfadyen": 0,
+  "reservoirdogs": {
+    "genres": ["thriller"],
+    "actors": [
+      "quentintarantino",
+      "harveykeitel",
+      "timroth",
+      "michaelmadsen",
+      "chrispenn"
+    ],
+    "decade": "1990"
+  },
+  "harveykeitel": 0,
+  "timroth": 0,
+  "michaelmadsen": 0,
+  "chrispenn": 0,
+  "fullmetaljacket": {
+    "genres": ["war"],
+    "actors": [
+      "stanleykubrick",
+      "matthewmodine",
+      "rleeermey",
+      "vincentd'onofrio",
+      "adambaldwin"
+    ],
+    "decade": "1980"
+  },
+  "matthewmodine": 0,
+  "rleeermey": 0,
+  "vincentd'onofrio": 0,
+  "adambaldwin": 0,
+  "aliens": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "jamescameron",
+      "sigourneyweaver",
+      "michaelbiehn",
+      "carriehenn",
+      "paulreiser"
+    ],
+    "decade": "1980"
+  },
+  "michaelbiehn": 0,
+  "carriehenn": 0,
+  "onceuponatimeinamerica": {
+    "genres": ["drama"],
+    "actors": [
+      "sergioleone",
+      "robertdeniro",
+      "jameswoods",
+      "elizabethmcgovern",
+      "treatwilliams"
+    ],
+    "decade": "1980"
+  },
+  "jameswoods": 0,
+  "elizabethmcgovern": 0,
+  "treatwilliams": 0,
+  "amadeus": {
+    "genres": ["music"],
+    "actors": [
+      "milosforman",
+      "fmurrayabraham",
+      "tomhulce",
+      "elizabethberridge",
+      "roydotrice"
+    ],
+    "decade": "1980"
+  },
+  "fmurrayabraham": 0,
+  "tomhulce": 0,
+  "elizabethberridge": 0,
+  "roydotrice": 0,
+  "scarface": {
+    "genres": ["drama"],
+    "actors": [
+      "briandepalma",
+      "alpacino",
+      "michellepfeiffer",
+      "stevenbauer",
+      "maryelizabethmastrantonio"
+    ],
+    "decade": "1980"
+  },
+  "briandepalma": 0,
+  "michellepfeiffer": 0,
+  "stevenbauer": 0,
+  "maryelizabethmastrantonio": 0,
+  "starwars:episodevi-returnofthejedi": {
+    "genres": ["fantasy"],
+    "actors": [
+      "richardmarquand",
+      "markhamill",
+      "harrisonford",
+      "carriefisher",
+      "billydeewilliams"
+    ],
+    "decade": "1980"
+  },
+  "richardmarquand": 0,
+  "thesting": {
+    "genres": ["drama"],
+    "actors": [
+      "georgeroyhill",
+      "paulnewman",
+      "robertredford",
+      "robertshaw",
+      "charlesdurning"
+    ],
+    "decade": "1970"
+  },
+  "georgeroyhill": 0,
+  "paulnewman": 0,
+  "robertredford": 0,
+  "robertshaw": 0,
+  "charlesdurning": 0,
+  "aclockworkorange": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "stanleykubrick",
+      "malcolmmcdowell",
+      "patrickmagee",
+      "michaelbates",
+      "warrenclarke"
+    ],
+    "decade": "1970"
+  },
+  "malcolmmcdowell": 0,
+  "patrickmagee": 0,
+  "michaelbates": 0,
+  "warrenclarke": 0,
+  "2001:aspaceodyssey": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "stanleykubrick",
+      "keirdullea",
+      "garylockwood",
+      "williamsylvester",
+      "danielrichter"
+    ],
+    "decade": "1960"
+  },
+  "keirdullea": 0,
+  "garylockwood": 0,
+  "williamsylvester": 0,
+  "danielrichter": 0,
+  "lawrenceofarabia": {
+    "genres": ["drama"],
+    "actors": [
+      "davidlean",
+      "petero'toole",
+      "alecguinness",
+      "anthonyquinn",
+      "jackhawkins"
+    ],
+    "decade": "1960"
+  },
+  "davidlean": 0,
+  "petero'toole": 0,
+  "anthonyquinn": 0,
+  "jackhawkins": 0,
+  "theapartment": {
+    "genres": ["romance"],
+    "actors": [
+      "billywilder",
+      "jacklemmon",
+      "shirleymaclaine",
+      "fredmacmurray",
+      "raywalston"
+    ],
+    "decade": "1960"
+  },
+  "jacklemmon": 0,
+  "shirleymaclaine": 0,
+  "fredmacmurray": 0,
+  "raywalston": 0,
+  "northbynorthwest": {
+    "genres": ["thriller"],
+    "actors": [
+      "alfredhitchcock",
+      "carygrant",
+      "evamariesaint",
+      "jamesmason",
+      "jessieroycelandis"
+    ],
+    "decade": "1950"
+  },
+  "carygrant": 0,
+  "evamariesaint": 0,
+  "jamesmason": 0,
+  "jessieroycelandis": 0,
+  "vertigo": {
+    "genres": ["thriller"],
+    "actors": [
+      "alfredhitchcock",
+      "jamesstewart",
+      "kimnovak",
+      "barbarabelgeddes",
+      "tomhelmore"
+    ],
+    "decade": "1950"
+  },
+  "kimnovak": 0,
+  "barbarabelgeddes": 0,
+  "tomhelmore": 0,
+  "singin'intherain": {
+    "genres": ["romance"],
+    "actors": [
+      "stanleydonen",
+      "genekelly",
+      "donaldo'connor",
+      "debbiereynolds",
+      "jeanhagen"
+    ],
+    "decade": "1950"
+  },
+  "musical": 0,
+  "stanleydonen": 0,
+  "genekelly": 0,
+  "donaldo'connor": 0,
+  "debbiereynolds": 0,
+  "jeanhagen": 0,
+  "bicyclethieves": {
+    "genres": ["drama"],
+    "actors": [
+      "vittoriodesica",
+      "lambertomaggiorani",
+      "enzostaiola",
+      "lianellacarell",
+      "elenaaltieri"
+    ],
+    "decade": "1940"
+  },
+  "vittoriodesica": 0,
+  "lambertomaggiorani": 0,
+  "enzostaiola": 0,
+  "lianellacarell": 0,
+  "elenaaltieri": 0,
+  "doubleindemnity": {
+    "genres": ["film-noir"],
+    "actors": [
+      "billywilder",
+      "fredmacmurray",
+      "barbarastanwyck",
+      "edwardgrobinson",
+      "byronbarr"
+    ],
+    "decade": "1940"
+  },
+  "barbarastanwyck": 0,
+  "edwardgrobinson": 0,
+  "byronbarr": 0,
+  "citizenkane": {
+    "genres": ["mystery"],
+    "actors": [
+      "orsonwelles",
+      "josephcotten",
+      "dorothycomingore",
+      "agnesmoorehead"
+    ],
+    "decade": "1940"
+  },
+  "orsonwelles": 0,
+  "josephcotten": 0,
+  "dorothycomingore": 0,
+  "agnesmoorehead": 0,
+  "metropolis": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "fritzlang",
+      "brigittehelm",
+      "alfredabel",
+      "gustavfr\u00f6hlich",
+      "rudolfklein-rogge"
+    ],
+    "decade": "1920"
+  },
+  "fritzlang": 0,
+  "brigittehelm": 0,
+  "alfredabel": 0,
+  "gustavfr\u00f6hlich": 0,
+  "rudolfklein-rogge": 0,
+  "1920": 0,
+  "thekid": {
+    "genres": ["family"],
+    "actors": ["charleschaplin", "ednapurviance", "jackiecoogan", "carlmiller"],
+    "decade": "1920"
+  },
+  "ednapurviance": 0,
+  "jackiecoogan": 0,
+  "carlmiller": 0,
+  "andhadhun": {
+    "genres": ["music"],
+    "actors": [
+      "sriramraghavan",
+      "ayushmannkhurrana",
+      "tabu",
+      "radhikaapte",
+      "anildhawan"
+    ],
+    "decade": "2010"
+  },
+  "sriramraghavan": 0,
+  "ayushmannkhurrana": 0,
+  "tabu": 0,
+  "radhikaapte": 0,
+  "anildhawan": 0,
+  "greenbook": {
+    "genres": ["drama"],
+    "actors": [
+      "peterfarrelly",
+      "viggomortensen",
+      "mahershalaali",
+      "lindacardellini",
+      "sebastianmaniscalco"
+    ],
+    "decade": "2010"
+  },
+  "peterfarrelly": 0,
+  "lindacardellini": 0,
+  "sebastianmaniscalco": 0,
+  "klaus": {
+    "genres": ["comedy"],
+    "actors": [
+      "sergiopablos",
+      "carlosmart\u00ednezl\u00f3pez",
+      "jasonschwartzman",
+      "jksimmons",
+      "rashidajones",
+      "willsasso"
+    ],
+    "decade": "2010"
+  },
+  "sergiopablos": 0,
+  "carlosmart\u00ednezl\u00f3pez": 0,
+  "jasonschwartzman": 0,
+  "rashidajones": 0,
+  "willsasso": 0,
+  "drishyam": {
+    "genres": ["mystery"],
+    "actors": [
+      "nishikantkamat",
+      "ajaydevgn",
+      "shriyasaran",
+      "tabu",
+      "rajatkapoor"
+    ],
+    "decade": "2010"
+  },
+  "nishikantkamat": 0,
+  "ajaydevgn": 0,
+  "shriyasaran": 0,
+  "rajatkapoor": 0,
+  "queen": {
+    "genres": ["drama"],
+    "actors": [
+      "vikasbahl",
+      "kanganaranaut",
+      "rajkummarrao",
+      "lisahaydon",
+      "jeffreyho"
+    ],
+    "decade": "2010"
+  },
+  "vikasbahl": 0,
+  "kanganaranaut": 0,
+  "rajkummarrao": 0,
+  "lisahaydon": 0,
+  "jeffreyho": 0,
+  "zindaginamilegidobara": {
+    "genres": ["musical"],
+    "actors": [
+      "zoyaakhtar",
+      "hrithikroshan",
+      "farhanakhtar",
+      "abhaydeol",
+      "katrinakaif"
+    ],
+    "decade": "2010"
+  },
+  "zoyaakhtar": 0,
+  "hrithikroshan": 0,
+  "farhanakhtar": 0,
+  "abhaydeol": 0,
+  "katrinakaif": 0,
+  "dune": {
+    "genres": ["drama"],
+    "actors": [
+      "denisvilleneuve",
+      "timoth\u00e9echalamet",
+      "rebeccaferguson",
+      "zendaya",
+      "oscarisaac"
+    ],
+    "decade": "2020"
+  },
+  "timoth\u00e9echalamet": 0,
+  "rebeccaferguson": 0,
+  "oscarisaac": 0,
+  "shutterisland": {
+    "genres": ["thriller"],
+    "actors": [
+      "martinscorsese",
+      "leonardodicaprio",
+      "emilymortimer",
+      "markruffalo",
+      "benkingsley"
+    ],
+    "decade": "2010"
+  },
+  "emilymortimer": 0,
+  "up": {
+    "genres": ["comedy"],
+    "actors": [
+      "petedocter",
+      "bobpeterson",
+      "edasner",
+      "jordannagai",
+      "johnratzenberger",
+      "christopherplummer"
+    ],
+    "decade": "2000"
+  },
+  "petedocter": 0,
+  "bobpeterson": 0,
+  "edasner": 0,
+  "jordannagai": 0,
+  "johnratzenberger": 0,
+  "christopherplummer": 0,
+  "thewolfofwallstreet": {
+    "genres": ["crime"],
+    "actors": [
+      "martinscorsese",
+      "leonardodicaprio",
+      "jonahhill",
+      "margotrobbie",
+      "matthewmcconaughey"
+    ],
+    "decade": "2010"
+  },
+  "jonahhill": 0,
+  "margotrobbie": 0,
+  "therewillbeblood": {
+    "genres": ["drama"],
+    "actors": [
+      "paulthomasanderson",
+      "danielday-lewis",
+      "pauldano",
+      "ciar\u00e1nhinds",
+      "martinstringer"
+    ],
+    "decade": "2000"
+  },
+  "paulthomasanderson": 0,
+  "danielday-lewis": 0,
+  "pauldano": 0,
+  "ciar\u00e1nhinds": 0,
+  "martinstringer": 0,
+  "toystory3": {
+    "genres": ["comedy"],
+    "actors": ["leeunkrich", "tomhanks", "timallen", "joancusack", "nedbeatty"],
+    "decade": "2010"
+  },
+  "joancusack": 0,
+  "nedbeatty": 0,
+  "black": {
+    "genres": ["drama"],
+    "actors": [
+      "sanjayleelabhansali",
+      "amitabhbachchan",
+      "ranimukerji",
+      "shernazpatel",
+      "ayeshakapoor"
+    ],
+    "decade": "2000"
+  },
+  "sanjayleelabhansali": 0,
+  "amitabhbachchan": 0,
+  "ranimukerji": 0,
+  "shernazpatel": 0,
+  "ayeshakapoor": 0,
+  "batmanbegins": {
+    "genres": ["drama"],
+    "actors": [
+      "christophernolan",
+      "christianbale",
+      "michaelcaine",
+      "kenwatanabe",
+      "liamneeson"
+    ],
+    "decade": "2000"
+  },
+  "swades": {
+    "genres": ["musical"],
+    "actors": [
+      "ashutoshgowariker",
+      "shahrukhkhan",
+      "gayatrijoshi",
+      "kishoriballal",
+      "smithseth"
+    ],
+    "decade": "2000"
+  },
+  "ashutoshgowariker": 0,
+  "shahrukhkhan": 0,
+  "gayatrijoshi": 0,
+  "kishoriballal": 0,
+  "smithseth": 0,
+  "downfall": {
+    "genres": ["history"],
+    "actors": [
+      "oliverhirschbiegel",
+      "brunoganz",
+      "alexandramarialara",
+      "ulrichmatthes",
+      "julianek\u00f6hler"
+    ],
+    "decade": "2000"
+  },
+  "oliverhirschbiegel": 0,
+  "brunoganz": 0,
+  "alexandramarialara": 0,
+  "ulrichmatthes": 0,
+  "julianek\u00f6hler": 0,
+  "abeautifulmind": {
+    "genres": ["drama"],
+    "actors": [
+      "ronhoward",
+      "russellcrowe",
+      "edharris",
+      "jenniferconnelly",
+      "christopherplummer"
+    ],
+    "decade": "2000"
+  },
+  "ronhoward": 0,
+  "edharris": 0,
+  "snatch": {
+    "genres": ["crime"],
+    "actors": [
+      "guyritchie",
+      "jasonstatham",
+      "bradpitt",
+      "stephengraham",
+      "vinniejones"
+    ],
+    "decade": "2000"
+  },
+  "guyritchie": 0,
+  "jasonstatham": 0,
+  "stephengraham": 0,
+  "vinniejones": 0,
+  "lock,stockandtwosmokingbarrels": {
+    "genres": ["crime"],
+    "actors": [
+      "guyritchie",
+      "jasonflemyng",
+      "dexterfletcher",
+      "nickmoran",
+      "jasonstatham"
+    ],
+    "decade": "1990"
+  },
+  "jasonflemyng": 0,
+  "dexterfletcher": 0,
+  "nickmoran": 0,
+  "l.a.confidential": {
+    "genres": ["mystery"],
+    "actors": [
+      "curtishanson",
+      "kevinspacey",
+      "russellcrowe",
+      "guypearce",
+      "kimbasinger"
+    ],
+    "decade": "1990"
+  },
+  "curtishanson": 0,
+  "kimbasinger": 0,
+  "heat": {
+    "genres": ["drama"],
+    "actors": [
+      "michaelmann",
+      "alpacino",
+      "robertdeniro",
+      "valkilmer",
+      "jonvoight"
+    ],
+    "decade": "1990"
+  },
+  "michaelmann": 0,
+  "valkilmer": 0,
+  "jonvoight": 0,
+  "casino": {
+    "genres": ["drama"],
+    "actors": [
+      "martinscorsese",
+      "robertdeniro",
+      "sharonstone",
+      "joepesci",
+      "jameswoods"
+    ],
+    "decade": "1990"
+  },
+  "sharonstone": 0,
+  "unforgiven": {
+    "genres": ["western"],
+    "actors": [
+      "clinteastwood",
+      "genehackman",
+      "morganfreeman",
+      "richardharris"
+    ],
+    "decade": "1990"
+  },
+  "clinteastwood": 0,
+  "genehackman": 0,
+  "richardharris": 0,
+  "indianajonesandthelastcrusade": {
+    "genres": ["adventure"],
+    "actors": [
+      "stevenspielberg",
+      "harrisonford",
+      "seanconnery",
+      "alisondoody",
+      "denholmelliott"
+    ],
+    "decade": "1980"
+  },
+  "seanconnery": 0,
+  "alisondoody": 0,
+  "denholmelliott": 0,
+  "diehard": {
+    "genres": ["thriller"],
+    "actors": [
+      "johnmctiernan",
+      "brucewillis",
+      "alanrickman",
+      "bonniebedelia",
+      "reginaldveljohnson"
+    ],
+    "decade": "1980"
+  },
+  "johnmctiernan": 0,
+  "alanrickman": 0,
+  "bonniebedelia": 0,
+  "reginaldveljohnson": 0,
+  "ragingbull": {
+    "genres": ["sport"],
+    "actors": [
+      "martinscorsese",
+      "robertdeniro",
+      "cathymoriarty",
+      "joepesci",
+      "frankvincent"
+    ],
+    "decade": "1980"
+  },
+  "sport": 0,
+  "cathymoriarty": 0,
+  "frankvincent": 0,
+  "autumnsonata": {
+    "genres": ["music"],
+    "actors": [
+      "ingmarbergman",
+      "ingridbergman",
+      "livullmann",
+      "lenanyman",
+      "halvarbj\u00f6rk"
+    ],
+    "decade": "1970"
+  },
+  "ingmarbergman": 0,
+  "livullmann": 0,
+  "lenanyman": 0,
+  "halvarbj\u00f6rk": 0,
+  "taxidriver": {
+    "genres": ["drama"],
+    "actors": [
+      "martinscorsese",
+      "robertdeniro",
+      "jodiefoster",
+      "cybillshepherd",
+      "albertbrooks"
+    ],
+    "decade": "1970"
+  },
+  "cybillshepherd": 0,
+  "albertbrooks": 0,
+  "themessage": {
+    "genres": ["history"],
+    "actors": [
+      "moustaphaakkad",
+      "anthonyquinn",
+      "irenepapas",
+      "michaelansara",
+      "johnnysekka"
+    ],
+    "decade": "1970"
+  },
+  "moustaphaakkad": 0,
+  "irenepapas": 0,
+  "michaelansara": 0,
+  "johnnysekka": 0,
+  "montypythonandtheholygrail": {
+    "genres": ["fantasy"],
+    "actors": [
+      "terrygilliam",
+      "terryjones",
+      "grahamchapman",
+      "johncleese",
+      "ericidle"
+    ],
+    "decade": "1970"
+  },
+  "terrygilliam": 0,
+  "terryjones": 0,
+  "grahamchapman": 0,
+  "johncleese": 0,
+  "ericidle": 0,
+  "chinatown": {
+    "genres": ["thriller"],
+    "actors": [
+      "romanpolanski",
+      "jacknicholson",
+      "fayedunaway",
+      "johnhuston",
+      "perrylopez"
+    ],
+    "decade": "1970"
+  },
+  "fayedunaway": 0,
+  "johnhuston": 0,
+  "perrylopez": 0,
+  "z": {
+    "genres": ["history"],
+    "actors": [
+      "costa-gavras",
+      "yvesmontand",
+      "irenepapas",
+      "jean-louistrintignant",
+      "fran\u00e7oisp\u00e9rier"
+    ],
+    "decade": "1960"
+  },
+  "costa-gavras": 0,
+  "yvesmontand": 0,
+  "jean-louistrintignant": 0,
+  "fran\u00e7oisp\u00e9rier": 0,
+  "forafewdollarsmore": {
+    "genres": ["western"],
+    "actors": [
+      "sergioleone",
+      "clinteastwood",
+      "leevancleef",
+      "gianmariavolont\u00e8",
+      "marakrupp"
+    ],
+    "decade": "1960"
+  },
+  "leevancleef": 0,
+  "gianmariavolont\u00e8": 0,
+  "marakrupp": 0,
+  "thegreatescape": {
+    "genres": ["history"],
+    "actors": [
+      "johnsturges",
+      "stevemcqueen",
+      "jamesgarner",
+      "richardattenborough",
+      "charlesbronson"
+    ],
+    "decade": "1960"
+  },
+  "johnsturges": 0,
+  "stevemcqueen": 0,
+  "jamesgarner": 0,
+  "richardattenborough": 0,
+  "tokillamockingbird": {
+    "genres": ["drama"],
+    "actors": [
+      "robertmulligan",
+      "gregorypeck",
+      "johnmegna",
+      "frankoverton",
+      "rosemarymurphy"
+    ],
+    "decade": "1960"
+  },
+  "robertmulligan": 0,
+  "gregorypeck": 0,
+  "johnmegna": 0,
+  "frankoverton": 0,
+  "rosemarymurphy": 0,
+  "judgmentatnuremberg": {
+    "genres": ["war"],
+    "actors": [
+      "stanleykramer",
+      "spencertracy",
+      "burtlancaster",
+      "richardwidmark",
+      "marlenedietrich"
+    ],
+    "decade": "1960"
+  },
+  "stanleykramer": 0,
+  "spencertracy": 0,
+  "burtlancaster": 0,
+  "richardwidmark": 0,
+  "somelikeithot": {
+    "genres": ["romance"],
+    "actors": [
+      "billywilder",
+      "marilynmonroe",
+      "tonycurtis",
+      "jacklemmon",
+      "georgeraft"
+    ],
+    "decade": "1950"
+  },
+  "marilynmonroe": 0,
+  "tonycurtis": 0,
+  "georgeraft": 0,
+  "dialmformurder": {
+    "genres": ["thriller"],
+    "actors": [
+      "alfredhitchcock",
+      "raymilland",
+      "gracekelly",
+      "robertcummings",
+      "johnwilliams"
+    ],
+    "decade": "1950"
+  },
+  "raymilland": 0,
+  "robertcummings": 0,
+  "johnwilliams": 0,
+  "tokyostory": {
+    "genres": ["drama"],
+    "actors": [
+      "yasujir\u00f4ozu",
+      "chish\u00fbry\u00fb",
+      "chiekohigashiyama",
+      "s\u00f4yamamura",
+      "setsukohara"
+    ],
+    "decade": "1950"
+  },
+  "yasujir\u00f4ozu": 0,
+  "chish\u00fbry\u00fb": 0,
+  "chiekohigashiyama": 0,
+  "s\u00f4yamamura": 0,
+  "setsukohara": 0,
+  "allabouteve": {
+    "genres": ["drama"],
+    "actors": [
+      "josephlmankiewicz",
+      "bettedavis",
+      "annebaxter",
+      "georgesanders",
+      "celesteholm"
+    ],
+    "decade": "1950"
+  },
+  "josephlmankiewicz": 0,
+  "bettedavis": 0,
+  "annebaxter": 0,
+  "georgesanders": 0,
+  "celesteholm": 0,
+  "thetreasureofthesierramadre": {
+    "genres": ["western"],
+    "actors": [
+      "johnhuston",
+      "humphreybogart",
+      "walterhuston",
+      "timholt",
+      "brucebennett"
+    ],
+    "decade": "1940"
+  },
+  "walterhuston": 0,
+  "timholt": 0,
+  "brucebennett": 0,
+  "tobeornottobe": {
+    "genres": ["war"],
+    "actors": [
+      "ernstlubitsch",
+      "carolelombard",
+      "jackbenny",
+      "robertstack",
+      "felixbressart"
+    ],
+    "decade": "1940"
+  },
+  "ernstlubitsch": 0,
+  "carolelombard": 0,
+  "jackbenny": 0,
+  "robertstack": 0,
+  "felixbressart": 0,
+  "thegoldrush": {
+    "genres": ["drama"],
+    "actors": ["charleschaplin", "mackswain", "tommurray", "henrybergman"],
+    "decade": "1920"
+  },
+  "mackswain": 0,
+  "tommurray": 0,
+  "sherlockjr.": {
+    "genres": ["romance"],
+    "actors": ["busterkeaton", "kathrynmcguire", "joekeaton", "erwinconnelly"],
+    "decade": "1920"
+  },
+  "busterkeaton": 0,
+  "kathrynmcguire": 0,
+  "joekeaton": 0,
+  "erwinconnelly": 0,
+  "threebillboardsoutsideebbing,missouri": {
+    "genres": ["drama"],
+    "actors": [
+      "martinmcdonagh",
+      "francesmcdormand",
+      "woodyharrelson",
+      "samrockwell",
+      "caleblandryjones"
+    ],
+    "decade": "2010"
+  },
+  "martinmcdonagh": 0,
+  "francesmcdormand": 0,
+  "woodyharrelson": 0,
+  "samrockwell": 0,
+  "caleblandryjones": 0,
+  "mommy": {
+    "genres": ["drama"],
+    "actors": [
+      "xavierdolan",
+      "annedorval",
+      "antoineolivierpilon",
+      "suzannecl\u00e9ment",
+      "patrickhuard"
+    ],
+    "decade": "2010"
+  },
+  "xavierdolan": 0,
+  "annedorval": 0,
+  "antoineolivierpilon": 0,
+  "suzannecl\u00e9ment": 0,
+  "patrickhuard": 0,
+  "logan": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "jamesmangold",
+      "hughjackman",
+      "patrickstewart",
+      "dafnekeen",
+      "boydholbrook"
+    ],
+    "decade": "2010"
+  },
+  "jamesmangold": 0,
+  "patrickstewart": 0,
+  "dafnekeen": 0,
+  "boydholbrook": 0,
+  "room": {
+    "genres": ["thriller"],
+    "actors": [
+      "lennyabrahamson",
+      "brielarson",
+      "jacobtremblay",
+      "seanbridgers",
+      "wendycrewson"
+    ],
+    "decade": "2010"
+  },
+  "lennyabrahamson": 0,
+  "brielarson": 0,
+  "jacobtremblay": 0,
+  "seanbridgers": 0,
+  "wendycrewson": 0,
+  "soul": {
+    "genres": ["comedy"],
+    "actors": [
+      "petedocter",
+      "kemppowers",
+      "jamiefoxx",
+      "tinafey",
+      "grahamnorton",
+      "rachelhouse"
+    ],
+    "decade": "2020"
+  },
+  "kemppowers": 0,
+  "tinafey": 0,
+  "grahamnorton": 0,
+  "rachelhouse": 0,
+  "wintersleep": {
+    "genres": ["drama"],
+    "actors": [
+      "nuribilgeceylan",
+      "halukbilginer",
+      "melisas\u00f6zen",
+      "demetakbag",
+      "ayberkpekcan"
+    ],
+    "decade": "2010"
+  },
+  "nuribilgeceylan": 0,
+  "halukbilginer": 0,
+  "melisas\u00f6zen": 0,
+  "demetakbag": 0,
+  "ayberkpekcan": 0,
+  "omg:ohmygod!": {
+    "genres": ["fantasy"],
+    "actors": [
+      "umeshshukla",
+      "pareshrawal",
+      "abhinayrajsingh",
+      "akshaykumar",
+      "mithunchakraborty"
+    ],
+    "decade": "2010"
+  },
+  "umeshshukla": 0,
+  "pareshrawal": 0,
+  "abhinayrajsingh": 0,
+  "akshaykumar": 0,
+  "mithunchakraborty": 0,
+  "thegrandbudapesthotel": {
+    "genres": ["crime"],
+    "actors": [
+      "wesanderson",
+      "ralphfiennes",
+      "fmurrayabraham",
+      "mathieuamalric",
+      "adrienbrody"
+    ],
+    "decade": "2010"
+  },
+  "wesanderson": 0,
+  "mathieuamalric": 0,
+  "gonegirl": {
+    "genres": ["thriller"],
+    "actors": [
+      "davidfincher",
+      "benaffleck",
+      "rosamundpike",
+      "neilpatrickharris",
+      "tylerperry"
+    ],
+    "decade": "2010"
+  },
+  "rosamundpike": 0,
+  "neilpatrickharris": 0,
+  "tylerperry": 0,
+  "hacksawridge": {
+    "genres": ["history"],
+    "actors": [
+      "melgibson",
+      "andrewgarfield",
+      "samworthington",
+      "lukebracey",
+      "teresapalmer"
+    ],
+    "decade": "2010"
+  },
+  "andrewgarfield": 0,
+  "samworthington": 0,
+  "lukebracey": 0,
+  "teresapalmer": 0,
+  "insideout": {
+    "genres": ["comedy"],
+    "actors": [
+      "petedocter",
+      "ronniedelcarmen",
+      "amypoehler",
+      "billhader",
+      "lewisblack",
+      "mindykaling"
+    ],
+    "decade": "2010"
+  },
+  "ronniedelcarmen": 0,
+  "amypoehler": 0,
+  "billhader": 0,
+  "lewisblack": 0,
+  "mindykaling": 0,
+  "12yearsaslave": {
+    "genres": ["history"],
+    "actors": [
+      "stevemcqueen",
+      "chiwetelejiofor",
+      "michaelkennethwilliams",
+      "michaelfassbender",
+      "bradpitt"
+    ],
+    "decade": "2010"
+  },
+  "chiwetelejiofor": 0,
+  "michaelkennethwilliams": 0,
+  "michaelfassbender": 0,
+  "rush": {
+    "genres": ["drama"],
+    "actors": [
+      "ronhoward",
+      "danielbr\u00fchl",
+      "chrishemsworth",
+      "oliviawilde",
+      "alexandramarialara"
+    ],
+    "decade": "2010"
+  },
+  "danielbr\u00fchl": 0,
+  "oliviawilde": 0,
+  "fordvferrari": {
+    "genres": ["drama"],
+    "actors": [
+      "jamesmangold",
+      "mattdamon",
+      "christianbale",
+      "jonbernthal",
+      "caitrionabalfe"
+    ],
+    "decade": "2010"
+  },
+  "jonbernthal": 0,
+  "caitrionabalfe": 0,
+  "spotlight": {
+    "genres": ["drama"],
+    "actors": [
+      "tommccarthy",
+      "markruffalo",
+      "michaelkeaton",
+      "rachelmcadams",
+      "lievschreiber"
+    ],
+    "decade": "2010"
+  },
+  "tommccarthy": 0,
+  "michaelkeaton": 0,
+  "rachelmcadams": 0,
+  "lievschreiber": 0,
+  "songofthesea": {
+    "genres": ["drama"],
+    "actors": [
+      "tommmoore",
+      "davidrawle",
+      "brendangleeson",
+      "lisahannigan",
+      "fionnulaflanagan"
+    ],
+    "decade": "2010"
+  },
+  "tommmoore": 0,
+  "davidrawle": 0,
+  "brendangleeson": 0,
+  "lisahannigan": 0,
+  "fionnulaflanagan": 0,
+  "prisoners": {
+    "genres": ["mystery"],
+    "actors": [
+      "denisvilleneuve",
+      "hughjackman",
+      "jakegyllenhaal",
+      "violadavis",
+      "melissaleo"
+    ],
+    "decade": "2010"
+  },
+  "jakegyllenhaal": 0,
+  "violadavis": 0,
+  "melissaleo": 0,
+  "madmax:furyroad": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "georgemiller",
+      "tomhardy",
+      "charlizetheron",
+      "nicholashoult",
+      "zo\u00ebkravitz"
+    ],
+    "decade": "2010"
+  },
+  "georgemiller": 0,
+  "charlizetheron": 0,
+  "nicholashoult": 0,
+  "zo\u00ebkravitz": 0,
+  "warrior": {
+    "genres": ["sport"],
+    "actors": [
+      "gavino'connor",
+      "tomhardy",
+      "nicknolte",
+      "joeledgerton",
+      "jennifermorrison"
+    ],
+    "decade": "2010"
+  },
+  "gavino'connor": 0,
+  "nicknolte": 0,
+  "joeledgerton": 0,
+  "jennifermorrison": 0,
+  "zacksnyder'sjusticeleague": {
+    "genres": ["fantasy"],
+    "actors": [
+      "zacksnyder",
+      "henrycavill",
+      "benaffleck",
+      "galgadot",
+      "amyadams"
+    ],
+    "decade": "2020"
+  },
+  "zacksnyder": 0,
+  "henrycavill": 0,
+  "galgadot": 0,
+  "amyadams": 0,
+  "grantorino": {
+    "genres": ["drama"],
+    "actors": ["clinteastwood", "beevang", "christophercarley", "ahneyher"],
+    "decade": "2000"
+  },
+  "beevang": 0,
+  "christophercarley": 0,
+  "ahneyher": 0,
+  "harrypotterandthedeathlyhallows:part2": {
+    "genres": ["mystery"],
+    "actors": [
+      "davidyates",
+      "danielradcliffe",
+      "emmawatson",
+      "rupertgrint",
+      "michaelgambon"
+    ],
+    "decade": "2010"
+  },
+  "davidyates": 0,
+  "danielradcliffe": 0,
+  "emmawatson": 0,
+  "rupertgrint": 0,
+  "michaelgambon": 0,
+  "coda": {
+    "genres": ["music"],
+    "actors": [
+      "sianheder",
+      "emiliajones",
+      "marleematlin",
+      "troykotsur",
+      "danieldurant"
+    ],
+    "decade": "2020"
+  },
+  "sianheder": 0,
+  "emiliajones": 0,
+  "marleematlin": 0,
+  "troykotsur": 0,
+  "danieldurant": 0,
+  "hachi:adog'stale": {
+    "genres": ["family"],
+    "actors": [
+      "lassehallstr\u00f6m",
+      "richardgere",
+      "joanallen",
+      "cary-hiroyukitagawa",
+      "sarahroemer"
+    ],
+    "decade": "2000"
+  },
+  "lassehallstr\u00f6m": 0,
+  "richardgere": 0,
+  "joanallen": 0,
+  "cary-hiroyukitagawa": 0,
+  "sarahroemer": 0,
+  "maryandmax": {
+    "genres": ["drama"],
+    "actors": [
+      "adamelliot",
+      "tonicollette",
+      "philipseymourhoffman",
+      "ericbana",
+      "barryhumphries"
+    ],
+    "decade": "2000"
+  },
+  "adamelliot": 0,
+  "tonicollette": 0,
+  "philipseymourhoffman": 0,
+  "ericbana": 0,
+  "barryhumphries": 0,
+  "howtotrainyourdragon": {
+    "genres": ["adventure"],
+    "actors": [
+      "deandeblois",
+      "chrissanders",
+      "jaybaruchel",
+      "gerardbutler",
+      "christophermintz-plasse",
+      "craigferguson"
+    ],
+    "decade": "2010"
+  },
+  "deandeblois": 0,
+  "chrissanders": 0,
+  "jaybaruchel": 0,
+  "gerardbutler": 0,
+  "christophermintz-plasse": 0,
+  "craigferguson": 0,
+  "intothewild": {
+    "genres": ["drama"],
+    "actors": [
+      "seanpenn",
+      "emilehirsch",
+      "vincevaughn",
+      "catherinekeener",
+      "marciagayharden"
+    ],
+    "decade": "2000"
+  },
+  "seanpenn": 0,
+  "emilehirsch": 0,
+  "vincevaughn": 0,
+  "catherinekeener": 0,
+  "marciagayharden": 0,
+  "nocountryforoldmen": {
+    "genres": ["thriller"],
+    "actors": [
+      "ethancoen",
+      "joelcoen",
+      "tommyleejones",
+      "javierbardem",
+      "joshbrolin",
+      "woodyharrelson"
+    ],
+    "decade": "2000"
+  },
+  "ethancoen": 0,
+  "joelcoen": 0,
+  "tommyleejones": 0,
+  "javierbardem": 0,
+  "joshbrolin": 0,
+  "vforvendetta": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "jamesmcteigue",
+      "hugoweaving",
+      "natalieportman",
+      "rupertgraves",
+      "stephenrea"
+    ],
+    "decade": "2000"
+  },
+  "jamesmcteigue": 0,
+  "rupertgraves": 0,
+  "stephenrea": 0,
+  "milliondollarbaby": {
+    "genres": ["sport"],
+    "actors": ["clinteastwood", "hilaryswank", "morganfreeman", "jaybaruchel"],
+    "decade": "2000"
+  },
+  "hilaryswank": 0,
+  "hotelrwanda": {
+    "genres": ["history"],
+    "actors": [
+      "terrygeorge",
+      "doncheadle",
+      "sophieokonedo",
+      "joaquinphoenix",
+      "xolanimali"
+    ],
+    "decade": "2000"
+  },
+  "terrygeorge": 0,
+  "doncheadle": 0,
+  "sophieokonedo": 0,
+  "xolanimali": 0,
+  "beforesunset": {
+    "genres": ["romance"],
+    "actors": [
+      "richardlinklater",
+      "ethanhawke",
+      "juliedelpy",
+      "vernondobtcheff",
+      "louiselemoinetorr\u00e8s"
+    ],
+    "decade": "2000"
+  },
+  "richardlinklater": 0,
+  "ethanhawke": 0,
+  "juliedelpy": 0,
+  "vernondobtcheff": 0,
+  "louiselemoinetorr\u00e8s": 0,
+  "memoriesofmurder": {
+    "genres": ["mystery"],
+    "actors": [
+      "bongjoonho",
+      "kang-hosong",
+      "kimsang-kyung",
+      "roe-hakim",
+      "jae-hosong"
+    ],
+    "decade": "2000"
+  },
+  "kimsang-kyung": 0,
+  "roe-hakim": 0,
+  "jae-hosong": 0,
+  "killbill:vol.1": {
+    "genres": ["drama"],
+    "actors": [
+      "quentintarantino",
+      "umathurman",
+      "davidcarradine",
+      "darylhannah",
+      "michaelmadsen"
+    ],
+    "decade": "2000"
+  },
+  "davidcarradine": 0,
+  "darylhannah": 0,
+  "findingnemo": {
+    "genres": ["comedy"],
+    "actors": [
+      "andrewstanton",
+      "leeunkrich",
+      "albertbrooks",
+      "ellendegeneres",
+      "alexandergould",
+      "willemdafoe"
+    ],
+    "decade": "2000"
+  },
+  "ellendegeneres": 0,
+  "alexandergould": 0,
+  "willemdafoe": 0,
+  "catchmeifyoucan": {
+    "genres": ["drama"],
+    "actors": [
+      "stevenspielberg",
+      "leonardodicaprio",
+      "tomhanks",
+      "christopherwalken",
+      "martinsheen"
+    ],
+    "decade": "2000"
+  },
+  "christopherwalken": 0,
+  "monsters,inc.": {
+    "genres": ["comedy"],
+    "actors": [
+      "petedocter",
+      "davidsilverman",
+      "leeunkrich",
+      "billycrystal",
+      "johngoodman",
+      "marygibbs",
+      "stevebuscemi"
+    ],
+    "decade": "2000"
+  },
+  "davidsilverman": 0,
+  "billycrystal": 0,
+  "johngoodman": 0,
+  "marygibbs": 0,
+  "stevebuscemi": 0,
+  "lagaan:onceuponatimeinindia": {
+    "genres": ["sport"],
+    "actors": [
+      "ashutoshgowariker",
+      "aamirkhan",
+      "raghuviryadav",
+      "gracysingh",
+      "rachelshelley"
+    ],
+    "decade": "2000"
+  },
+  "raghuviryadav": 0,
+  "gracysingh": 0,
+  "rachelshelley": 0,
+  "thesixthsense": {
+    "genres": ["thriller"],
+    "actors": [
+      "mnightshyamalan",
+      "brucewillis",
+      "haleyjoelosment",
+      "tonicollette",
+      "oliviawilliams"
+    ],
+    "decade": "1990"
+  },
+  "mnightshyamalan": 0,
+  "haleyjoelosment": 0,
+  "thecelebration": {
+    "genres": ["drama"],
+    "actors": [
+      "thomasvinterberg",
+      "ulrichthomsen",
+      "henningmoritzen",
+      "thomasbolarsen",
+      "paprikasteen"
+    ],
+    "decade": "1990"
+  },
+  "ulrichthomsen": 0,
+  "henningmoritzen": 0,
+  "paprikasteen": 0,
+  "thelegendof1900": {
+    "genres": ["romance"],
+    "actors": [
+      "giuseppetornatore",
+      "timroth",
+      "pruitttaylorvince",
+      "m\u00e9laniethierry",
+      "billnunn"
+    ],
+    "decade": "1990"
+  },
+  "giuseppetornatore": 0,
+  "pruitttaylorvince": 0,
+  "m\u00e9laniethierry": 0,
+  "billnunn": 0,
+  "thetrumanshow": {
+    "genres": ["drama"],
+    "actors": [
+      "peterweir",
+      "jimcarrey",
+      "edharris",
+      "lauralinney",
+      "noahemmerich"
+    ],
+    "decade": "1990"
+  },
+  "peterweir": 0,
+  "lauralinney": 0,
+  "noahemmerich": 0,
+  "thebiglebowski": {
+    "genres": ["sport"],
+    "actors": [
+      "joelcoen",
+      "ethancoen",
+      "jeffbridges",
+      "johngoodman",
+      "juliannemoore",
+      "stevebuscemi"
+    ],
+    "decade": "1990"
+  },
+  "jeffbridges": 0,
+  "juliannemoore": 0,
+  "trainspotting": {
+    "genres": ["drama"],
+    "actors": [
+      "dannyboyle",
+      "ewanmcgregor",
+      "ewenbremner",
+      "jonnyleemiller",
+      "kevinmckidd"
+    ],
+    "decade": "1990"
+  },
+  "dannyboyle": 0,
+  "ewanmcgregor": 0,
+  "ewenbremner": 0,
+  "jonnyleemiller": 0,
+  "kevinmckidd": 0,
+  "fargo": {
+    "genres": ["thriller"],
+    "actors": [
+      "joelcoen",
+      "ethancoen",
+      "williamhmacy",
+      "francesmcdormand",
+      "stevebuscemi",
+      "peterstormare"
+    ],
+    "decade": "1990"
+  },
+  "williamhmacy": 0,
+  "peterstormare": 0,
+  "underground": {
+    "genres": ["fantasy"],
+    "actors": [
+      "emirkusturica",
+      "predrag'miki'manojlovic",
+      "lazarristovski",
+      "mirjanajokovic",
+      "slavkostimac"
+    ],
+    "decade": "1990"
+  },
+  "emirkusturica": 0,
+  "predrag'miki'manojlovic": 0,
+  "lazarristovski": 0,
+  "mirjanajokovic": 0,
+  "slavkostimac": 0,
+  "beforesunrise": {
+    "genres": ["romance"],
+    "actors": [
+      "richardlinklater",
+      "ethanhawke",
+      "juliedelpy",
+      "andreaeckert",
+      "hannop\u00f6schl"
+    ],
+    "decade": "1990"
+  },
+  "andreaeckert": 0,
+  "hannop\u00f6schl": 0,
+  "chungkingexpress": {
+    "genres": ["drama"],
+    "actors": [
+      "kar-waiwong",
+      "brigittelin",
+      "takeshikaneshiro",
+      "tonychiu-waileung",
+      "fayewong"
+    ],
+    "decade": "1990"
+  },
+  "kar-waiwong": 0,
+  "brigittelin": 0,
+  "takeshikaneshiro": 0,
+  "tonychiu-waileung": 0,
+  "fayewong": 0,
+  "jurassicpark": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "stevenspielberg",
+      "samneill",
+      "lauradern",
+      "jeffgoldblum",
+      "richardattenborough"
+    ],
+    "decade": "1990"
+  },
+  "samneill": 0,
+  "lauradern": 0,
+  "jeffgoldblum": 0,
+  "inthenameofthefather": {
+    "genres": ["drama"],
+    "actors": [
+      "jimsheridan",
+      "danielday-lewis",
+      "petepostlethwaite",
+      "alisoncrosbie",
+      "philipking"
+    ],
+    "decade": "1990"
+  },
+  "jimsheridan": 0,
+  "petepostlethwaite": 0,
+  "alisoncrosbie": 0,
+  "philipking": 0,
+  "timeofthegypsies": {
+    "genres": ["drama"],
+    "actors": [
+      "emirkusturica",
+      "davordujmovic",
+      "boratodorovic",
+      "ljubicaadzovic",
+      "husnijahasimovic"
+    ],
+    "decade": "1980"
+  },
+  "davordujmovic": 0,
+  "boratodorovic": 0,
+  "ljubicaadzovic": 0,
+  "husnijahasimovic": 0,
+  "deadpoetssociety": {
+    "genres": ["drama"],
+    "actors": [
+      "peterweir",
+      "robinwilliams",
+      "robertseanleonard",
+      "ethanhawke",
+      "joshcharles"
+    ],
+    "decade": "1980"
+  },
+  "robertseanleonard": 0,
+  "joshcharles": 0,
+  "theprincessbride": {
+    "genres": ["fantasy"],
+    "actors": [
+      "robreiner",
+      "caryelwes",
+      "mandypatinkin",
+      "robinwright",
+      "chrissarandon"
+    ],
+    "decade": "1980"
+  },
+  "robreiner": 0,
+  "caryelwes": 0,
+  "mandypatinkin": 0,
+  "chrissarandon": 0,
+  "standbyme": {
+    "genres": ["drama"],
+    "actors": [
+      "robreiner",
+      "wilwheaton",
+      "riverphoenix",
+      "coreyfeldman",
+      "jerryo'connell"
+    ],
+    "decade": "1980"
+  },
+  "wilwheaton": 0,
+  "riverphoenix": 0,
+  "coreyfeldman": 0,
+  "jerryo'connell": 0,
+  "platoon": {
+    "genres": ["war"],
+    "actors": [
+      "oliverstone",
+      "charliesheen",
+      "tomberenger",
+      "willemdafoe",
+      "keithdavid"
+    ],
+    "decade": "1980"
+  },
+  "oliverstone": 0,
+  "charliesheen": 0,
+  "tomberenger": 0,
+  "keithdavid": 0,
+  "paris,texas": {
+    "genres": ["drama"],
+    "actors": [
+      "wimwenders",
+      "harrydeanstanton",
+      "nastassjakinski",
+      "deanstockwell",
+      "samberry"
+    ],
+    "decade": "1980"
+  },
+  "wimwenders": 0,
+  "harrydeanstanton": 0,
+  "nastassjakinski": 0,
+  "deanstockwell": 0,
+  "samberry": 0,
+  "thething": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "johncarpenter",
+      "kurtrussell",
+      "wilfordbrimley",
+      "keithdavid",
+      "richardmasur"
+    ],
+    "decade": "1980"
+  },
+  "johncarpenter": 0,
+  "kurtrussell": 0,
+  "wilfordbrimley": 0,
+  "richardmasur": 0,
+  "fitzcarraldo": {
+    "genres": ["drama"],
+    "actors": [
+      "wernerherzog",
+      "klauskinski",
+      "claudiacardinale",
+      "jos\u00e9lewgoy",
+      "miguel\u00e1ngelfuentes"
+    ],
+    "decade": "1980"
+  },
+  "wernerherzog": 0,
+  "klauskinski": 0,
+  "jos\u00e9lewgoy": 0,
+  "miguel\u00e1ngelfuentes": 0,
+  "fannyandalexander": {
+    "genres": ["drama"],
+    "actors": [
+      "ingmarbergman",
+      "bertilguve",
+      "pernillaallwin",
+      "kristinaadolphson",
+      "b\u00f6rjeahlstedt"
+    ],
+    "decade": "1980"
+  },
+  "bertilguve": 0,
+  "pernillaallwin": 0,
+  "kristinaadolphson": 0,
+  "b\u00f6rjeahlstedt": 0,
+  "bladerunner": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "ridleyscott",
+      "harrisonford",
+      "rutgerhauer",
+      "seanyoung",
+      "edwardjamesolmos"
+    ],
+    "decade": "1980"
+  },
+  "rutgerhauer": 0,
+  "seanyoung": 0,
+  "edwardjamesolmos": 0,
+  "theelephantman": {
+    "genres": ["drama"],
+    "actors": [
+      "davidlynch",
+      "anthonyhopkins",
+      "johnhurt",
+      "annebancroft",
+      "johngielgud"
+    ],
+    "decade": "1980"
+  },
+  "davidlynch": 0,
+  "annebancroft": 0,
+  "johngielgud": 0,
+  "lifeofbrian": {
+    "genres": ["comedy"],
+    "actors": [
+      "terryjones",
+      "grahamchapman",
+      "johncleese",
+      "michaelpalin",
+      "terrygilliam"
+    ],
+    "decade": "1970"
+  },
+  "michaelpalin": 0,
+  "thedeerhunter": {
+    "genres": ["war"],
+    "actors": [
+      "michaelcimino",
+      "robertdeniro",
+      "christopherwalken",
+      "johncazale",
+      "johnsavage"
+    ],
+    "decade": "1970"
+  },
+  "michaelcimino": 0,
+  "johncazale": 0,
+  "johnsavage": 0,
+  "rocky": {
+    "genres": ["sport"],
+    "actors": [
+      "johngavildsen",
+      "sylvesterstallone",
+      "taliashire",
+      "burtyoung",
+      "carlweathers"
+    ],
+    "decade": "1970"
+  },
+  "johngavildsen": 0,
+  "sylvesterstallone": 0,
+  "taliashire": 0,
+  "burtyoung": 0,
+  "carlweathers": 0,
+  "network": {
+    "genres": ["drama"],
+    "actors": [
+      "sidneylumet",
+      "fayedunaway",
+      "williamholden",
+      "peterfinch",
+      "robertduvall"
+    ],
+    "decade": "1970"
+  },
+  "peterfinch": 0,
+  "barrylyndon": {
+    "genres": ["history"],
+    "actors": [
+      "stanleykubrick",
+      "ryano'neal",
+      "marisaberenson",
+      "patrickmagee",
+      "hardykr\u00fcger"
+    ],
+    "decade": "1970"
+  },
+  "ryano'neal": 0,
+  "marisaberenson": 0,
+  "hardykr\u00fcger": 0,
+  "papermoon": {
+    "genres": ["drama"],
+    "actors": [
+      "peterbogdanovich",
+      "ryano'neal",
+      "tatumo'neal",
+      "madelinekahn",
+      "johnhillerman"
+    ],
+    "decade": "1970"
+  },
+  "peterbogdanovich": 0,
+  "tatumo'neal": 0,
+  "madelinekahn": 0,
+  "johnhillerman": 0,
+  "coolhandluke": {
+    "genres": ["drama"],
+    "actors": [
+      "stuartrosenberg",
+      "paulnewman",
+      "georgekennedy",
+      "strothermartin",
+      "jdcannon"
+    ],
+    "decade": "1960"
+  },
+  "stuartrosenberg": 0,
+  "georgekennedy": 0,
+  "strothermartin": 0,
+  "jdcannon": 0,
+  "persona": {
+    "genres": ["thriller"],
+    "actors": [
+      "ingmarbergman",
+      "bibiandersson",
+      "livullmann",
+      "margarethakrook",
+      "gunnarbj\u00f6rnstrand"
+    ],
+    "decade": "1960"
+  },
+  "bibiandersson": 0,
+  "margarethakrook": 0,
+  "gunnarbj\u00f6rnstrand": 0,
+  "thebattleofalgiers": {
+    "genres": ["war"],
+    "actors": [
+      "gillopontecorvo",
+      "brahimhadjadj",
+      "jeanmartin",
+      "yacefsaadi",
+      "samiakerbash"
+    ],
+    "decade": "1960"
+  },
+  "gillopontecorvo": 0,
+  "brahimhadjadj": 0,
+  "jeanmartin": 0,
+  "yacefsaadi": 0,
+  "samiakerbash": 0,
+  "whateverhappenedtobabyjane?": {
+    "genres": ["thriller"],
+    "actors": [
+      "robertaldrich",
+      "bettedavis",
+      "joancrawford",
+      "victorbuono",
+      "wesleyaddy"
+    ],
+    "decade": "1960"
+  },
+  "robertaldrich": 0,
+  "joancrawford": 0,
+  "victorbuono": 0,
+  "wesleyaddy": 0,
+  "themanwhoshotlibertyvalance": {
+    "genres": ["western"],
+    "actors": [
+      "johnford",
+      "jamesstewart",
+      "johnwayne",
+      "veramiles",
+      "leemarvin"
+    ],
+    "decade": "1960"
+  },
+  "johnford": 0,
+  "johnwayne": 0,
+  "leemarvin": 0,
+  "inheritthewind": {
+    "genres": ["history"],
+    "actors": [
+      "stanleykramer",
+      "spencertracy",
+      "fredricmarch",
+      "genekelly",
+      "dickyork"
+    ],
+    "decade": "1960"
+  },
+  "fredricmarch": 0,
+  "dickyork": 0,
+  "the400blows": {
+    "genres": ["drama"],
+    "actors": [
+      "fran\u00e7oistruffaut",
+      "jean-pierrel\u00e9aud",
+      "albertr\u00e9my",
+      "clairemaurier",
+      "guydecomble"
+    ],
+    "decade": "1950"
+  },
+  "fran\u00e7oistruffaut": 0,
+  "jean-pierrel\u00e9aud": 0,
+  "albertr\u00e9my": 0,
+  "clairemaurier": 0,
+  "guydecomble": 0,
+  "ben-hur": {
+    "genres": ["history"],
+    "actors": [
+      "williamwyler",
+      "charltonheston",
+      "jackhawkins",
+      "stephenboyd",
+      "hayaharareet"
+    ],
+    "decade": "1950"
+  },
+  "williamwyler": 0,
+  "charltonheston": 0,
+  "stephenboyd": 0,
+  "hayaharareet": 0,
+  "thebridgeontheriverkwai": {
+    "genres": ["war"],
+    "actors": [
+      "davidlean",
+      "williamholden",
+      "alecguinness",
+      "jackhawkins",
+      "sessuehayakawa"
+    ],
+    "decade": "1950"
+  },
+  "sessuehayakawa": 0,
+  "rififi": {
+    "genres": ["thriller"],
+    "actors": [
+      "julesdassin",
+      "jeanservais",
+      "carlm\u00f6hner",
+      "robertmanuel",
+      "janinedarcey"
+    ],
+    "decade": "1950"
+  },
+  "julesdassin": 0,
+  "jeanservais": 0,
+  "carlm\u00f6hner": 0,
+  "robertmanuel": 0,
+  "janinedarcey": 0,
+  "onthewaterfront": {
+    "genres": ["thriller"],
+    "actors": [
+      "eliakazan",
+      "marlonbrando",
+      "karlmalden",
+      "leejcobb",
+      "rodsteiger"
+    ],
+    "decade": "1950"
+  },
+  "eliakazan": 0,
+  "karlmalden": 0,
+  "rodsteiger": 0,
+  "diabolique": {
+    "genres": ["horror"],
+    "actors": [
+      "henri-georgesclouzot",
+      "simonesignoret",
+      "v\u00e9raclouzot",
+      "paulmeurisse",
+      "charlesvanel"
+    ],
+    "decade": "1950"
+  },
+  "henri-georgesclouzot": 0,
+  "simonesignoret": 0,
+  "v\u00e9raclouzot": 0,
+  "paulmeurisse": 0,
+  "charlesvanel": 0,
+  "thewagesoffear": {
+    "genres": ["thriller"],
+    "actors": [
+      "henri-georgesclouzot",
+      "yvesmontand",
+      "charlesvanel",
+      "petervaneyck",
+      "folcolulli"
+    ],
+    "decade": "1950"
+  },
+  "petervaneyck": 0,
+  "folcolulli": 0,
+  "aceinthehole": {
+    "genres": ["film-noir"],
+    "actors": [
+      "billywilder",
+      "kirkdouglas",
+      "jansterling",
+      "robertarthur",
+      "porterhall"
+    ],
+    "decade": "1950"
+  },
+  "jansterling": 0,
+  "robertarthur": 0,
+  "porterhall": 0,
+  "whiteheat": {
+    "genres": ["drama"],
+    "actors": [
+      "raoulwalsh",
+      "jamescagney",
+      "virginiamayo",
+      "edmondo'brien",
+      "margaretwycherly"
+    ],
+    "decade": "1940"
+  },
+  "raoulwalsh": 0,
+  "jamescagney": 0,
+  "virginiamayo": 0,
+  "edmondo'brien": 0,
+  "margaretwycherly": 0,
+  "thethirdman": {
+    "genres": ["thriller"],
+    "actors": [
+      "carolreed",
+      "orsonwelles",
+      "josephcotten",
+      "alidavalli",
+      "trevorhoward"
+    ],
+    "decade": "1940"
+  },
+  "carolreed": 0,
+  "alidavalli": 0,
+  "trevorhoward": 0,
+  "theredshoes": {
+    "genres": ["romance"],
+    "actors": [
+      "michaelpowell",
+      "emericpressburger",
+      "antonwalbrook",
+      "mariusgoring",
+      "moirashearer",
+      "roberthelpmann"
+    ],
+    "decade": "1940"
+  },
+  "michaelpowell": 0,
+  "emericpressburger": 0,
+  "antonwalbrook": 0,
+  "mariusgoring": 0,
+  "moirashearer": 0,
+  "roberthelpmann": 0,
+  "thebestyearsofourlives": {
+    "genres": ["war"],
+    "actors": [
+      "williamwyler",
+      "myrnaloy",
+      "danaandrews",
+      "fredricmarch",
+      "teresawright"
+    ],
+    "decade": "1940"
+  },
+  "myrnaloy": 0,
+  "danaandrews": 0,
+  "teresawright": 0,
+  "theshoparoundthecorner": {
+    "genres": ["romance"],
+    "actors": [
+      "ernstlubitsch",
+      "margaretsullavan",
+      "jamesstewart",
+      "frankmorgan",
+      "josephschildkraut"
+    ],
+    "decade": "1940"
+  },
+  "margaretsullavan": 0,
+  "frankmorgan": 0,
+  "josephschildkraut": 0,
+  "rebecca": {
+    "genres": ["mystery"],
+    "actors": [
+      "alfredhitchcock",
+      "laurenceolivier",
+      "joanfontaine",
+      "georgesanders",
+      "judithanderson"
+    ],
+    "decade": "1940"
+  },
+  "laurenceolivier": 0,
+  "joanfontaine": 0,
+  "judithanderson": 0,
+  "thegrapesofwrath": {
+    "genres": ["drama"],
+    "actors": [
+      "johnford",
+      "henryfonda",
+      "janedarwell",
+      "johncarradine",
+      "charleygrapewin"
+    ],
+    "decade": "1940"
+  },
+  "janedarwell": 0,
+  "johncarradine": 0,
+  "charleygrapewin": 0,
+  "mr.smithgoestowashington": {
+    "genres": ["drama"],
+    "actors": [
+      "frankcapra",
+      "jamesstewart",
+      "jeanarthur",
+      "clauderains",
+      "edwardarnold"
+    ],
+    "decade": "1930"
+  },
+  "jeanarthur": 0,
+  "edwardarnold": 0,
+  "gonewiththewind": {
+    "genres": ["romance"],
+    "actors": [
+      "victorfleming",
+      "georgecukor",
+      "samwood",
+      "clarkgable",
+      "vivienleigh",
+      "thomasmitchell",
+      "barbarao'neil"
+    ],
+    "decade": "1930"
+  },
+  "victorfleming": 0,
+  "georgecukor": 0,
+  "samwood": 0,
+  "clarkgable": 0,
+  "vivienleigh": 0,
+  "barbarao'neil": 0,
+  "lagrandeillusion": {
+    "genres": ["war"],
+    "actors": [
+      "jeanrenoir",
+      "jeangabin",
+      "ditaparlo",
+      "pierrefresnay",
+      "erichvonstroheim"
+    ],
+    "decade": "1930"
+  },
+  "jeanrenoir": 0,
+  "jeangabin": 0,
+  "ditaparlo": 0,
+  "pierrefresnay": 0,
+  "ithappenedonenight": {
+    "genres": ["romance"],
+    "actors": [
+      "frankcapra",
+      "clarkgable",
+      "claudettecolbert",
+      "walterconnolly",
+      "roscoekarns"
+    ],
+    "decade": "1930"
+  },
+  "claudettecolbert": 0,
+  "walterconnolly": 0,
+  "roscoekarns": 0,
+  "allquietonthewesternfront": {
+    "genres": ["war"],
+    "actors": [
+      "lewismilestone",
+      "lewayres",
+      "louiswolheim",
+      "johnwray",
+      "arnoldlucy"
+    ],
+    "decade": "1930"
+  },
+  "lewismilestone": 0,
+  "lewayres": 0,
+  "louiswolheim": 0,
+  "johnwray": 0,
+  "arnoldlucy": 0,
+  "thecircus": {
+    "genres": ["romance"],
+    "actors": [
+      "charleschaplin",
+      "mernakennedy",
+      "alernestgarcia",
+      "harrycrocker"
+    ],
+    "decade": "1920"
+  },
+  "mernakennedy": 0,
+  "alernestgarcia": 0,
+  "harrycrocker": 0,
+  "sunrise": {
+    "genres": ["romance"],
+    "actors": [
+      "fwmurnau",
+      "georgeo'brien",
+      "janetgaynor",
+      "margaretlivingston",
+      "bodilrosing"
+    ],
+    "decade": "1920"
+  },
+  "fwmurnau": 0,
+  "georgeo'brien": 0,
+  "janetgaynor": 0,
+  "margaretlivingston": 0,
+  "bodilrosing": 0,
+  "thegeneral": {
+    "genres": ["comedy"],
+    "actors": [
+      "clydebruckman",
+      "busterkeaton",
+      "marionmack",
+      "glencavender",
+      "jimfarley"
+    ],
+    "decade": "1920"
+  },
+  "clydebruckman": 0,
+  "marionmack": 0,
+  "glencavender": 0,
+  "jimfarley": 0,
+  "wolfwalkers": {
+    "genres": ["family"],
+    "actors": [
+      "tommmoore",
+      "rossstewart",
+      "honorkneafsey",
+      "evawhittaker",
+      "seanbean",
+      "simonmcburney"
+    ],
+    "decade": "2020"
+  },
+  "rossstewart": 0,
+  "honorkneafsey": 0,
+  "evawhittaker": 0,
+  "simonmcburney": 0,
+  "togo": {
+    "genres": ["drama"],
+    "actors": [
+      "ericsoncore",
+      "willemdafoe",
+      "juliannenicholson",
+      "christopherheyerdahl",
+      "richarddormer"
+    ],
+    "decade": "2010"
+  },
+  "ericsoncore": 0,
+  "juliannenicholson": 0,
+  "christopherheyerdahl": 0,
+  "richarddormer": 0,
+  "lalaland": {
+    "genres": ["music"],
+    "actors": [
+      "damienchazelle",
+      "ryangosling",
+      "emmastone",
+      "rosemariedewitt",
+      "jksimmons"
+    ],
+    "decade": "2010"
+  },
+  "ryangosling": 0,
+  "emmastone": 0,
+  "rosemariedewitt": 0,
+  "lion": {
+    "genres": ["drama"],
+    "actors": [
+      "garthdavis",
+      "devpatel",
+      "nicolekidman",
+      "rooneymara",
+      "sunnypawar"
+    ],
+    "decade": "2010"
+  },
+  "garthdavis": 0,
+  "devpatel": 0,
+  "nicolekidman": 0,
+  "rooneymara": 0,
+  "sunnypawar": 0,
+  "themartian": {
+    "genres": ["sci-fi"],
+    "actors": [
+      "ridleyscott",
+      "mattdamon",
+      "jessicachastain",
+      "kristenwiig",
+      "katemara"
+    ],
+    "decade": "2010"
+  },
+  "kristenwiig": 0,
+  "katemara": 0,
+  "zootopia": {
+    "genres": ["comedy"],
+    "actors": [
+      "byronhoward",
+      "richmoore",
+      "jaredbush",
+      "ginnifergoodwin",
+      "jasonbateman",
+      "idriselba",
+      "jennyslate"
+    ],
+    "decade": "2010"
+  },
+  "byronhoward": 0,
+  "richmoore": 0,
+  "jaredbush": 0,
+  "ginnifergoodwin": 0,
+  "jasonbateman": 0,
+  "idriselba": 0,
+  "jennyslate": 0,
+  "wonder": {
+    "genres": ["family"],
+    "actors": [
+      "stephenchbosky",
+      "jacobtremblay",
+      "owenwilson",
+      "izabelavidovic",
+      "juliaroberts"
+    ],
+    "decade": "2010"
+  },
+  "stephenchbosky": 0,
+  "owenwilson": 0,
+  "izabelavidovic": 0,
+  "juliaroberts": 0,
+  "shortterm12": {
+    "genres": ["drama"],
+    "actors": [
+      "destindanielcretton",
+      "brielarson",
+      "frantzturner",
+      "johngallagherjr",
+      "kaitlyndever"
+    ],
+    "decade": "2010"
+  },
+  "destindanielcretton": 0,
+  "frantzturner": 0,
+  "johngallagherjr": 0,
+  "kaitlyndever": 0,
+  "theraid2": {
+    "genres": ["thriller"],
+    "actors": [
+      "garethevans",
+      "ikouwais",
+      "yayanruhian",
+      "arifinputra",
+      "okaantara"
+    ],
+    "decade": "2010"
+  },
+  "garethevans": 0,
+  "ikouwais": 0,
+  "yayanruhian": 0,
+  "arifinputra": 0,
+  "okaantara": 0,
+  "movies": {
+    "theshawshankredemption": false,
+    "thegodfather": false,
+    "thedarkknight": false,
+    "thegodfather:partii": false,
+    "12angrymen": false,
+    "thelordoftherings:thereturnoftheking": false,
+    "pulpfiction": false,
+    "schindler'slist": false,
+    "inception": false,
+    "spider-man:nowayhome": false,
+    "sardarudham": false,
+    "fightclub": false,
+    "thelordoftherings:thefellowshipofthering": false,
+    "forrestgump": false,
+    "thelordoftherings:thetwotowers": false,
+    "thematrix": false,
+    "goodfellas": false,
+    "starwars:episodev-theempirestrikesback": false,
+    "oneflewoverthecuckoo'snest": false,
+    "parasite": false,
+    "interstellar": false,
+    "spiritedaway": false,
+    "savingprivateryan": false,
+    "thegreenmile": false,
+    "lifeisbeautiful": false,
+    "se7en": false,
+    "thesilenceofthelambs": false,
+    "starwars:episodeiv-anewhope": false,
+    "it'sawonderfullife": false,
+    "whiplash": false,
+    "theintouchables": false,
+    "theprestige": false,
+    "thedeparted": false,
+    "thepianist": false,
+    "gladiator": false,
+    "americanhistoryx": false,
+    "theusualsuspects": false,
+    "l\u00e9on:theprofessional": false,
+    "thelionking": false,
+    "terminator2:judgmentday": false,
+    "backtothefuture": false,
+    "onceuponatimeinthewest": false,
+    "psycho": false,
+    "rearwindow": false,
+    "casablanca": false,
+    "moderntimes": false,
+    "citylights": false,
+    "hamilton": false,
+    "joker": false,
+    "ayla:thedaughterofwar": false,
+    "dangal": false,
+    "spider-man:intothespider-verse": false,
+    "avengers:endgame": false,
+    "avengers:infinitywar": false,
+    "coco": false,
+    "djangounchained": false,
+    "thedarkknightrises": false,
+    "3idiots": false,
+    "wall\u00b7e": false,
+    "memento": false,
+    "indianajonesandtheraidersofthelostark": false,
+    "theshining": false,
+    "apocalypsenow": false,
+    "alien": false,
+    "dr.strangeloveor:howilearnedtostopworryingandlovethebomb": false,
+    "witnessfortheprosecution": false,
+    "pathsofglory": false,
+    "sunsetblvd.": false,
+    "thegreatdictator": false,
+    "1917": false,
+    "thehunt": false,
+    "incendies": false,
+    "thefather": false,
+    "inglouriousbasterds": false,
+    "eternalsunshineofthespotlessmind": false,
+    "am\u00e9lie": false,
+    "requiemforadream": false,
+    "americanbeauty": false,
+    "goodwillhunting": false,
+    "toystory": false,
+    "braveheart": false,
+    "reservoirdogs": false,
+    "fullmetaljacket": false,
+    "aliens": false,
+    "onceuponatimeinamerica": false,
+    "amadeus": false,
+    "scarface": false,
+    "starwars:episodevi-returnofthejedi": false,
+    "thesting": false,
+    "aclockworkorange": false,
+    "2001:aspaceodyssey": false,
+    "lawrenceofarabia": false,
+    "theapartment": false,
+    "northbynorthwest": false,
+    "vertigo": false,
+    "singin'intherain": false,
+    "bicyclethieves": false,
+    "doubleindemnity": false,
+    "citizenkane": false,
+    "metropolis": false,
+    "thekid": false,
+    "andhadhun": false,
+    "greenbook": false,
+    "klaus": false,
+    "drishyam": false,
+    "queen": false,
+    "zindaginamilegidobara": false,
+    "dune": false,
+    "shutterisland": false,
+    "up": false,
+    "thewolfofwallstreet": false,
+    "therewillbeblood": false,
+    "toystory3": false,
+    "black": false,
+    "batmanbegins": false,
+    "swades": false,
+    "downfall": false,
+    "abeautifulmind": false,
+    "snatch": false,
+    "lock,stockandtwosmokingbarrels": false,
+    "l.a.confidential": false,
+    "heat": false,
+    "casino": false,
+    "unforgiven": false,
+    "indianajonesandthelastcrusade": false,
+    "diehard": false,
+    "ragingbull": false,
+    "autumnsonata": false,
+    "taxidriver": false,
+    "themessage": false,
+    "montypythonandtheholygrail": false,
+    "chinatown": false,
+    "z": false,
+    "forafewdollarsmore": false,
+    "thegreatescape": false,
+    "tokillamockingbird": false,
+    "judgmentatnuremberg": false,
+    "somelikeithot": false,
+    "dialmformurder": false,
+    "tokyostory": false,
+    "allabouteve": false,
+    "thetreasureofthesierramadre": false,
+    "tobeornottobe": false,
+    "thegoldrush": false,
+    "sherlockjr.": false,
+    "threebillboardsoutsideebbing,missouri": false,
+    "mommy": false,
+    "logan": false,
+    "room": false,
+    "soul": false,
+    "wintersleep": false,
+    "omg:ohmygod!": false,
+    "thegrandbudapesthotel": false,
+    "gonegirl": false,
+    "hacksawridge": false,
+    "insideout": false,
+    "12yearsaslave": false,
+    "rush": false,
+    "fordvferrari": false,
+    "spotlight": false,
+    "songofthesea": false,
+    "prisoners": false,
+    "madmax:furyroad": false,
+    "warrior": false,
+    "zacksnyder'sjusticeleague": false,
+    "grantorino": false,
+    "harrypotterandthedeathlyhallows:part2": false,
+    "coda": false,
+    "hachi:adog'stale": false,
+    "maryandmax": false,
+    "howtotrainyourdragon": false,
+    "intothewild": false,
+    "nocountryforoldmen": false,
+    "vforvendetta": false,
+    "milliondollarbaby": false,
+    "hotelrwanda": false,
+    "beforesunset": false,
+    "memoriesofmurder": false,
+    "killbill:vol.1": false,
+    "findingnemo": false,
+    "catchmeifyoucan": false,
+    "monsters,inc.": false,
+    "lagaan:onceuponatimeinindia": false,
+    "thesixthsense": false,
+    "thecelebration": false,
+    "thelegendof1900": false,
+    "thetrumanshow": false,
+    "thebiglebowski": false,
+    "trainspotting": false,
+    "fargo": false,
+    "underground": false,
+    "beforesunrise": false,
+    "chungkingexpress": false,
+    "jurassicpark": false,
+    "inthenameofthefather": false,
+    "timeofthegypsies": false,
+    "deadpoetssociety": false,
+    "theprincessbride": false,
+    "standbyme": false,
+    "platoon": false,
+    "paris,texas": false,
+    "thething": false,
+    "fitzcarraldo": false,
+    "fannyandalexander": false,
+    "bladerunner": false,
+    "theelephantman": false,
+    "lifeofbrian": false,
+    "thedeerhunter": false,
+    "rocky": false,
+    "network": false,
+    "barrylyndon": false,
+    "papermoon": false,
+    "coolhandluke": false,
+    "persona": false,
+    "thebattleofalgiers": false,
+    "whateverhappenedtobabyjane?": false,
+    "themanwhoshotlibertyvalance": false,
+    "inheritthewind": false,
+    "the400blows": false,
+    "ben-hur": false,
+    "thebridgeontheriverkwai": false,
+    "rififi": false,
+    "onthewaterfront": false,
+    "diabolique": false,
+    "thewagesoffear": false,
+    "aceinthehole": false,
+    "whiteheat": false,
+    "thethirdman": false,
+    "theredshoes": false,
+    "thebestyearsofourlives": false,
+    "theshoparoundthecorner": false,
+    "rebecca": false,
+    "thegrapesofwrath": false,
+    "mr.smithgoestowashington": false,
+    "gonewiththewind": false,
+    "lagrandeillusion": false,
+    "ithappenedonenight": false,
+    "allquietonthewesternfront": false,
+    "thecircus": false,
+    "sunrise": false,
+    "thegeneral": false,
+    "wolfwalkers": false,
+    "togo": false,
+    "lalaland": false,
+    "lion": false,
+    "themartian": false,
+    "zootopia": false,
+    "wonder": false,
+    "shortterm12": false,
+    "theraid2": false
+  }
+}
