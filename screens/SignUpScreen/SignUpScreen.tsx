@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, View, StyleSheet, ScrollView } from 'react-native';
 import CustomInput from '../../components/CustomInput';
+import CustomInput2 from '../../components/CustomInput2';
 import CustomButton from '../../components/CustomButton';
 import { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
@@ -45,14 +46,14 @@ const SignUpScreen = () => {
                 setValue={setEmail}
                 />
 
-            <CustomInput
+            <CustomInput2
                 placeholder="Password"
                 value={password}
                 setValue={setPassword}
                 // secureTextEntry={true}
                 />
 
-            <CustomInput 
+            <CustomInput2 
                 placeholder="Repeat Password"
                 value={passwordRepeat}
                 setValue={setPasswordRepeat}
