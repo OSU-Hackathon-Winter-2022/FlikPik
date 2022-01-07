@@ -111,13 +111,13 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import SignInScreen from '../screens/SignInScreen';
-import SignUpScreen from '../screens/SignUpScreen';
-import HomeScreen from '../screens/HomeScreen';
-import SwipeScreen from '../screens/SwipeScreen';
-import SettingsScreen from '../screens/SettingsScreen';
-import GenreScreen from '../screens/GenreScreen';
-import ChatScreen from '../screens/ChatScreen'
+import SignInScreen from '../screens/SignInScreen/SignInScreen';
+import SignUpScreen from '../screens/SignUpScreen/SignUpScreen';
+import HomeScreen from '../screens/HomeScreen/HomeScreen';
+import SwipeScreen from '../screens/SwipeScreen/SwipeScreen';
+import SettingsScreen from '../screens/SettingsScreen/SettingsScreen';
+import GenreScreen from '../screens/GenreScreen/GenreScreen';
+import ChatScreen from '../screens/ChatScreen/ChatScreen'
 
 
 
