@@ -6,13 +6,14 @@ type MovieProps = {
     year: string;
     coverImageURL: string;
     runtime: string;
-    directors: string;
-    writers: string;
+    // directors: string;
+    // writers: string;
     stars: string;
     genres: string;
     rating: string;
     score: string;
     id: string;
+    plot: string;
     style: Object;
 };
 
@@ -28,6 +29,7 @@ export function MovieProfileView(props : MovieProps) {
             <Text>Rating: {props.rating}</Text>
             <Text>Runtime: {props.runtime}</Text>
             <Text>Genre(s): {props.genres}</Text>
+            <Text>Plot: {props.plot}</Text>
             <Text>Starring: {props.stars}</Text>
             <Text>IMDB Score: {props.score}</Text>
         </View>
