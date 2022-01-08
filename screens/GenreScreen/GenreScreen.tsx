@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-const Chat = () => {
+const Genre = () => {
     return (
         <View>
             <Text style={{ fontSize: 24, alignSelf: 'center'}}>Genre Cheese</Text>
@@ -9,4 +9,4 @@ const Chat = () => {
     )
 }
 
-export default Chat
+export default Genre
