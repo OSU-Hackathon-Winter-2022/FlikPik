@@ -62,7 +62,7 @@ function SwipeTab() {
       })
       }
     >
-
+      
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Chat Rooms" component={MessagesScreen} options={{ headerTitleAlign: "center"}} />
       <Tab.Screen name="Swipe" component={SwipeScreen} options={{ headerShown: false }} />
@@ -78,8 +78,10 @@ function RootNavigation() {
       <Stack.Navigator>
         <Stack.Screen name="SignIn"component={SignInScreen} options={{ headerShown: false }} />
         <Stack.Screen name="SignUp" component={SignUpScreen} />
-        <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="SwipeMain" component={SwipeTab} options={{ headerShown: false }}/>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        
+        <Stack.Screen name="SwipeSecond" component={SwipeScreen} options={{ headerShown: false }}/>
         <Stack.Screen name="Settings" component={SettingsScreen} />
         <Stack.Screen name="Genre" component={GenreScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Chat" component={ChatScreen} options={({route}) => ({
