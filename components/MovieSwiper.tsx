@@ -1,22 +1,14 @@
 import React, { Component, useState } from 'react'
 import Swiper from 'react-native-deck-swiper'
-import { StyleSheet, View } from 'react-native'
+import { Dimensions, StyleSheet, View } from 'react-native'
 import { MovieProperties, MovieProfileView } from './MovieProfileView'
 
 const styles = StyleSheet.create({
     container: {
-      // flex: 1,
+      flexDirection: 'column',
       backgroundColor: '#F5FCFF',
-      height: 635,
-
-    },
-    movie: {
-      flex: 1,
-      borderRadius: 4,
-      borderWidth: 2,
-      borderColor: '#E8E8E8',
-      justifyContent: 'center',
-      backgroundColor: 'white'
+      height: Dimensions.get('screen').height,
+      width: Dimensions.get('screen').width
     },
     text: {
       textAlign: 'center',
@@ -55,7 +47,7 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
   
     renderMovieProfile = (movie: MovieProperties, index: number) => {
         return (
-            <MovieProfileView style={styles.movie} {...movie} />
+            <MovieProfileView {...movie} />
         )
     };
   
