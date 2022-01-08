@@ -23,7 +23,6 @@ const Genre = () => {
                 onPress={onSwipePressed}
             >
                 <Text style={{color: "#FFFFFF", fontWeight: "bold", fontSize: 25}}>START SWIPING</Text>
-                
             </TouchableOpacity>
         </View>
     )

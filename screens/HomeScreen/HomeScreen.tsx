@@ -31,7 +31,6 @@ const Home = () => {
                 onPress={onRecommendedPressed}
             >
                 <Text style={{color: "#FFFFFF", fontWeight: "bold", fontSize: 25}}>View Matches</Text>
-                
             </TouchableOpacity>
             <Text style={{fontSize: 25, fontWeight:'bold', textAlign:'center'}}>Start a New Match Session</Text>
             <TouchableOpacity
@@ -39,9 +38,7 @@ const Home = () => {
                 onPress={onSwipePressed}
             >
                 <Text style={{color: "#FFFFFF", fontWeight: "bold", fontSize: 25}}>START SWIPING</Text>
-                
             </TouchableOpacity>
-                
         </View>
     )
 };

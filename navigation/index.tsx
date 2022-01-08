@@ -11,7 +11,6 @@ import GenreScreen from '../screens/GenreScreen/GenreScreen';
 import ChatScreen from '../screens/ChatScreen/ChatScreen'
 import MessagesScreen from '../screens/MessagesScreen/MessagesScreen'
 import RecommendationsScreen from '../screens/RecommendationsScreen/RecommendationsScreen';
-// import Tabs from './tabs'
 import TestScreen from '../screens/TestScreen/TestScreen';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -31,7 +30,7 @@ function SwipeTab() {
           let iconName;
           let size;
           let color;
-          
+
           if (route.name === "Settings"){
             iconName = "settings";
             size = 24;
@@ -60,12 +59,10 @@ function SwipeTab() {
 
           return <Ionicons name={iconName} size={size} color={color} />;
         }
-
       })
-
       }
     >
-      
+
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Chat Rooms" component={MessagesScreen} options={{ headerTitleAlign: "center"}} />
       <Tab.Screen name="Swipe" component={SwipeScreen} options={{ headerShown: false }} />

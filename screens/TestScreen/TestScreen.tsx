@@ -1,10 +1,7 @@
 import React from 'react';
-import { Text, View, TextInput, StyleSheet,useWindowDimensions, Image } from 'react-native';
+import { Text, View, StyleSheet,useWindowDimensions, Image } from 'react-native';
 import CustomButton from '../../components/CustomButton';
 import { useNavigation } from '@react-navigation/native';
-import index from '../HomeScreen';
-import Swipe from '../SwipeScreen';
-import Recommendations from '../RecommendationsScreen';
 import popcornImage from '../../assets/images/popcorn_controller.jpg'
 
 
