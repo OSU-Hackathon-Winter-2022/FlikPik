@@ -193,7 +193,7 @@ function RootNavigation() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="SwipeMain" component={SwipeTab} options={{ headerShown: false }} />
         <Stack.Screen name="Settings" component={SettingsScreen} />
-        <Stack.Screen name="Genre" component={GenreScreen} />
+        <Stack.Screen name="Genre" component={GenreScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Chat" component={ChatScreen} />
         <Stack.Screen name="Recommendations" component={RecommendationsScreen} />
         <Stack.Screen name="Test" component={TestScreen} />

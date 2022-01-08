@@ -21,7 +21,9 @@ const Home = () => {
     return (
         <View style={styles.root}>
             <View>
-                <Text style={{fontSize: 40, fontWeight:'bold', paddingBottom:15}}>Movie Dashboard</Text>
+                <Text style={{fontSize: 40, fontWeight:'bold'}}>
+                    Movie Dashboard
+                </Text>
             </View>
             <Text style={{fontSize: 25, fontWeight:'bold', textAlign:'center'}}>Recomended Movies</Text>
             <TouchableOpacity
