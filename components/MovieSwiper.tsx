@@ -3,7 +3,6 @@ import Swiper from 'react-native-deck-swiper'
 import { Button, Dimensions, StyleSheet, View } from 'react-native'
 import { MovieProperties, MovieProfileView } from './MovieProfileView'
 import { recommendations } from '../recommendation_engine/Recommender'
-import { addMatchedRecs } from '../screens/RecommendationsScreen/RecommendationsScreen'
 import { addMatched, addUnmatched } from '../recommendation_engine/Recommender'
 
 const styles = StyleSheet.create({
@@ -85,7 +84,6 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
         let movie_details = this.state.movies[index]
         this.state.swipedRight.push(movie_details)
         addMatched(movie_details.title)
-        addMatchedRecs(movie_details.title)
         if (index == this.state.movies.length-1) {
             let recommend = recommendations(this.state.swipedLeft, this.state.swipedRight)
             this.setState({
