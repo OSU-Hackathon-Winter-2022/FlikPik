@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet, useWindowDimensions, Image } from 'react-native';
+import { Text, View, StyleSheet, TouchableOpacity, useWindowDimensions, Image } from 'react-native';
 import CustomInput from '../../components/CustomInput';
 import CustomButton from '../../components/CustomButton';
 import { useState } from 'react';
@@ -15,8 +15,14 @@ const SignInScreen = () => {
     const [password, setPassword] = useState('');
     const [isSignedIn, setIsSignedIn] = useState(false);
 
-    // const {height} = useWindowDimensions();
+
     const navigation = useNavigation();
+
+    const function1 = () => {
+        setEmail("")
+        setPassword("")
+    };
+
 
     const onSignInPressed = () => {
         // console.warn("Signing in");
@@ -60,7 +66,7 @@ const SignInScreen = () => {
 
             <CustomButton
                 text="Sign In"
-                onPress={onSignInPressed}
+                onPress={()=> { function1(); onSignInPressed(); }}
                 />
 
             <CustomButton 

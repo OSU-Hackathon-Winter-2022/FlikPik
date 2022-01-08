@@ -16,7 +16,6 @@ const Settings = () => {
         {title: "Import", subTitle: null, onPress: () => {}},
         {title: "Blocked Contacts", subTitle: null, onPress: () => {}},
         {title: "Developer Tools", subTitle: null, onPress: () => {}},
-        // {title: "Logout", subTitle: null, onPress: () => {}},
     ]
 
 
