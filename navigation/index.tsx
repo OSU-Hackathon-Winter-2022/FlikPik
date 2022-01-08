@@ -118,9 +118,10 @@ import SwipeScreen from '../screens/SwipeScreen/SwipeScreen';
 import SettingsScreen from '../screens/SettingsScreen/SettingsScreen';
 import GenreScreen from '../screens/GenreScreen/GenreScreen';
 import ChatScreen from '../screens/ChatScreen/ChatScreen'
-import RecommendationsScreen from '../screens/RecommendationsScreen/RecommendationsScreen'
+import RecommendationsScreen from '../screens/RecommendationsScreen/RecommendationsScreen';
 // import Tabs from './tabs'
-import TestScreen from '../screens/TestScreen/TestScreen'
+import TestScreen from '../screens/TestScreen/TestScreen';
+import { Ionicons } from '@expo/vector-icons';
 
 
 
@@ -128,12 +129,51 @@ const Stack = createNativeStackNavigator();
 
 
 
-
+// Team note: more icons can be found here (select Ionicons as a filter): https://icons.expo.fyi
 
 function SwipeTab() {
   const Tab = createBottomTabNavigator();
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={({ route }) => ({
+        tabBarIcon: ({}) => {
+          let iconName;
+          let size;
+          let color;
+          
+          if (route.name === "Settings"){
+            iconName = "settings";
+            size = 24;
+            color= "black";
+          } 
+          if (route.name === "Home"){
+            iconName = "home";
+            size = 24;
+            color= "black";
+          }
+          if (route.name === "Swipe"){
+            iconName = "film";
+            size = 24;
+            color= "black";
+          }
+          if (route.name === "Recommendations"){
+            iconName = "md-thumbs-up";
+            size = 24;
+            color= "black";
+          }
+          if (route.name === "Test Screen"){
+            iconName = "checkmark-circle";
+            size = 24;
+            color= "black";
+          }
+
+          return <Ionicons name={iconName} size={size} color={color} />;
+        }
+
+      })
+
+      }
+    >
       
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Test Screen" component={TestScreen} />
