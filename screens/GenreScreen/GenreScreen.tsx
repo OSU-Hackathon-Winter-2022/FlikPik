@@ -4,7 +4,7 @@ import { View, Text } from 'react-native'
 const Chat = () => {
     return (
         <View>
-            <Text style={{ fontSize: 24, alignSelf: 'center'}}>Home, Sweet Home</Text>
+            <Text style={{ fontSize: 24, alignSelf: 'center'}}>Genre Cheese</Text>
         </View>
     )
 }

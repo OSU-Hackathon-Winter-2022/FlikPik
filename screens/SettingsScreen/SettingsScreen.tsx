@@ -4,7 +4,7 @@ import { View, Text } from 'react-native'
 const Settings = () => {
     return (
         <View>
-            <Text style={{ fontSize: 24, alignSelf: 'center'}}>Home, Sweet Home</Text>
+            <Text style={{ fontSize: 24, alignSelf: 'center'}}>Settings Cheese</Text>
         </View>
     )
 }

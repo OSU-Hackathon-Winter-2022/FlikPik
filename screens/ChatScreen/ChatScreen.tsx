@@ -4,7 +4,7 @@ import { View, Text } from 'react-native'
 const Genre = () => {
     return (
         <View>
-            <Text style={{ fontSize: 24, alignSelf: 'center'}}>Home, Sweet Home</Text>
+            <Text style={{ fontSize: 24, alignSelf: 'center'}}>Chat Cheese</Text>
         </View>
     )
 }

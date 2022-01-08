@@ -22,7 +22,7 @@ const SignInScreen = () => {
     const navigation = useNavigation();
 
     const onSignInPressed = () => {
-        console.warn("Signing in");
+        // console.warn("Signing in");
         // validate user
         signInWithEmailAndPassword(authentication, email, password)
         .then((re) => {
