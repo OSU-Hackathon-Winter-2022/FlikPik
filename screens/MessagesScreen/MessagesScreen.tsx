@@ -17,7 +17,7 @@ const Messages = [
   {
     id: '1',
     userName: 'Chat Room 1',
-    userImg: require('../../assets/users/user-3.jpg'),
+    userImg: require('../../assets/images/popcorn.png'),
     messageTime: '',
     messageText:
       'THE GREEN MILE',
@@ -25,7 +25,7 @@ const Messages = [
   {
     id: '2',
     userName: 'Chat Room 2',
-    userImg: require('../../assets/users/user-1.jpg'),
+    userImg: require('../../assets/images/popcorn.png'),
     messageTime: '',
     messageText:
       'LORD OF THE RINGS',
@@ -33,7 +33,7 @@ const Messages = [
   {
     id: '3',
     userName: 'Chat Room 3',
-    userImg: require('../../assets/users/user-4.jpg'),
+    userImg: require('../../assets/images/popcorn.png'),
     messageTime: '',
     messageText:
       'DOWNFALL',
@@ -41,7 +41,7 @@ const Messages = [
   {
     id: '4',
     userName: 'Chat Room 4',
-    userImg: require('../../assets/users/user-6.jpg'),
+    userImg: require('../../assets/images/popcorn.png'),
     messageTime: '',
     messageText:
       'LEON',
@@ -49,7 +49,7 @@ const Messages = [
   {
     id: '5',
     userName: 'Chat Room 5',
-    userImg: require('../../assets/users/user-7.jpg'),
+    userImg: require('../../assets/images/popcorn.png'),
     messageTime: '',
     messageText:
       'V FOR VENDETTA',
@@ -57,7 +57,7 @@ const Messages = [
   {
     id: '6',
     userName: 'Chat Room 6',
-    userImg: require('../../assets/users/user-8.jpg'),
+    userImg: require('../../assets/images/popcorn.png'),
     messageTime: '',
     messageText:
       'THE SHOP AROUND THE CORNER 1940',
@@ -65,7 +65,7 @@ const Messages = [
   {
     id: '7',
     userName: 'Chat Room 7',
-    userImg: require('../../assets/users/user-9.jpg'),
+    userImg: require('../../assets/images/popcorn.png'),
     messageTime: '',
     messageText:
       'THE ELEPHANT MAN',
@@ -73,7 +73,7 @@ const Messages = [
   {
     id: '8',
     userName: 'Chat Room 8',
-    userImg: require('../../assets/users/user-5.jpg'),
+    userImg: require('../../assets/images/popcorn.png'),
     messageTime: '',
     messageText:
       'ETERNAL SUNSHINE OF THE SPOTLESS MIND',

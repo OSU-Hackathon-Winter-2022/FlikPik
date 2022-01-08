@@ -67,7 +67,7 @@ function SwipeTab() {
     >
       
       <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Chat Rooms" component={MessagesScreen} />
+      <Tab.Screen name="Chat Rooms" component={MessagesScreen} options={{ headerTitleAlign: "center"}} />
       <Tab.Screen name="Swipe" component={SwipeScreen} options={{ headerShown: false }} />
       <Tab.Screen name="Recommendations" component={RecommendationsScreen} />
       <Tab.Screen name="Settings" component={SettingsScreen} />
@@ -82,10 +82,13 @@ function RootNavigation() {
         <Stack.Screen name="SignIn"component={SignInScreen} options={{ headerShown: false }} />
         <Stack.Screen name="SignUp" component={SignUpScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="SwipeMain" component={SwipeTab} options={{ headerShown: false }} />
+        <Stack.Screen name="SwipeMain" component={SwipeTab} options={{ headerShown: false }}/>
         <Stack.Screen name="Settings" component={SettingsScreen} />
         <Stack.Screen name="Genre" component={GenreScreen} options={{ headerShown: false }} />
-        <Stack.Screen name="Chat" component={ChatScreen} />
+        <Stack.Screen name="Chat" component={ChatScreen} options={({route}) => ({
+          title: route.params.userName,
+          headerTitleAlign: "center"
+        })} />
         <Stack.Screen name="Messages" component={MessagesScreen} />
         <Stack.Screen name="Recommendations" component={RecommendationsScreen} />
         <Stack.Screen name="Test" component={TestScreen} />
