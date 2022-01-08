@@ -25,7 +25,7 @@ const Home = () => {
                     Movie Dashboard
                 </Text>
             </View>
-            <Text style={{fontSize: 25, fontWeight:'bold', textAlign:'center'}}>Recomended Movies</Text>
+            <Text style={{fontSize: 25, fontWeight:'bold', textAlign:'center'}}>Recommended Movies</Text>
             <TouchableOpacity
                 style={styles.recommendationbutton}
                 onPress={onRecommendedPressed}
