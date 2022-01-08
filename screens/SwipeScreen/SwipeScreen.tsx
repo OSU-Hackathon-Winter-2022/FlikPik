@@ -1,13 +1,11 @@
 import React from 'react'
 import { StyleSheet, View, Text, SafeAreaView } from 'react-native';
+import CustomButton from '../../components/CustomButton';
 import { NavigationContainer } from '@react-navigation/native';
 import Navigation from '../../navigation';
 import Tabs from '../../navigation/tabs';
 import { MovieSwiper } from '../../components/MovieSwiper';
 import top_movies from '../../database/top_250_by_rating.json'
-import CustomButton from '../../components/CustomButton';
-import { useState } from 'react';
-import CustomInput2 from '../../components/CustomInput2';
 import { useNavigation } from '@react-navigation/native';
 
 let topMovieProfiles = [];
@@ -55,20 +53,10 @@ const Swipe = () => {
 
     return (
 
-        // <View>
+        <View>
             <MovieSwiper movies={default_movies} />
-
-            // <CustomButton
-            //     text="Test1"
-            //     onPress={onTestPress}
-            //     />
-
-            // <CustomButton 
-            //     text="Test2"
-            //     onPress={onTestPress}
-            //     type="TERTIARY"
-            //     />
-        // </View>
+            <Tabs />
+        </View>
 
 
     );

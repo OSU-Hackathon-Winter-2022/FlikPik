@@ -20,7 +20,7 @@ const SignUpScreen = () => {
     const navigation = useNavigation();
 
     const onRegisterPressed = () => {
-        console.warn('onRegisterPressed');
+        // console.warn('onRegisterPressed');
         createUserWithEmailAndPassword(authentication, email, password)
         .then((re) => {
             console.log(re);

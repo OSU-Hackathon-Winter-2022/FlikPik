@@ -5,8 +5,10 @@ import { MovieProperties, MovieProfileView } from './MovieProfileView'
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: '#F5FCFF'
+      // flex: 1,
+      backgroundColor: '#F5FCFF',
+      height: 635,
+
     },
     movie: {
       flex: 1,
