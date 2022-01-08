@@ -134,8 +134,9 @@ function SwipeTab() {
   const Tab = createBottomTabNavigator();
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Test Screen" component={TestScreen} />
+      
       <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Test Screen" component={TestScreen} />
       <Tab.Screen name="Swipe" component={SwipeScreen} options={{ headerShown: false }} />
       <Tab.Screen name="Recommendations" component={RecommendationsScreen} />
       <Tab.Screen name="Settings" component={SettingsScreen} />
@@ -150,7 +151,7 @@ function RootNavigation() {
         <Stack.Screen name="Sign In"component={SignInScreen} options={{ headerShown: false }} />
         <Stack.Screen name="SignUp" component={SignUpScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Swipe" component={SwipeTab} options={{ headerShown: false }} />
+        <Stack.Screen name="SwipeMain" component={SwipeTab} options={{ headerShown: false }} />
         <Stack.Screen name="Settings" component={SettingsScreen} />
         <Stack.Screen name="Genre" component={GenreScreen} />
         <Stack.Screen name="Chat" component={ChatScreen} />

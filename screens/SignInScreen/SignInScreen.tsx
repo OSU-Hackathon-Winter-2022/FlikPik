@@ -28,7 +28,7 @@ const SignInScreen = () => {
         .then((re) => {
             console.log(re);
             setIsSignedIn(true);
-            navigation.navigate('Test')
+            navigation.navigate('SwipeMain')
         })
         .catch((re) => {
             console.log(re);
