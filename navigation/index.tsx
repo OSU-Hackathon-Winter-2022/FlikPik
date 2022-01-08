@@ -46,7 +46,7 @@ function SwipeTab() {
             size = 24;
             color= "black";
           }
-          if (route.name === "Recommendations"){
+          if (route.name === "Matches"){
             iconName = "md-thumbs-up";
             size = 24;
             color= "black";
@@ -66,7 +66,7 @@ function SwipeTab() {
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Chat Rooms" component={MessagesScreen} options={{ headerTitleAlign: "center"}} />
       <Tab.Screen name="Swipe" component={SwipeScreen} options={{ headerShown: false }} />
-      <Tab.Screen name="Recommendations" component={RecommendationsScreen} />
+      <Tab.Screen name="Matches" component={RecommendationsScreen} />
       <Tab.Screen name="Settings" component={SettingsScreen} />
     </Tab.Navigator>
   );
@@ -87,7 +87,7 @@ function RootNavigation() {
           headerTitleAlign: "center"
         })} />
         <Stack.Screen name="Messages" component={MessagesScreen} />
-        <Stack.Screen name="Recommendations" component={RecommendationsScreen} />
+        <Stack.Screen name="Matches" component={RecommendationsScreen} />
         <Stack.Screen name="Test" component={TestScreen} />
       </Stack.Navigator>
     </NavigationContainer>

@@ -25,7 +25,7 @@ const Test = () => {
     };
     const onRecommendationsPressed = () => {
         // console.warn("Signing in");
-        navigation.navigate('Recommendations')
+        navigation.navigate('Matches')
     };
     const onChatPressed = () => {
         // console.warn("Signing in");
