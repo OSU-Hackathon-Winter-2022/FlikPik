@@ -9,7 +9,7 @@ const Home = () => {
 
     const onSwipePressed = () => {
         console.warn("Swipe session");
-        navigation.navigate('Swipe')
+        navigation.navigate('Swipe');
     };
 
     return (
