@@ -22,16 +22,22 @@ export type MovieProperties = MovieProps;
 export function MovieProfileView(props : MovieProps) {
     let url = props.coverImageURL
     return (
-        <View style={{flex: 1, backgroundColor: '#3B71F3', borderRadius: 50, justifyContent: 'center'}}>
-            <View style={{justifyContent: 'center', alignItems: 'center'}}>
+        <View style={{
+            flex: 2,
+            flexDirection: 'column',
+            backgroundColor: '#3B71F3',
+            borderRadius: 50}}>
+            <View style={{flex: 1, alignItems: 'center'}}>
                 <Image source={{uri: url}}
                 style={{
+                    margin: 10, 
+                    marginBottom: 0,
                     resizeMode: 'contain',
-                    height: Dimensions.get('screen').height/2.5,
+                    flex: 1,
                     width: Dimensions.get('screen').width}} />
             </View>
-            <View>
-                <Text style={{margin: 18, fontSize: 18, textAlign: 'left', color: 'black', alignItems: 'center'}}>
+            <View style={{flex: 1, margin: 10, marginTop: 0}}>
+                <Text style={{fontSize: 24, textAlign: 'left', color: 'black'}} adjustsFontSizeToFit={true}>
                     Title: {props.title} {'\n'}
                     Release Year: {props.year} {'\n'}
                     Rating: {props.rating} {'\n'}
