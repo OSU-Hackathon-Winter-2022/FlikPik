@@ -9,10 +9,12 @@ import SwipeScreen from '../screens/SwipeScreen/SwipeScreen';
 import SettingsScreen from '../screens/SettingsScreen/SettingsScreen';
 import GenreScreen from '../screens/GenreScreen/GenreScreen';
 import ChatScreen from '../screens/ChatScreen/ChatScreen'
+import MessagesScreen from '../screens/MessagesScreen/MessagesScreen'
 import RecommendationsScreen from '../screens/RecommendationsScreen/RecommendationsScreen';
 // import Tabs from './tabs'
 import TestScreen from '../screens/TestScreen/TestScreen';
 import { Ionicons } from '@expo/vector-icons';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -50,8 +52,8 @@ function SwipeTab() {
             size = 24;
             color= "black";
           }
-          if (route.name === "Test Screen"){
-            iconName = "checkmark-circle";
+          if (route.name === "Messages"){
+            iconName = "chatbubbles";
             size = 24;
             color= "black";
           }
@@ -65,7 +67,7 @@ function SwipeTab() {
     >
       
       <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Chat" component={ChatScreen} />
+      <Tab.Screen name="Messages" component={MessagesScreen} />
       <Tab.Screen name="Swipe" component={SwipeScreen} options={{ headerShown: false }} />
       <Tab.Screen name="Recommendations" component={RecommendationsScreen} />
       <Tab.Screen name="Settings" component={SettingsScreen} />
@@ -84,6 +86,7 @@ function RootNavigation() {
         <Stack.Screen name="Settings" component={SettingsScreen} />
         <Stack.Screen name="Genre" component={GenreScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Chat" component={ChatScreen} />
+        <Stack.Screen name="Messages" component={MessagesScreen} />
         <Stack.Screen name="Recommendations" component={RecommendationsScreen} />
         <Stack.Screen name="Test" component={TestScreen} />
       </Stack.Navigator>
@@ -96,43 +99,3 @@ export default RootNavigation;
 
 
 
-
-
-
-
-// const RootNavigation = () => {
-//   return (
-//         <NavigationContainer>
-//             <Stack.Navigator screenOptions={{headerShown: false}}>
-//                 <Stack.Screen name="SignIn" component={SignInScreen} />
-//                 <Stack.Screen name="SignUp" component={SignUpScreen} />
-//                 <Stack.Screen name="Home" component={HomeScreen} />
-//                 <Stack.Screen name="Swipe" component={SwipeScreen} />
-//                 <Stack.Screen name="Settings" component={SettingsScreen} />
-//                 <Stack.Screen name="Genre" component={GenreScreen} />
-//                 <Stack.Screen name="Chat" component={ChatScreen} />
-//                 <Stack.Screen name="Recommendations" component={RecommendationsScreen} />
-//                 <Stack.Screen name="Test" component={TestScreen} />
-//             </Stack.Navigator>
-//         </NavigationContainer>
-//   );
-// };
-// export default RootNavigation;
-
-
-
-// const Tab = createBottomTabNavigator();
-
-// const Tabs = () => {
-//     return (
-//         <Tab.Navigator>
-//             <Tab.Screen name="Home" component={HomeScreen} />
-//             <Tab.Screen name="Genre" component={GenreScreen} />
-//             <Tab.Screen name="Recommendations" component={RecommendationsScreen} />
-//             <Tab.Screen name="Chat" component={ChatScreen} />
-//             <Tab.Screen name="Settings" component={SettingsScreen} />
-//         </Tab.Navigator>
-//     );
-// };
-
-// export default Tabs;
