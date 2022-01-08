@@ -9,7 +9,7 @@ for (let movie of top_movies.results) {
     let movieProfile = {
         id: movie.id,
         title: movie.title,
-        year: movie.description.slice(1, 5),
+        year: movie.description.slice(-5, -1),
         runtime: movie.runtimeStr,
         coverImageURL: movie.image,
         stars: movie.stars,
