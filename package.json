@@ -34,6 +34,8 @@
     "react-native-deck-swiper": "^2.0.5",
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "~3.10.1",
+    "react-native-settings-page": "^2.0.6",
+    "react-native-settings-screen": "^2.2.1",
     "react-native-web": "0.17.1"
   },
   "devDependencies": {

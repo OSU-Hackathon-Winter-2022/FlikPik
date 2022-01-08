@@ -1,9 +1,5 @@
 import React from 'react'
 import { StyleSheet, View, Text, SafeAreaView } from 'react-native';
-import CustomButton from '../../components/CustomButton';
-import { NavigationContainer } from '@react-navigation/native';
-import Navigation from '../../navigation';
-import Tabs from '../../navigation/tabs';
 import { MovieSwiper } from '../../components/MovieSwiper';
 import top_movies from '../../database/top_250_by_rating.json'
 import { useNavigation } from '@react-navigation/native';
@@ -81,14 +77,3 @@ const styles = StyleSheet.create({
 
 
 export default Swipe
-
-
-
-// const App = () => {
-
-//   return (
-//     <NavigationContainer>
-//       <Tabs />
-//     </NavigationContainer>
-//   );
-// }
