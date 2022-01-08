@@ -16,67 +16,67 @@ import {
 const Messages = [
   {
     id: '1',
-    userName: 'The Homie',
+    userName: 'Chat Room 1',
     userImg: require('../../assets/users/user-3.jpg'),
-    messageTime: '4 mins ago',
+    messageTime: '',
     messageText:
-      'Graphs can be used to model a plethora of natural objects, such as connections in ...',
+      'THE GREEN MILE',
   },
   {
     id: '2',
-    userName: 'Tommy',
+    userName: 'Chat Room 2',
     userImg: require('../../assets/users/user-1.jpg'),
-    messageTime: '1 hours ago',
+    messageTime: '',
     messageText:
-      'Did you see Spider-Man yet???',
+      'LORD OF THE RINGS',
   },
   {
     id: '3',
-    userName: 'Kimberly Hart',
+    userName: 'Chat Room 3',
     userImg: require('../../assets/users/user-4.jpg'),
-    messageTime: '2 hours ago',
+    messageTime: '',
     messageText:
-      'Hey, Zordon wants us to be early for the pizza party',
+      'DOWNFALL',
   },
   {
     id: '4',
-    userName: 'T-Kwan',
+    userName: 'Chat Room 4',
     userImg: require('../../assets/users/user-6.jpg'),
-    messageTime: '1 day ago',
+    messageTime: '',
     messageText:
-      'Yo, dont tell Zordon I broke the new ice-cream machine, thanks fam',
+      'LEON',
   },
   {
     id: '5',
-    userName: 'Boss',
+    userName: 'Chat Room 5',
     userImg: require('../../assets/users/user-7.jpg'),
-    messageTime: '1 day ago',
+    messageTime: '',
     messageText:
-      'WHO BROKE THE ICE CREAM MACHINE???',
+      'V FOR VENDETTA',
   },
   {
     id: '6',
-    userName: 'Jason Lee Scott',
+    userName: 'Chat Room 6',
     userImg: require('../../assets/users/user-8.jpg'),
-    messageTime: '2 days ago',
+    messageTime: '',
     messageText:
-      'Just saw the new Spider-Man with Tommy, IT WAS SIIIIIIICK',
+      'THE SHOP AROUND THE CORNER 1940',
   },
   {
     id: '7',
-    userName: 'Lord Zedd',
+    userName: 'Chat Room 7',
     userImg: require('../../assets/users/user-9.jpg'),
-    messageTime: '2 days ago',
+    messageTime: '',
     messageText:
-      'Meet me at the arcade in 15',
+      'THE ELEPHANT MAN',
   },
   {
     id: '8',
-    userName: 'Zach',
+    userName: 'Chat Room 8',
     userImg: require('../../assets/users/user-5.jpg'),
-    messageTime: '2 days ago',
+    messageTime: '',
     messageText:
-      'See you at the party!',
+      'ETERNAL SUNSHINE OF THE SPOTLESS MIND',
   },
 ];
 

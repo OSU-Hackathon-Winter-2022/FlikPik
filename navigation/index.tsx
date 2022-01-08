@@ -52,7 +52,7 @@ function SwipeTab() {
             size = 24;
             color= "black";
           }
-          if (route.name === "Messages"){
+          if (route.name === "Chat Rooms"){
             iconName = "chatbubbles";
             size = 24;
             color= "black";
@@ -67,7 +67,7 @@ function SwipeTab() {
     >
       
       <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Messages" component={MessagesScreen} />
+      <Tab.Screen name="Chat Rooms" component={MessagesScreen} />
       <Tab.Screen name="Swipe" component={SwipeScreen} options={{ headerShown: false }} />
       <Tab.Screen name="Recommendations" component={RecommendationsScreen} />
       <Tab.Screen name="Settings" component={SettingsScreen} />
