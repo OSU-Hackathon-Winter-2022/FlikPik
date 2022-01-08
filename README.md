@@ -5,7 +5,7 @@ Tired of never being able to decide what to watch? Not a problem! With FlikPik y
 
 ## Prerequisites
 
-- [Node.js > 12](https://nodejs.org) and npm (Recommended: Use [nvm](https://github.com/nvm-sh/nvm))
+- [Node.js](https://nodejs.org) and npm
 - [React Native](https://reactnative.dev)
 - [Expo](https://expo.dev)
 - [Firebase](https://firebase.google.com)
