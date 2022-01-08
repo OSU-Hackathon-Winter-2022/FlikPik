@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, StyleSheet, View, Image } from 'react-native';
+import { Platform, Dimensions, Text, StyleSheet, View, Image } from 'react-native';
 
 type MovieProps = {
     title: string;
@@ -22,21 +22,28 @@ export type MovieProperties = MovieProps;
 export function MovieProfileView(props : MovieProps) {
     let url = props.coverImageURL
     return (
-        <View style={props.style}>
-            <Image source={{uri: url}} style={{position: 'absolute', top: -40, left: 65, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center', resizeMode: 'contain', width: 235, height: 320}} />
-
-            <Text style={{ top: 150, left: 0, right: 0, fontSize: 12, textAlign: 'left', color: 'black' }}>
-                Title: {props.title} {'\n'}
-                Release Year: {props.year} {'\n'}
-                Rating: {props.rating} {'\n'}
-                Runtime: {props.runtime} {'\n'}
-                Genre(s): {props.genres} {'\n'}
-                {'\n'}
-                Plot: {props.plot} {'\n'}
-                {'\n'}
-                Starring: {props.stars} {'\n'}
-                IMDB Score: {props.score} {'\n'}
-                </Text>
+        <View style={{flex: 1, backgroundColor: '#3B71F3', borderRadius: 50, justifyContent: 'center'}}>
+            <View style={{justifyContent: 'center', alignItems: 'center'}}>
+                <Image source={{uri: url}}
+                style={{
+                    resizeMode: 'contain',
+                    height: Dimensions.get('screen').height/2.5,
+                    width: Dimensions.get('screen').width}} />
+            </View>
+            <View>
+                <Text style={{margin: 18, fontSize: 18, textAlign: 'left', color: 'black', alignItems: 'center'}}>
+                    Title: {props.title} {'\n'}
+                    Release Year: {props.year} {'\n'}
+                    Rating: {props.rating} {'\n'}
+                    Runtime: {props.runtime} {'\n'}
+                    Genre(s): {props.genres} {'\n'}
+                    {'\n'}
+                    Plot: {props.plot} {'\n'}
+                    {'\n'}
+                    Starring: {props.stars} {'\n'}
+                    IMDB Score: {props.score} {'\n'}
+                    </Text>
+            </View>
         </View>
     );
 }
