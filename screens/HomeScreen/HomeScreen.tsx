@@ -15,7 +15,7 @@ const Home = () => {
 
     const onRecommendedPressed = () => {
         // console.warn("Swipe session");
-        navigation.navigate('Recommendations');
+        navigation.navigate('Matches');
     };
 
     const onGenrePressed = () => {
