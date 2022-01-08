@@ -28,11 +28,11 @@ const ChatScreen = () => {
     setMessages([
       {
         _id: 1,
-        text: 'Hello developer',
+        text: 'Testing',
         createdAt: new Date(),
         user: {
           _id: 2,
-          name: 'React Native',
+          name: 'Tim',
           avatar: require('../../assets/users/user-2.jpg'),
         },
       },
@@ -42,8 +42,38 @@ const ChatScreen = () => {
         createdAt: new Date(),
         user: {
           _id: 1,
-          name: 'React Native',
+          name: 'Tom',
           avatar: require('../../assets/users/user-5.jpg'),
+        },
+      },
+      {
+        _id: 3,
+        text: 'Testsssssss',
+        createdAt: new Date(),
+        user: {
+          _id: 4,
+          name: 'Jerry',
+          avatar: require('../../assets/users/user-4.jpg'),
+        },
+      },
+      {
+        _id: 4,
+        text: 'Test2',
+        createdAt: new Date(),
+        user: {
+          _id: 7,
+          name: 'Phil',
+          avatar: require('../../assets/users/user-7.jpg'),
+        },
+      },
+      {
+        _id: 5,
+        text: 'Test3',
+        createdAt: new Date(),
+        user: {
+          _id: 8,
+          name: 'Kim',
+          avatar: require('../../assets/users/user-8.jpg'),
         },
       },
     ]);
