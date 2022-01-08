@@ -77,7 +77,7 @@ function RootNavigation() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Sign In"component={SignInScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="SignIn"component={SignInScreen} options={{ headerShown: false }} />
         <Stack.Screen name="SignUp" component={SignUpScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="SwipeMain" component={SwipeTab} options={{ headerShown: false }} />

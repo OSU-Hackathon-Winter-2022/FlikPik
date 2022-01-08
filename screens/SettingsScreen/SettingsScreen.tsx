@@ -1,37 +1,26 @@
 import React from 'react'
-import { View, Text } from 'react-native'
 import SettingsComponent from '../../components/SettingsComponent'
+import { useNavigation } from '@react-navigation/native';
+import { useState } from 'react';
+import { View, Text, TouchableOpacity, ScrollView } from 'react-native'
 
-// const Settings = () => {
-
-//     const settingsOptions=[
-//         {title: "My Info", subTitle: "SETUP YOUR PROFILE", onPress: () => {}},
-//         {title: "Accounts", subTitle: null, onPress: () => {}},
-//         {title: "Contacts", subTitle: "Your friends", onPress: () => {}},
-//         {title: "Downloads", subTitle: "Downloaded movies", onPress: () => {}},
-//         {title: "Import", subTitle: null, onPress: () => {}},
-//         {title: "Blocked Contacts", subTitle: null, onPress: () => {}},
-//         {title: "Developer Tools", subTitle: null, onPress: () => {}},
-//     ]
+const Settings = () => {
 
 
-//     return <SettingsComponent  settingsOptions={settingsOptions}/>
-// };
 
-// export default Settings;
+    const settingsOptions=[
+        {title: "My Info", subTitle: "SETUP YOUR PROFILE", onPress: () => {}},
+        {title: "Accounts", subTitle: null, onPress: () => {}},
+        {title: "Contacts", subTitle: "Your friends", onPress: () => {}},
+        {title: "Downloads", subTitle: "Downloaded movies", onPress: () => {}},
+        {title: "Import", subTitle: null, onPress: () => {}},
+        {title: "Blocked Contacts", subTitle: null, onPress: () => {}},
+        {title: "Developer Tools", subTitle: null, onPress: () => {}},
+        // {title: "Logout", subTitle: null, onPress: () => {}},
+    ]
 
 
-const SettingsScreen = () => {
-    return (
-        <View>
-            <Text>Test string</Text>
-            <Text>Test string</Text>
-            <Text>Test string</Text>
-            <Text>Test string</Text>
-            <Text>Test string</Text>
-            <Text>Test string</Text>
-        </View>
-    )
-}
+    return <SettingsComponent  settingsOptions={settingsOptions}/>
+};
 
-export default SettingsScreen
+export default Settings;

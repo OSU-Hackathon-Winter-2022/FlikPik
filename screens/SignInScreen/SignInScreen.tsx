@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, TextInput, StyleSheet,useWindowDimensions, Image } from 'react-native';
+import { Text, View, StyleSheet, useWindowDimensions, Image } from 'react-native';
 import CustomInput from '../../components/CustomInput';
 import CustomButton from '../../components/CustomButton';
 import { useState } from 'react';
@@ -15,7 +15,7 @@ const SignInScreen = () => {
     const [password, setPassword] = useState('');
     const [isSignedIn, setIsSignedIn] = useState(false);
 
-    const {height} = useWindowDimensions();
+    // const {height} = useWindowDimensions();
     const navigation = useNavigation();
 
     const onSignInPressed = () => {
@@ -32,10 +32,7 @@ const SignInScreen = () => {
         })
 
     };
-    // const onForgotPasswordPressed = () => {
-    //     console.warn('Forgot Password');
-    //     navigation.navigate('ForgotPassword')
-    // };
+
     const onSignUpPressed = () => {
         console.warn('onSignUpPressed');
         navigation.navigate('SignUp');
@@ -46,9 +43,9 @@ const SignInScreen = () => {
             <Text style={{color: '#191970', fontSize:20, fontWeight:'bold'}}>Welcome to</Text>
             <Text style={{color: '#191970', fontSize:35, fontWeight:'bold', paddingBottom:15}}>FlikPik</Text>
 
-            <Text style={{color: '#191970', fontSize:10, fontWeight:'bold'}}>Test User:</Text>
+            {/* <Text style={{color: '#191970', fontSize:10, fontWeight:'bold'}}>Test User:</Text>
             <Text style={{color: '#191970', fontSize:10, fontWeight:'bold'}}>email: abc@gmail.com</Text>
-            <Text style={{color: '#191970', fontSize:10, fontWeight:'bold'}}>password: 123456</Text>
+            <Text style={{color: '#191970', fontSize:10, fontWeight:'bold'}}>password: 123456</Text> */}
             <CustomInput
                 placeholder="Email"
                 value={email}
@@ -66,16 +63,9 @@ const SignInScreen = () => {
                 onPress={onSignInPressed}
                 />
 
-            {/* <CustomButton 
-                text="Forgot Password?"
-                onPress={onForgotPasswordPressed}
-                type="TERTIARY"
-                /> */}
-
             <CustomButton 
-                text="Don't have an account? Sign Up"
+                text="Don't have an account?"
                 onPress={onSignUpPressed}
-                type="TERTIARY"
                 />
 
             <Image style={styles.popImage} source={popcornImage}/>
@@ -88,7 +78,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        padding: 20,
+        padding: 60,
 
     },
     popImage: {

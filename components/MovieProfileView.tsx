@@ -1,5 +1,5 @@
 import React from 'react';
-import { Platform, Dimensions, Text, StyleSheet, View, Image } from 'react-native';
+import { Platform, Dimensions, Text, StyleSheet, View, Image, ScrollView } from 'react-native';
 
 type MovieProps = {
     title: string;
