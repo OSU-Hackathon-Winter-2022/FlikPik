@@ -2,27 +2,28 @@ import sqlite3
 import json
 
 def populate_database(movie_json):
-    conn = sqlite3.connect('top_250') 
+    conn = sqlite3.connect('top_250.db') 
     c = conn.cursor()
 
     # Set up 'movies' table in db
     c.execute('''
                 CREATE TABLE IF NOT EXISTS movies
                 (movie_id INTEGER PRIMARY KEY,
+                imdb_id TEXT,
                 title TEXT,
                 metadata TEXT)
               ''')
     
-    with open(movie_json) as file:
+    with open(movie_json, encoding='utf-8') as file:
         top_250_data = json.load(file)
 
     id = 1
     for movie in top_250_data["results"]:
-        title, data = parse_movie_metadata(movie)
-        new_database_row = (id, title, data)
+        title, imdb_id, data = parse_movie_metadata(movie)
+        new_database_row = (id, imdb_id, title, data)
 
-        c.execute(f''' INSERT INTO movies (movie_id, title, metadata)
-                       VALUES (?, ?, ?)''', new_database_row)
+        c.execute(f''' INSERT INTO movies (movie_id, imdb_id, title, metadata)
+                       VALUES (?, ?, ?, ?)''', new_database_row)
         id += 1
 
     conn.commit()
@@ -41,6 +42,10 @@ def parse_movie_metadata(movie):
     title = ''
     for title_word in title_list:
         title += title_word.lower()
+
+    # Massage imdb id data
+    # format is integer
+    imdb_id = movie["id"]
 
     # Massage genre data
     # Format is string of lowercase genres, separated by spaces
@@ -71,7 +76,7 @@ def parse_movie_metadata(movie):
         year = movie["description"][1:5]
 
     # Combine data into a single string and return
-    return (title, f'{genres}{actors}{year}')
+    return (title, imdb_id, f'{genres}{actors}{year}')
 
 if __name__ == "__main__":
     populate_database("top_250_by_rating.json")
