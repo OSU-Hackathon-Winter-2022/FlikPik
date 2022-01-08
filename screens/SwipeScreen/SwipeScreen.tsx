@@ -55,7 +55,6 @@ const Swipe = () => {
 
         <View>
             <MovieSwiper movies={default_movies} />
-            <Tabs />
         </View>
 
 
