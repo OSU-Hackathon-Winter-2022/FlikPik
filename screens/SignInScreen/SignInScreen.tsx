@@ -1,9 +1,10 @@
 import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, useWindowDimensions, Image } from 'react-native';
 import CustomInput from '../../components/CustomInput';
+import CustomInput2 from '../../components/CustomInput2';
 import CustomButton from '../../components/CustomButton';
 import { useState } from 'react';
-import CustomInput2 from '../../components/CustomInput2';
+
 import { useNavigation } from '@react-navigation/native';
 import popcornImage from '../../assets/images/popcorn_controller.jpg'
 import { authentication } from '../../firebase/firebase-config';

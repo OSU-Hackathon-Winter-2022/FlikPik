@@ -1,5 +1,6 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Text, Button, SafeAreaView } from 'react-native';
+
 import { MovieSwiper } from '../../components/MovieSwiper';
 import top_movies from '../../database/top_250_by_rating.json'
 import { useNavigation } from '@react-navigation/native';
@@ -8,18 +9,17 @@ import { getRandomMovieList } from '../../recommendation_engine/Recommender'
 
 const Swipe = () => {
     const navigation = useNavigation();
-
-
-
+    let fullMoviesQueue = getRandomMovieList(24);
+    let movies = fullMoviesQueue.slice(0, 12);
+    let moviesQueue = fullMoviesQueue.slice(12);
     return (
-
         <View>
-            <MovieSwiper movies={getRandomMovieList(10)} />
+            <MovieSwiper movies={movies} moviesQueue={moviesQueue} />
         </View>
-
-
     );
 };
+
+
 
 
 const styles = StyleSheet.create({
@@ -41,3 +41,5 @@ const styles = StyleSheet.create({
 
 
 export default Swipe
+
+
