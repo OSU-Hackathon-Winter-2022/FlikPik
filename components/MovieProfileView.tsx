@@ -46,7 +46,7 @@ export function MovieProfileView(props : MovieProps) {
                     {'\n'}
                     Plot: {props.plot} {'\n'}
                     {'\n'}
-                    Starring: {props.stars.split(', ').slice(1).join(', ')} {'\n'}
+                    Starring: {props.stars} {'\n'}
                     IMDB Score: {props.score} {'\n'}
                     </Text>
             </View>
