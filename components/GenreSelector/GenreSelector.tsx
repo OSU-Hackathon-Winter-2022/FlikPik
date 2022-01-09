@@ -81,7 +81,8 @@ import CustomInput from '../../components/CustomInput';
 import CustomInput2 from '../../components/CustomInput2';
 import Recommendations from '../../screens/RecommendationsScreen/RecommendationsScreen';
 
-const genreList = ['Mystery', 'Thriller', 'Romance', 'Sci-Fi', 'Family', 'Film-Noir', 'Biography', 'Drama', 'Crime', 'Western', 'Musical', 'History', 'War', 'Comedy', 'Fantasy', 'Action', 'Adventure', 'Animation', 'Horror', 'Music', 'Sport'];
+const genreList = ['Pick for me!', 'Mystery', 'Thriller', 'Romance', 'Sci-Fi', 'Family', 'Film-Noir', 'Biography', 'Drama', 'Crime', 'Western', 'Musical', 'History', 'War', 'Comedy', 'Fantasy', 'Action', 'Adventure', 'Animation', 'Horror', 'Music', 'Sport'];
+export let genreString = genreList[0]
 
 const opacities = {
   0: 1,
@@ -141,10 +142,11 @@ const ItemToRender = ({ item, index }, indexSelected, vertical) => {
 export default function GenreSelector(props) {
   function handleChange(index) {
     setSelected(index);
+    genreString = genreList[index];
     // console.warn(`Your selection is ${genreList[selected]}`)
   }
 
-  const [selected, setSelected] = React.useState(4);
+  const [selected, setSelected] = React.useState(0);
   const navigation = useNavigation();
 
   const [passGenre, setGenre] = useState('');
@@ -173,25 +175,13 @@ export default function GenreSelector(props) {
       </View>
 
       <View style={{height: 100}}>
-        <Text></Text>
-        <Text>Your selection is: </Text>
         <View style={{flex: 1, margin: 10, marginTop: 0}}>
-        <TextInput
-          style={styles.input}
-          value={passGenre}
-          onChangeText={(genre) => setGenre(genre)}
-          // setValue={setGenre}
-          // placeholder={'{genreList[selected]}'}
-          // style={styles.inputStyle}
-        />
 
         <Button
-          title="Start Swiping!"
-          onPress={() =>
-            navigation.navigate('Swipe', {
-              paramKey: passGenre,
-            })
-          }
+            title="Start Swiping!"
+            onPress={() => {
+                navigation.navigate('Swipe')
+            }}
         />
 
 
