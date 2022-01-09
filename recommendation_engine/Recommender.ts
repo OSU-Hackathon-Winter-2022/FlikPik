@@ -35,14 +35,15 @@ function getRandomInt(min, max) {
 }
 
 export function getRandomMovieList(number) {
-    
+    const auth = getAuth();
+    const user = auth.currentUser;
     let selected = new Set();
     let movies: any[] = [];
     let i = 0;
 
     if (user) {
-        const uid = user.uid;
-        get(child(databaseRef, `user_' + uid + '/unswiped_movies`)).then((snapshot) => {
+        let uid = user.uid;
+        get(child(databaseRef, 'user_' + uid + '/unswiped_movies')).then((snapshot) => {
             if (snapshot.exists()) {
                 let unswipedMoviesList: any[] = snapshot.val();
                 while(i < number) {
@@ -83,11 +84,13 @@ export const matched_movies = new Set();
 export const unmatched_movies = new Set();
 
 export function addMatched(movie) {
+    const auth = getAuth();
+    const user = auth.currentUser;
     if (user) {
         const uid = user.uid;
         get(child(databaseRef, 'user_' + uid)).then((snapshot) => {
             let user_db = snapshot.val();
-            if (snapshot.exists()) {
+            if (user_db) {
                 // Initialize new user's db under their userid
                 const uid = user.uid;
                 if (!("matched_movies" in user_db)) {
@@ -102,9 +105,9 @@ export function addMatched(movie) {
                     set(newPostRef, movie["title"]);
                     matched_movies.add(movie)
             }
-        } else {
-                console.log("No data available");
-            }
+            } else {
+                    console.log("No data available");
+                }
     }).catch((error) => {
     console.error(error);
     });
@@ -114,6 +117,8 @@ export function addMatched(movie) {
 }
 
 export function addUnmatched(movie) {
+    const auth = getAuth();
+    const user = auth.currentUser;
     if (user) {
         const uid = user.uid;
         get(child(databaseRef, 'user_' + uid)).then((snapshot) => {
