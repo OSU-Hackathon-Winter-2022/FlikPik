@@ -34,6 +34,7 @@ function getRandomInt(min, max) {
 export function getRandomMovieList(number) {
     const auth = getAuth();
     const user = auth.currentUser;
+    
     let selected = new Set();
     let movies: any[] = [];
     let i = 0;
@@ -64,7 +65,7 @@ export function getRandomMovieList(number) {
         // ##### pass in parameter/variable from GenreSelector
         // ##### use parameter to generate Movie List
     } else {
-        console.log("No user is currently logged in.")
+        console.log("No user is currently logged in. ref: getRandomMovieList")
     }
 
     return movies
