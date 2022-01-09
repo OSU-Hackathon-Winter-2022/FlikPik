@@ -71,7 +71,6 @@ let similarity_matrix = recommendation_config["similarity-matrix"]
 const matched_ids = new Set();
 const unmatched_ids = new Set();
 
-
 export const matched_movies = new Set();
 export const unmatched_movies = new Set();
 

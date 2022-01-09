@@ -4,26 +4,11 @@ import { database, databaseRef } from "../firebase/firebase-config";
 import { ref, onValue, update, set, get, child, push } from "firebase/database";
 import { getAuth } from 'firebase/auth';
 import GenreSelector from '../components/GenreSelector'
+import {genreString} from "../components/GenreSelector/GenreSelector"
 
-let topMovieProfilesList = [];
-let topMovieProfilesObject: { [id : string ] : any } = {};
-for (let movie of db_json["movies"]) {
-    let movieProfile = {
-        id: movie.id,
-        title: movie.title,
-        year: movie.year,
-        runtime: movie.runtime,
-        coverImageURL: movie.coverImageURL,
-        stars: movie.stars,
-        genres: movie.genres,
-        rating: movie.rating,
-        score: movie.score,
-        plot: movie.plot
-    }
-    console.log(movie)
-    topMovieProfilesList.push(movieProfile);
-    topMovieProfilesObject[movie.id] = movieProfile;
-}
+
+const auth = getAuth();
+const user = auth.currentUser;
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -34,16 +19,31 @@ function getRandomInt(min, max) {
 export function getRandomMovieList(number) {
     const auth = getAuth();
     const user = auth.currentUser;
-    
     let selected = new Set();
     let movies: any[] = [];
     let i = 0;
 
     if (user) {
-        const uid = user.uid;
-        get(child(databaseRef, `user_' + uid + '/unswiped_movies`)).then((snapshot) => {
+        let uid = user.uid;
+        get(child(databaseRef, 'user_' + uid + '/unswiped_movies')).then((snapshot) => {
             if (snapshot.exists()) {
                 let unswipedMoviesList: any[] = snapshot.val();
+                let num_tries = 0
+                while(i < number && num_tries < 250) {
+                    let randIndex = getRandomInt(0, unswipedMoviesList.length);       // won't need this because of the parameter
+                    let randMovie = unswipedMoviesList[randIndex]
+                    if (!selected.has(randIndex)) {
+                        let selectedGenreInMovie = randMovie.genres.toLowerCase().includes(genreString.toLowerCase());
+                        if (genreString != "" && (genreString == "Pick for me!" || selectedGenreInMovie)) {
+                            movies.push(randMovie);       // randindex needs to be parameter
+                            selected.add(randIndex);        // randindex needs to be parameter
+                            i++;
+                        } else {
+                            num_tries++;
+                        }
+                    }
+                }
+
                 while(i < number) {
                     let randIndex = getRandomInt(0, unswipedMoviesList.length);       // won't need this because of the parameter
                     let randTitle = unswipedMoviesList[randIndex];
@@ -65,7 +65,7 @@ export function getRandomMovieList(number) {
         // ##### pass in parameter/variable from GenreSelector
         // ##### use parameter to generate Movie List
     } else {
-        console.log("No user is currently logged in. ref: getRandomMovieList")
+        console.log("No user is currently logged in.")
     }
 
     return movies
@@ -88,7 +88,7 @@ export function addMatched(movie) {
         const uid = user.uid;
         get(child(databaseRef, 'user_' + uid)).then((snapshot) => {
             let user_db = snapshot.val();
-            if (snapshot.exists()) {
+            if (user_db) {
                 // Initialize new user's db under their userid
                 const uid = user.uid;
                 if (!("matched_movies" in user_db)) {
@@ -103,9 +103,9 @@ export function addMatched(movie) {
                     set(newPostRef, movie["title"]);
                     matched_movies.add(movie)
             }
-        } else {
-                console.log("No data available");
-            }
+            } else {
+                    console.log("No data available");
+                }
     }).catch((error) => {
     console.error(error);
     });
@@ -148,6 +148,23 @@ export function addUnmatched(movie) {
 }
 
 export function recommendations(disliked_movies, liked_movies) {
+    let topMovieProfilesObject: { [id : string ] : any } = {};
+    for (let movie of db_json["movies"]) {
+        let movieProfile = {
+            id: movie.id,
+            title: movie.title,
+            year: movie.year,
+            runtime: movie.runtime,
+            coverImageURL: movie.coverImageURL,
+            stars: movie.stars,
+            genres: movie.genres,
+            rating: movie.rating,
+            score: movie.score,
+            plot: movie.plot
+        }
+    topMovieProfilesObject[movie.id] = movieProfile;
+    }
+
     if (liked_movies.length == 0) {
         return getRandomMovieList(10);
     }

@@ -8,7 +8,7 @@ def parse_movie_metadata(movie_json):
     data_set = dict()
     all_genres = set()
     unswiped_movies = list()
-    all_movies = list()
+    all_movies = dict()
     
     with open(movie_json) as file:
         top_250_data = json.load(file)
@@ -51,7 +51,7 @@ def parse_movie_metadata(movie_json):
             genre = genre.lower()
             all_genres.add(genre)
 
-        all_movies.append(curr_movie)
+        all_movies[formatted_title] = curr_movie
 
     # Initialize data set genres
     data_set['genres'] = list(all_genres)
