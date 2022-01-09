@@ -10,13 +10,12 @@ import { genreString } from '../../components/GenreSelector/GenreSelector';
 
 const Swipe = () => {
     console.log(genreString)
-    const navigation = useNavigation();
-    let fullMoviesQueue = getRandomMovieList(24);
+    let fullMoviesQueue = getRandomMovieList(24, genreString);
     let movies = fullMoviesQueue.slice(0, 12);
     let moviesQueue = fullMoviesQueue.slice(12);
     return (
         <View>
-            <MovieSwiper movies={movies} moviesQueue={moviesQueue} />
+            <MovieSwiper movies={movies} moviesQueue={moviesQueue} genreString={genreString[0]} />
         </View>
     );
 };

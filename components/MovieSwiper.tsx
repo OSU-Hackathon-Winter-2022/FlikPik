@@ -28,12 +28,14 @@ const styles = StyleSheet.create({
 
 type SwiperProps = {
     movies: Array<Object>,
-    moviesQueue: Array<Object>
+    moviesQueue: Array<Object>,
+    genreString: string
 }
 
 type SwiperState = {
     movies: Array<Object>,
-    moviesQueue: Array<Object>
+    moviesQueue: Array<Object>,
+    genreString: string,
     swipedAllMovies: Boolean,
     swipeDirection: string,
     swipedLeft: Array<Object>,
@@ -46,6 +48,7 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
       this.state = {
         movies: props.movies,
         moviesQueue: props.moviesQueue,
+        genreString: props.genreString,
         swipedAllMovies: false,
         swipeDirection: '',
         swipedLeft: [],
@@ -59,7 +62,7 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
             newQueue.push(m)
         }
         if (newQueue.length == 0) {
-            newQueue = getRandomMovieList(12);
+            newQueue = getRandomMovieList(12, this.state.genreString);
         }
         let newMovies = Array.from(this.state.movies)
         let i = 0;
@@ -88,7 +91,7 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
         this.state.swipedLeft.push(movie_details)
         addUnmatched(Object.assign({}, movie_details))
         if (index == this.state.movies.length-3) {
-            this.alterMovieStack(recommendations(this.state.swipedLeft, this.state.swipedRight), 10, 0)
+            this.alterMovieStack(recommendations(this.state.swipedLeft, this.state.swipedRight, this.state.genreString), 10, 0)
             this.setState({
                 swipedLeft: [],
                 swipedRight: []
@@ -103,7 +106,7 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
         this.state.swipedRight.push(movie_details)
         addMatched(Object.assign({}, movie_details))
         if (index == this.state.movies.length-3) {
-            this.alterMovieStack(recommendations(this.state.swipedLeft, this.state.swipedRight), 10, 0)
+            this.alterMovieStack(recommendations(this.state.swipedLeft, this.state.swipedRight, this.state.genreString), 10, 0)
             this.setState({
                 swipedLeft: [],
                 swipedRight: []

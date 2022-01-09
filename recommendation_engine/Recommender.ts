@@ -28,35 +28,27 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
 }
 
-export function getRandomMovieList(number) {
+export function getRandomMovieList(number, genreString) {
     let selected = new Set();
     let movies = [];
     let recmovies = [];
     let i = 0;
 
-    // {route.params.paramKey}
-    let selectgenre = 'Drama';
-
     // ##### pass in parameter/variable from GenreSelector
     // ##### use parameter to generate Movie List
     while(i < number) {
         let randIndex = getRandomInt(0, topMovieProfilesList.length);       // won't need this because of the parameter
-
+        let randMovie = topMovieProfilesList[randIndex]
         if (!selected.has(randIndex)) {
-            movies.push(topMovieProfilesList[randIndex]);       // randindex needs to be parameter
-            selected.add(randIndex);        // randindex needs to be parameter
-            i++;
-
+            let selectedGenreInMovie = randMovie.genres.toLowerCase().includes(genreString.toLowerCase());
+            if (genreString != "" && (genreString == "Pick for me!" || selectedGenreInMovie)) {
+                movies.push(randMovie);       // randindex needs to be parameter
+                selected.add(randIndex);        // randindex needs to be parameter
+                i++;
             }
         }
-    // while(i < movies.length) {
-    //     let element = movies[i];
-    //     if ( element == selectgenre ) {
-    //         recmovies.push(element);
-    //         i++;
-    //     }
-    // }
-    return movies
+    }
+    return movies;
 }
 
 let id_to_imdb = recommendation_config["id-to-imdb"]
@@ -78,9 +70,9 @@ export function addUnmatched(movie) {
     unmatched_movies.add(movie)
 }
 
-export function recommendations(disliked_movies, liked_movies) {
+export function recommendations(disliked_movies, liked_movies, genreString) {
     if (liked_movies.length == 0) {
-        return getRandomMovieList(10);
+        return getRandomMovieList(10, genreString);
     }
     let dont_add = new Set()
     for (const movie of liked_movies) {
