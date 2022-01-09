@@ -64,7 +64,7 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
     onSwipedLeft = (index) => {
         let movie_details = this.state.movies[index]
         this.state.swipedLeft.push(movie_details)
-        addUnmatched(movie_details.title)
+        addUnmatched(Object.assign({}, movie_details))
         if (index == this.state.movies.length-1) {
             let recommend = recommendations(this.state.swipedLeft, this.state.swipedRight)
             this.setState({
@@ -83,7 +83,7 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
     onSwipedRight = (index) => {
         let movie_details = this.state.movies[index]
         this.state.swipedRight.push(movie_details)
-        addMatched(movie_details.title)
+        addMatched(Object.assign({}, movie_details))
         if (index == this.state.movies.length-1) {
             let recommend = recommendations(this.state.swipedLeft, this.state.swipedRight)
             this.setState({
