@@ -9,7 +9,7 @@ const auth = getAuth();
 const user = auth.currentUser;
 
 let topMovieProfilesList = [];
-let topMovieProfilesObject = {};
+let topMovieProfilesObject: { [id : string ] : any } = {};
 for (let movie of db_json["movies"]) {
     let movieProfile = {
         id: movie.id,
@@ -23,6 +23,7 @@ for (let movie of db_json["movies"]) {
         score: movie.score,
         plot: movie.plot
     }
+    console.log(movie)
     topMovieProfilesList.push(movieProfile);
     topMovieProfilesObject[movie.id] = movieProfile;
 }
@@ -36,20 +37,21 @@ function getRandomInt(min, max) {
 export function getRandomMovieList(number) {
     
     let selected = new Set();
-    let movies = [];
+    let movies: any[] = [];
     let i = 0;
 
-    const dbRef = ref(getDatabase());
     if (user) {
         const uid = user.uid;
-        get(child(dbRef, `user_' + uid + '/unswiped_movies`)).then((snapshot) => {
+        get(child(databaseRef, `user_' + uid + '/unswiped_movies`)).then((snapshot) => {
             if (snapshot.exists()) {
-                let unswipedMoviesList = snapshot.val();
+                let unswipedMoviesList: any[] = snapshot.val();
                 while(i < number) {
                     let randIndex = getRandomInt(0, unswipedMoviesList.length);       // won't need this because of the parameter
-                    if (!selected.has(randIndex)) {
-                        movies.push(unswipedMoviesList[randIndex]);       // randindex needs to be parameter
-                        selected.add(randIndex);        // randindex needs to be parameter
+                    let randTitle = unswipedMoviesList[randIndex];
+                    let randMovie = db_json['movies'][randTitle];
+                    if (!selected.has(randTitle)) {
+                        movies.push(randMovie);       // randindex needs to be parameter
+                        selected.add(randTitle);        // randindex needs to be parameter
                         i++;
                     }
                 }
