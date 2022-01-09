@@ -51,12 +51,12 @@ const unmatched_ids = new Set();
 export const matched_movies = new Set();
 export const unmatched_movies = new Set();
 
-export function addMatched(title) {
-    matched_movies.add(title)
+export function addMatched(movie) {
+    matched_movies.add(movie)
 }
 
-export function addUnmatched(title) {
-    unmatched_movies.add(title)
+export function addUnmatched(movie) {
+    unmatched_movies.add(movie)
 }
 
 export function recommendations(disliked_movies, liked_movies) {
