@@ -65,9 +65,8 @@ function SwipeTab() {
       <Tab.Screen name="Swipe" component={SwipeScreen} options={{ headerShown: false }} />
       <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }}/>
       <Tab.Screen name="Chat Rooms" component={MessagesScreen} />
-      
       <Tab.Screen name="Matches" component={RecommendationsScreen} />
-      <Tab.Screen name="Settings" component={SettingsScreen} options={{ headerShown: false }}/>
+      <Tab.Screen name="Settings" component={SettingsScreen} />
     </Tab.Navigator>
   );
 }
@@ -80,7 +79,6 @@ function RootNavigation() {
         <Stack.Screen name="SignUp" component={SignUpScreen} options={{ headerShown: false }}/>
         <Stack.Screen name="SwipeMain" component={SwipeTab} options={{ headerShown: false }}/>
         <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }}/>
-        
         <Stack.Screen name="SwipeSecond" component={SwipeScreen} />
         <Stack.Screen name="Settings" component={SettingsScreen} options={{ headerShown: false }}/>
         <Stack.Screen name="Genre" component={GenreScreen} options={{ headerShown: false }}/>
