@@ -2,18 +2,20 @@ import React from 'react'
 import { View, Text, StyleSheet, SafeAreaView } from 'react-native'
 import { matched_movies } from '../../recommendation_engine/Recommender'
 import GenreSelector from '../../components/GenreSelector'
+import { test_movies, getRandomMovieList } from '../../text'
 
 // {route}
 const Recommendations = () => {
     let movies = Array.from(matched_movies)
     let titles = movies.map((movie) => {return movie.title})
 
-
-
+    let list = ['empy']
     return (
 
         <View>
             <Text style={{ fontSize: 24, alignSelf: 'center'}}>{titles.join('\n')}</Text>
+
+
         </View>
 
     //     <SafeAreaView style={{flex: 1}}>

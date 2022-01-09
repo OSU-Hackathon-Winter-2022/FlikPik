@@ -178,7 +178,7 @@ export default function GenreSelector(props) {
         <View style={{flex: 1, margin: 10, marginTop: 0}}>
         <TextInput
           style={styles.input}
-          value={passGenre}
+          value={genreList[selected]}
           onChangeText={(genre) => setGenre(genre)}
           // setValue={setGenre}
           // placeholder={'{genreList[selected]}'}
