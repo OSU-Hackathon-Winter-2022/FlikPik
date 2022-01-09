@@ -1,74 +1,21 @@
 import React from 'react'
-import { StyleSheet, View, Text, SafeAreaView } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import Navigation from '../../navigation';
-import Tabs from '../../navigation/tabs';
+import { StyleSheet, View } from 'react-native';
 import { MovieSwiper } from '../../components/MovieSwiper';
 import top_movies from '../../database/top_250_by_rating.json'
-import CustomButton from '../../components/CustomButton';
-import { useState } from 'react';
-import CustomInput2 from '../../components/CustomInput2';
 import { useNavigation } from '@react-navigation/native';
+import { getRandomMovieList } from '../../recommendation_engine/Recommender'
 
-let topMovieProfiles = [];
-for (let movie of top_movies.results) {
-    let movieProfile = {
-        id: movie.id,
-        title: movie.title,
-        year: movie.description.slice(1, 5),
-        runtime: movie.runtimeStr,
-        coverImageURL: movie.image,
-        stars: movie.stars,
-        genres: movie.genres,
-        rating: movie.contentRating,
-        score: movie.imDbRating,
-        plot: movie.plot
-    }
-    topMovieProfiles.push(movieProfile);
-}
-
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
-}
-
-let selected = new Set();
-let default_movies = [];
-let i = 0;
-while(i < 10) {
-    let randIndex = getRandomInt(0, topMovieProfiles.length);
-    if (!selected.has(randIndex)) {
-        default_movies.push(topMovieProfiles[randIndex]);
-        selected.add(randIndex);
-        i++;
-    }
-}
 
 const Swipe = () => {
     const navigation = useNavigation();
 
-    const onTestPress = () => {
-        console.warn('onSignUpPressed');
-        navigation.navigate('Home');
-    };
+
 
     return (
 
-        // <View>
-            <MovieSwiper movies={default_movies} />
-
-            // <CustomButton
-            //     text="Test1"
-            //     onPress={onTestPress}
-            //     />
-
-            // <CustomButton 
-            //     text="Test2"
-            //     onPress={onTestPress}
-            //     type="TERTIARY"
-            //     />
-        // </View>
+        <View>
+            <MovieSwiper movies={getRandomMovieList(10)} />
+        </View>
 
 
     );
@@ -94,14 +41,3 @@ const styles = StyleSheet.create({
 
 
 export default Swipe
-
-
-
-// const App = () => {
-
-//   return (
-//     <NavigationContainer>
-//       <Tabs />
-//     </NavigationContainer>
-//   );
-// }

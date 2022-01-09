@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet, Pressable } from 'react-native'
+import { Text, StyleSheet, Pressable } from 'react-native'
 
 const CustomButton = ({onPress, text, type = "PRIMARY", bgColor, fgColor}) => {
     return (
@@ -22,12 +22,9 @@ const CustomButton = ({onPress, text, type = "PRIMARY", bgColor, fgColor}) => {
 const styles = StyleSheet.create({
     container: {
         backgroundColor: '#3B71F3',
-
-        width: '50%',
-
+        width: '70%',
         padding: 10,
         marginVertical: 5,
-
         alignItems: 'center',
         borderRadius: 5,
     },
@@ -35,9 +32,6 @@ const styles = StyleSheet.create({
     container_PRIMARY: {
         backgroundColor: '#3B71F3',
     },
-
-    container_TERTIARY: {},
-
 
     text: {
         fontWeight: 'bold',

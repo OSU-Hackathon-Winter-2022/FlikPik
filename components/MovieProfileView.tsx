@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, StyleSheet, View, Image } from 'react-native';
+import { Platform, Dimensions, Text, StyleSheet, View, Image, ScrollView } from 'react-native';
 
 type MovieProps = {
     title: string;
@@ -22,21 +22,34 @@ export type MovieProperties = MovieProps;
 export function MovieProfileView(props : MovieProps) {
     let url = props.coverImageURL
     return (
-        <View style={props.style}>
-            <Image source={{uri: url}} style={{position: 'absolute', top: -40, left: 65, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center', resizeMode: 'contain', width: 235, height: 320}} />
-
-            <Text style={{ top: 150, left: 0, right: 0, fontSize: 12, textAlign: 'left', color: 'black' }}>
-                Title: {props.title} {'\n'}
-                Release Year: {props.year} {'\n'}
-                Rating: {props.rating} {'\n'}
-                Runtime: {props.runtime} {'\n'}
-                Genre(s): {props.genres} {'\n'}
-                {'\n'}
-                Plot: {props.plot} {'\n'}
-                {'\n'}
-                Starring: {props.stars} {'\n'}
-                IMDB Score: {props.score} {'\n'}
-                </Text>
+        <View style={{
+            flex: 2,
+            flexDirection: 'column',
+            backgroundColor: '#3B71F3',
+            borderRadius: 50}}>
+            <View style={{flex: 1, alignItems: 'center'}}>
+                <Image source={{uri: url}}
+                style={{
+                    margin: 10, 
+                    marginBottom: 0,
+                    resizeMode: 'contain',
+                    flex: 1,
+                    width: Dimensions.get('screen').width}} />
+            </View>
+            <View style={{flex: 1, margin: 10, marginTop: 0}}>
+                <Text style={{fontSize: 24, textAlign: 'left', color: 'black'}} adjustsFontSizeToFit={true}>
+                    Title: {props.title} {'\n'}
+                    Release Year: {props.year} {'\n'}
+                    Rating: {props.rating} {'\n'}
+                    Runtime: {props.runtime} {'\n'}
+                    Genre(s): {props.genres} {'\n'}
+                    {'\n'}
+                    Plot: {props.plot} {'\n'}
+                    {'\n'}
+                    Starring: {props.stars} {'\n'}
+                    IMDB Score: {props.score} {'\n'}
+                    </Text>
+            </View>
         </View>
     );
 }

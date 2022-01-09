@@ -1,13 +1,10 @@
 import React from 'react';
-import { Text, View, TextInput, StyleSheet,useWindowDimensions, Image } from 'react-native';
+import { Text, View, StyleSheet, TouchableOpacity, useWindowDimensions, Image } from 'react-native';
 import CustomInput from '../../components/CustomInput';
 import CustomButton from '../../components/CustomButton';
 import { useState } from 'react';
 import CustomInput2 from '../../components/CustomInput2';
 import { useNavigation } from '@react-navigation/native';
-import index from '../HomeScreen';
-import Swipe from '../SwipeScreen';
-import Test from '../TestScreen';
 import popcornImage from '../../assets/images/popcorn_controller.jpg'
 import { authentication } from '../../firebase/firebase-config';
 import { signInWithEmailAndPassword } from 'firebase/auth';
@@ -18,27 +15,30 @@ const SignInScreen = () => {
     const [password, setPassword] = useState('');
     const [isSignedIn, setIsSignedIn] = useState(false);
 
-    const {height} = useWindowDimensions();
+
     const navigation = useNavigation();
 
+    const function1 = () => {
+        setEmail("")
+        setPassword("")
+    };
+
+
     const onSignInPressed = () => {
-        console.warn("Signing in");
+        // console.warn("Signing in");
         // validate user
         signInWithEmailAndPassword(authentication, email, password)
         .then((re) => {
             console.log(re);
             setIsSignedIn(true);
-            navigation.navigate('Test')
+            navigation.navigate('SwipeMain')
         })
         .catch((re) => {
             console.log(re);
         })
 
     };
-    // const onForgotPasswordPressed = () => {
-    //     console.warn('Forgot Password');
-    //     navigation.navigate('ForgotPassword')
-    // };
+
     const onSignUpPressed = () => {
         console.warn('onSignUpPressed');
         navigation.navigate('SignUp');
@@ -49,9 +49,6 @@ const SignInScreen = () => {
             <Text style={{color: '#191970', fontSize:20, fontWeight:'bold'}}>Welcome to</Text>
             <Text style={{color: '#191970', fontSize:35, fontWeight:'bold', paddingBottom:15}}>FlikPik</Text>
 
-            <Text style={{color: '#191970', fontSize:10, fontWeight:'bold'}}>Test User:</Text>
-            <Text style={{color: '#191970', fontSize:10, fontWeight:'bold'}}>email: abc@gmail.com</Text>
-            <Text style={{color: '#191970', fontSize:10, fontWeight:'bold'}}>password: 123456</Text>
             <CustomInput
                 placeholder="Email"
                 value={email}
@@ -66,19 +63,12 @@ const SignInScreen = () => {
 
             <CustomButton
                 text="Sign In"
-                onPress={onSignInPressed}
+                onPress={()=> { function1(); onSignInPressed(); }}
                 />
 
-            {/* <CustomButton 
-                text="Forgot Password?"
-                onPress={onForgotPasswordPressed}
-                type="TERTIARY"
-                /> */}
-
             <CustomButton 
-                text="Don't have an account? Sign Up"
+                text="Don't have an account?"
                 onPress={onSignUpPressed}
-                type="TERTIARY"
                 />
 
             <Image style={styles.popImage} source={popcornImage}/>
@@ -91,7 +81,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        padding: 20,
+        padding: 60,
 
     },
     popImage: {

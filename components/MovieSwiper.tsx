@@ -1,20 +1,16 @@
 import React, { Component, useState } from 'react'
 import Swiper from 'react-native-deck-swiper'
-import { StyleSheet, View } from 'react-native'
+import { Button, Dimensions, StyleSheet, View } from 'react-native'
 import { MovieProperties, MovieProfileView } from './MovieProfileView'
+import { recommendations } from '../recommendation_engine/Recommender'
+import { addMatched, addUnmatched } from '../recommendation_engine/Recommender'
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: '#F5FCFF'
-    },
-    movie: {
-      flex: 1,
-      borderRadius: 4,
-      borderWidth: 2,
-      borderColor: '#E8E8E8',
-      justifyContent: 'center',
-      backgroundColor: 'white'
+      flexDirection: 'column',
+      backgroundColor: '#F5FCFF',
+      height: Dimensions.get('screen').height,
+      width: Dimensions.get('screen').width
     },
     text: {
       textAlign: 'center',
@@ -37,7 +33,9 @@ type SwiperState = {
     movies: Array<Object>,
     swipedAllMovies: Boolean,
     swipeDirection: string,
-    movieIndex: number
+    movieIndex: number,
+    swipedLeft: Array<Object>,
+    swipedRight: Array<Object>
 }
 
 export class MovieSwiper extends Component<SwiperProps, SwiperState> {
@@ -47,67 +45,135 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
         movies: props.movies,
         swipedAllMovies: false,
         swipeDirection: '',
-        movieIndex: 0
+        movieIndex: 0,
+        swipedLeft: [],
+        swipedRight: []
       }
     }
   
     renderMovieProfile = (movie: MovieProperties, index: number) => {
         return (
-            <MovieProfileView style={styles.movie} {...movie} />
+            <MovieProfileView {...this.state.movies[this.state.movieIndex]} />
         )
     };
   
     onSwiped = (type) => {
       console.log(`on swiped ${type}`)
     }
-  
-    onSwipedAllMovies = () => {
-      this.setState({
-        swipedAllMovies: true
-      })
-    };
+
+    onSwipedLeft = (index) => {
+        let movie_details = this.state.movies[index]
+        this.state.swipedLeft.push(movie_details)
+        addUnmatched(movie_details.title)
+        if (index == this.state.movies.length-1) {
+            let recommend = recommendations(this.state.swipedLeft, this.state.swipedRight)
+            this.setState({
+                movies: recommend,
+                movieIndex: 0,
+                swipedLeft: [],
+                swipedRight: []
+            })
+        } else {
+            this.setState({
+                movieIndex: this.state.movieIndex + 1
+            })
+        }
+    }
+
+    onSwipedRight = (index) => {
+        let movie_details = this.state.movies[index]
+        this.state.swipedRight.push(movie_details)
+        addMatched(movie_details.title)
+        if (index == this.state.movies.length-1) {
+            let recommend = recommendations(this.state.swipedLeft, this.state.swipedRight)
+            this.setState({
+                movies: recommend,
+                movieIndex: 0,
+                swipedLeft: [],
+                swipedRight: []
+            })
+        } else {
+            this.setState({
+                movieIndex: this.state.movieIndex + 1
+            })
+        }
+    }
+
+    // onSwipedAllMovies = () => {
+    //     console.log("all done")
+    //     let recommend = recommendations(this.state.swipedLeft, this.state.swipedRight)
+    //     this.swiper.setState({
+    //         cards: recommend,
+    //         firstCardIndex: 0
+    //     })
+    //     this.setState({
+    //         movies: recommend,
+    //         swipedLeft: [],
+    //         swipedRight: []
+    //     })
+    //     this.swiper.jumpToCardIndex(0)
+    // };
   
     render () {
-      return (
+        return (
         <View style={styles.container}>
           <Swiper
             ref={swiper => {
               this.swiper = swiper
             }}
-            onSwiped={() => this.onSwiped('general')}
-            onSwipedLeft={() => this.onSwiped('left')}
-            onSwipedRight={() => this.onSwiped('right')}
-            onSwipedTop={() => this.onSwiped('top')}
-            onSwipedBottom={() => this.onSwiped('bottom')}
+            //onSwiped={() => this.onSwiped('general')}
+            onSwipedLeft={(index) => this.onSwipedLeft(index)}
+            onSwipedRight={(index) => this.onSwipedRight(index)}
+            // onSwipedTop={() => this.onSwiped('top')}
+            // onSwipedBottom={() => this.onSwiped('bottom')}
+            disableBottomSwipe={true}
+            disableTopSwipe={true}
+            infinite={true}
             cards={this.state.movies}
             cardIndex={this.state.movieIndex}
             cardVerticalMargin={80}
             renderCard={this.renderMovieProfile}
-            onSwipedAll={this.onSwipedAllMovies}
-            stackSize={3}
+            onSwipedAll={() => this.onSwipedAllMovies()}
+            stackSize={1}
             stackSeparation={15}
             overlayLabels={{
-              bottom: {
-                title: 'SKIP',
-                style: {
-                  label: {
-                    backgroundColor: 'black',
-                    borderColor: 'black',
-                    color: 'white',
-                    borderWidth: 1
-                  },
-                  wrapper: {
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                  }
-                }
-              },
+            //   bottom: {
+            //     title: 'SKIP',
+            //     style: {
+            //       label: {
+            //         backgroundColor: 'black',
+            //         borderColor: 'black',
+            //         color: 'white',
+            //         borderWidth: 1
+            //       },
+            //       wrapper: {
+            //         flexDirection: 'column',
+            //         alignItems: 'center',
+            //         justifyContent: 'center'
+            //       }
+            //     }
+            //   },
+            //   top: {
+            //     title: 'SUPER LIKE',
+            //     style: {
+            //       label: {
+            //         backgroundColor: 'blue',
+            //         borderColor: 'black',
+            //         color: 'white',
+            //         borderWidth: 1
+            //       },
+            //       wrapper: {
+            //         flexDirection: 'column',
+            //         alignItems: 'center',
+            //         justifyContent: 'center'
+            //       }
+            //     }
+            //   },
               left: {
                 title: 'NOPE',
                 style: {
                   label: {
-                    backgroundColor: 'black',
+                    backgroundColor: 'red',
                     borderColor: 'black',
                     color: 'white',
                     borderWidth: 1
@@ -125,7 +191,7 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
                 title: 'LIKE',
                 style: {
                   label: {
-                    backgroundColor: 'black',
+                    backgroundColor: 'green',
                     borderColor: 'black',
                     color: 'white',
                     borderWidth: 1
@@ -136,22 +202,6 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
                     justifyContent: 'flex-start',
                     marginTop: 30,
                     marginLeft: 30
-                  }
-                }
-              },
-              top: {
-                title: 'SUPER LIKE',
-                style: {
-                  label: {
-                    backgroundColor: 'black',
-                    borderColor: 'black',
-                    color: 'white',
-                    borderWidth: 1
-                  },
-                  wrapper: {
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center'
                   }
                 }
               }

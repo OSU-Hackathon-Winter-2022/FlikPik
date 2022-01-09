@@ -1,52 +1,37 @@
 import React from 'react';
-import { Text, View, TextInput, StyleSheet,useWindowDimensions, Image } from 'react-native';
-import CustomInput from '../../components/CustomInput';
+import { Text, View, StyleSheet,useWindowDimensions, Image } from 'react-native';
 import CustomButton from '../../components/CustomButton';
-import { useState } from 'react';
-import CustomInput2 from '../../components/CustomInput2';
 import { useNavigation } from '@react-navigation/native';
-import index from '../HomeScreen';
-import Swipe from '../SwipeScreen';
 import popcornImage from '../../assets/images/popcorn_controller.jpg'
-import { authentication } from '../../firebase/firebase-config';
-import { signInWithEmailAndPassword } from 'firebase/auth';
+
 
 
 const Test = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [isSignedIn, setIsSignedIn] = useState(false);
 
     const {height} = useWindowDimensions();
     const navigation = useNavigation();
 
     const onHomePressed = () => {
-        console.warn("Signing in");
+        // console.warn("Signing in");
         navigation.navigate('Home')
     };
     const onGenrePressed = () => {
-        console.warn("Signing in");
+        // console.warn("Signing in");
         navigation.navigate('Genre')
     };
-    
     const onSwipePressed = () => {
-        console.warn("Signing in");
+        // console.warn("Signing in");
         navigation.navigate('Swipe')
     };
-    
-    const onRecommendationPressed = () => {
-        console.warn("Signing in");
-        navigation.navigate('Recommendation')
+    const onRecommendationsPressed = () => {
+        // console.warn("Signing in");
+        navigation.navigate('Matches')
     };
-    
     const onChatPressed = () => {
-        console.warn("Signing in");
+        // console.warn("Signing in");
         navigation.navigate('Chat')
     };
-    // const onForgotPasswordPressed = () => {
-    //     console.warn('Forgot Password');
-    //     navigation.navigate('ForgotPassword')
-    // };
+
 
 
     return (
@@ -69,13 +54,12 @@ const Test = () => {
                 />
             <CustomButton
                 text="Recommendation Page"
-                onPress={onRecommendationPressed}
+                onPress={onRecommendationsPressed}
                 />
             <CustomButton
                 text="Chat Page"
                 onPress={onChatPressed}
                 />
-
 
             {/* <CustomButton 
                 text="Don't have an account? Sign Up"
