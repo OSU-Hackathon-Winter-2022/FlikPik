@@ -44,7 +44,7 @@ const SignUpScreen = () => {
             // Carry on with onboarding
             console.log(re);
             setIsSignedIn(true);
-            navigation.navigate('Genre')
+            navigation.navigate('SwipeMain')
         })
         .catch((re) => {
             console.log(re);
