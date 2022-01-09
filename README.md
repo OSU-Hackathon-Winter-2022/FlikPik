@@ -20,9 +20,8 @@ You can start by cloning this repository. Once that is done, there a few methods
 
 You can run the app quickly by doing the following:
 
-<ol>
-<li>Download the Expo Go app on [Android](https://play.google.com/store/apps/details?id=host.exp.exponent) or on [iOS](https://apps.apple.com/us/app/expo-go/id982107779)</li>
-<li>Navigate to the [Expo Project](https://expo.dev/@hakkilab/FlikPik) page in a web browser</li>
-<li>Open the Expo Go app and select "Scan QR Code" the scan the QR code on the project</li>
-<li>Wait for the project to load onto your device and enjoy!</li>
-</ol>
+
+1. Download the Expo Go app on [Android](https://play.google.com/store/apps/details?id=host.exp.exponent) or on [iOS](https://apps.apple.com/us/app/expo-go/id982107779)<br>
+2. Navigate to the [Expo Project](https://expo.dev/@hakkilab/FlikPik) page in a web browser<br>
+3. Open the Expo Go app and select "Scan QR Code" the scan the QR code on the project<br>
+4. Wait for the project to load onto your device and enjoy!<br>
