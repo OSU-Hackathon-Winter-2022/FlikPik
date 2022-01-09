@@ -13,6 +13,7 @@ import MessagesScreen from '../screens/MessagesScreen/MessagesScreen'
 import RecommendationsScreen from '../screens/RecommendationsScreen/RecommendationsScreen';
 import TestScreen from '../screens/TestScreen/TestScreen';
 import { Ionicons } from '@expo/vector-icons';
+import { matched_movies } from '../recommendation_engine/Recommender';
 
 
 const Stack = createNativeStackNavigator();
@@ -65,7 +66,7 @@ function SwipeTab() {
       <Tab.Screen name="Swipe" component={SwipeScreen} options={{ headerShown: false }} />
       <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }}/>
       <Tab.Screen name="Chat Rooms" component={MessagesScreen} />
-      <Tab.Screen name="Matches" component={RecommendationsScreen} />
+      <Tab.Screen name="Matches" component={RecommendationsScreen} initialParams={{movies: matched_movies}} />
       <Tab.Screen name="Settings" component={SettingsScreen} />
     </Tab.Navigator>
   );
