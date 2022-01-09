@@ -15,7 +15,7 @@ const Swipe = () => {
     let moviesQueue = fullMoviesQueue.slice(12);
     return (
         <View>
-            <MovieSwiper movies={movies} moviesQueue={moviesQueue} genreString={genreString[0]} />
+            <MovieSwiper movies={movies} moviesQueue={moviesQueue} genreString={genreString} />
         </View>
     );
 };
