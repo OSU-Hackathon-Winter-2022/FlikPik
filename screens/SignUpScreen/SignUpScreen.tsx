@@ -6,11 +6,8 @@ import CustomButton from '../../components/CustomButton';
 import { useState } from 'react';
 import { NavigationHelpersContext, useNavigation } from '@react-navigation/native';
 import { authentication, database, databaseRef } from '../../firebase/firebase-config';
-import { set, getDatabase, ref, onValue, get, child } from "firebase/database";
-
+import { set, ref, get, child } from "firebase/database";
 import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth';
-
-
 
 const SignUpScreen = () => {
     // const [username, setUsername] = useState('');
