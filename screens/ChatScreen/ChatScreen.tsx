@@ -24,6 +24,8 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 const ChatScreen = () => {
   const [messages, setMessages] = useState([]);
 
+  // ######## Add Users ##########
+
   useEffect(() => {
     setMessages([
       {
