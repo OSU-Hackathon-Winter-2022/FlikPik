@@ -8,25 +8,14 @@ import { getRandomMovieList } from '../../recommendation_engine/Recommender'
 
 
 const Swipe = () => {
-<<<<<<< HEAD
-
-
-
-
-=======
     const navigation = useNavigation();
     let fullMoviesQueue = getRandomMovieList(24);
     let movies = fullMoviesQueue.slice(0, 12);
     let moviesQueue = fullMoviesQueue.slice(12);
->>>>>>> 8284b6f7df5ba95455ab4a3f42d81861514155ff
     return (
         <View>
             <MovieSwiper movies={movies} moviesQueue={moviesQueue} />
         </View>
-<<<<<<< HEAD
-
-=======
->>>>>>> 8284b6f7df5ba95455ab4a3f42d81861514155ff
     );
 };
 
