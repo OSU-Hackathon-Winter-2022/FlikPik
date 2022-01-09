@@ -9,8 +9,7 @@ import { genreString } from '../../components/GenreSelector/GenreSelector';
 
 
 const Swipe = () => {
-    console.log(genreString)
-    let fullMoviesQueue = getRandomMovieList(24, genreString);
+    let fullMoviesQueue = getRandomMovieList(24);
     let movies = fullMoviesQueue.slice(0, 12);
     let moviesQueue = fullMoviesQueue.slice(12);
     return (

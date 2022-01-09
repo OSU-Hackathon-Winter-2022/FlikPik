@@ -1,6 +1,7 @@
 import recommendation_config from "./recommendation_config_top_250.json"
 import top_movies from '../database/top_250_by_rating.json'
 import GenreSelector from '../components/GenreSelector'
+import {genreString} from "../components/GenreSelector/GenreSelector"
 
 
 let topMovieProfilesList = [];
@@ -28,7 +29,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
 }
 
-export function getRandomMovieList(number, genreString) {
+export function getRandomMovieList(number) {
     let selected = new Set();
     let movies = [];
     let recmovies = [];
@@ -82,9 +83,9 @@ export function addUnmatched(movie) {
     unmatched_movies.add(movie)
 }
 
-export function recommendations(disliked_movies, liked_movies, genreString) {
+export function recommendations(disliked_movies, liked_movies) {
     if (liked_movies.length == 0) {
-        return getRandomMovieList(10, genreString);
+        return getRandomMovieList(10);
     }
     let dont_add = new Set()
     for (const movie of liked_movies) {
