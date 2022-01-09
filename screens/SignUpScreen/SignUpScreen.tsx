@@ -5,8 +5,10 @@ import CustomInput2 from '../../components/CustomInput2';
 import CustomButton from '../../components/CustomButton';
 import { useState } from 'react';
 import { NavigationHelpersContext, useNavigation } from '@react-navigation/native';
-import { authentication } from '../../firebase/firebase-config';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { authentication, database, databaseRef } from '../../firebase/firebase-config';
+import { set, getDatabase, ref, onValue, get, child } from "firebase/database";
+
+import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth';
 
 
 
@@ -23,6 +25,26 @@ const SignUpScreen = () => {
         // console.warn('onRegisterPressed');
         createUserWithEmailAndPassword(authentication, email, password)
         .then((re) => {
+            // Get new userid from Firebase
+            const auth = getAuth();
+            const user = auth.currentUser;
+            const uid = user.uid;
+            // Get blank_user_db from Firebase
+            get(child(databaseRef, 'new_user_db')).then((snapshot) => {
+                let user_db = snapshot.val();
+                if (snapshot.exists()) {
+                    // Initialize new user's db under their userid
+                    set(ref(database, "user_" + uid), {
+                        "unswiped_movies" : user_db["unswiped_movies"],
+                    });
+                    console.log();
+                } else {
+                    console.log("No data available");
+                }
+            }).catch((error) => {
+            console.error(error);
+            });
+            // Carry on with onboarding
             console.log(re);
             setIsSignedIn(true);
             navigation.navigate('Genre')
