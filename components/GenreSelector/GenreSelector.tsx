@@ -181,7 +181,7 @@ export default function GenreSelector(props) {
             title="Start Swiping!"
             onPress={() => {
                 genreString = genreList[selected]
-                navigation.navigate('Swipe')
+                navigation.navigate('SwipeMain')
             }}
         />
 
