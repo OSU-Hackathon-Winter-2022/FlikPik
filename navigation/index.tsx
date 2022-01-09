@@ -62,12 +62,12 @@ function SwipeTab() {
       })
       }
     >
-      
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Chat Rooms" component={MessagesScreen} options={{ headerTitleAlign: "center"}} />
       <Tab.Screen name="Swipe" component={SwipeScreen} options={{ headerShown: false }} />
+      <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }}/>
+      <Tab.Screen name="Chat Rooms" component={MessagesScreen} />
+      
       <Tab.Screen name="Matches" component={RecommendationsScreen} />
-      <Tab.Screen name="Settings" component={SettingsScreen} />
+      <Tab.Screen name="Settings" component={SettingsScreen} options={{ headerShown: false }}/>
     </Tab.Navigator>
   );
 }
@@ -77,20 +77,20 @@ function RootNavigation() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="SignIn"component={SignInScreen} options={{ headerShown: false }} />
-        <Stack.Screen name="SignUp" component={SignUpScreen} />
+        <Stack.Screen name="SignUp" component={SignUpScreen} options={{ headerShown: false }}/>
         <Stack.Screen name="SwipeMain" component={SwipeTab} options={{ headerShown: false }}/>
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }}/>
         
-        <Stack.Screen name="SwipeSecond" component={SwipeScreen} options={{ headerShown: false }}/>
-        <Stack.Screen name="Settings" component={SettingsScreen} />
-        <Stack.Screen name="Genre" component={GenreScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="SwipeSecond" component={SwipeScreen} />
+        <Stack.Screen name="Settings" component={SettingsScreen} options={{ headerShown: false }}/>
+        <Stack.Screen name="Genre" component={GenreScreen} options={{ headerShown: false }}/>
         <Stack.Screen name="Chat" component={ChatScreen} options={({route}) => ({
           title: route.params.userName,
-          headerTitleAlign: "center"
+          headerTitleAlign: "center",
         })} />
-        <Stack.Screen name="Messages" component={MessagesScreen} />
-        <Stack.Screen name="Matches" component={RecommendationsScreen} />
-        <Stack.Screen name="Test" component={TestScreen} />
+        <Stack.Screen name="Messages" component={MessagesScreen} options={{ headerShown: false }}/>
+        <Stack.Screen name="Matches" component={RecommendationsScreen} options={{ headerShown: false }}/>
+        <Stack.Screen name="Test" component={TestScreen} options={{ headerShown: false }}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
