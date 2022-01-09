@@ -12,79 +12,13 @@ import {
   MessageText,
   TextSection,
 } from '../../styles/MessageStyles';
-
-const Messages = [
-  {
-    id: '1',
-    userName: 'Chat Room 1',
-    userImg: require('../../assets/images/popcorn.png'),
-    messageTime: '',
-    messageText:
-      'THE GREEN MILE',
-  },
-  {
-    id: '2',
-    userName: 'Chat Room 2',
-    userImg: require('../../assets/images/popcorn.png'),
-    messageTime: '',
-    messageText:
-      'LORD OF THE RINGS',
-  },
-  {
-    id: '3',
-    userName: 'Chat Room 3',
-    userImg: require('../../assets/images/popcorn.png'),
-    messageTime: '',
-    messageText:
-      'DOWNFALL',
-  },
-  {
-    id: '4',
-    userName: 'Chat Room 4',
-    userImg: require('../../assets/images/popcorn.png'),
-    messageTime: '',
-    messageText:
-      'LEON',
-  },
-  {
-    id: '5',
-    userName: 'Chat Room 5',
-    userImg: require('../../assets/images/popcorn.png'),
-    messageTime: '',
-    messageText:
-      'V FOR VENDETTA',
-  },
-  {
-    id: '6',
-    userName: 'Chat Room 6',
-    userImg: require('../../assets/images/popcorn.png'),
-    messageTime: '',
-    messageText:
-      'THE SHOP AROUND THE CORNER 1940',
-  },
-  {
-    id: '7',
-    userName: 'Chat Room 7',
-    userImg: require('../../assets/images/popcorn.png'),
-    messageTime: '',
-    messageText:
-      'THE ELEPHANT MAN',
-  },
-  {
-    id: '8',
-    userName: 'Chat Room 8',
-    userImg: require('../../assets/images/popcorn.png'),
-    messageTime: '',
-    messageText:
-      'ETERNAL SUNSHINE OF THE SPOTLESS MIND',
-  },
-];
+import {Messages} from '../RecommendationsScreen/RecommendationsScreen'
 
 const MessagesScreen = ({navigation}) => {
     return (
       <Container>
         <FlatList 
-          data={Messages}
+          data={Array.from(Messages)}
           keyExtractor={item=>item.id}
           renderItem={({item}) => (
             <Card onPress={() => navigation.navigate('Chat', {userName: item.userName})}>
