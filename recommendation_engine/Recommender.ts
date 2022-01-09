@@ -1,5 +1,6 @@
 import recommendation_config from "./recommendation_config_top_250.json"
 import top_movies from '../database/top_250_by_rating.json'
+import GenreSelector from '../components/GenreSelector'
 
 let topMovieProfilesList = [];
 let topMovieProfilesObject = {};
@@ -30,11 +31,16 @@ export function getRandomMovieList(number) {
     let selected = new Set();
     let movies = [];
     let i = 0;
+
+    // let genre = '{route.params.paramKey}';
+
+    // ##### pass in parameter/variable from GenreSelector
+    // ##### use parameter to generate Movie List
     while(i < number) {
-        let randIndex = getRandomInt(0, topMovieProfilesList.length);
+        let randIndex = getRandomInt(0, topMovieProfilesList.length);       // won't need this because of the parameter
         if (!selected.has(randIndex)) {
-            movies.push(topMovieProfilesList[randIndex]);
-            selected.add(randIndex);
+            movies.push(topMovieProfilesList[randIndex]);       // randindex needs to be parameter
+            selected.add(randIndex);        // randindex needs to be parameter
             i++;
         }
     }

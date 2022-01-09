@@ -1,7 +1,7 @@
-// import React from 'react';
-// import { View, Text, StyleSheet, Pressable } from 'react-native';
-// import {Picker} from '@react-native-picker/picker';
-// import { useState } from 'react';
+
+import {  Pressable } from 'react-native';
+import {Picker} from '@react-native-picker/picker';
+
 
 // const GenreSelector = () => {
 //     const [selectedLanguage, setSelectedLanguage] = React.useState();
@@ -71,10 +71,15 @@
 
 
 import * as React from 'react';
-import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
+import { Text, View, TouchableOpacity, StyleSheet, Button, TextInput } from 'react-native';
 import Constants from 'expo-constants';
 import { useNavigation } from '@react-navigation/native';
+import { useState } from 'react';
 import SmoothPicker from 'react-native-smooth-picker';
+import { getRandomMovieList } from '../../recommendation_engine/Recommender';
+import CustomInput from '../../components/CustomInput';
+import CustomInput2 from '../../components/CustomInput2';
+import Recommendations from '../../screens/RecommendationsScreen/RecommendationsScreen';
 
 const genreList = ['Mystery', 'Thriller', 'Romance', 'Sci-Fi', 'Family', 'Film-Noir', 'Biography', 'Drama', 'Crime', 'Western', 'Musical', 'History', 'War', 'Comedy', 'Fantasy', 'Action', 'Adventure', 'Animation', 'Horror', 'Music', 'Sport'];
 
@@ -133,7 +138,7 @@ const ItemToRender = ({ item, index }, indexSelected, vertical) => {
   );
 };
 
-export default function GenreSelector() {
+export default function GenreSelector(props) {
   function handleChange(index) {
     setSelected(index);
     // console.warn(`Your selection is ${genreList[selected]}`)
@@ -142,15 +147,12 @@ export default function GenreSelector() {
   const [selected, setSelected] = React.useState(4);
   const navigation = useNavigation();
 
+  const [passGenre, setGenre] = useState('');
 
-  // const onSelectPressed = () => {
-  //     // console.warn("Swipe session");
-  //     navigation.navigate('Swipe');
-  // };
-
-  // const var1 = <Text>{`${genreList[selected]}`}</Text>
 
   return (
+    
+
     <View style={styles.container}>
       <View style={styles.wrapperVertical}>
         <SmoothPicker
@@ -165,27 +167,54 @@ export default function GenreSelector() {
           magnet
           selectOnPress
         />
-      <Text></Text>
-      <Text></Text>
-      <Text>{`Your selection is ${genreList[selected]}`}</Text>
+
+      {/* <Text>{`Your selection is ${genreList[selected]}`}</Text> */}
+      {/* <Text>this is used for passing to recommender >> ({genreList[selected]})</Text> */}
       </View>
+
       <View style={{height: 100}}>
         <Text></Text>
-        <Text></Text>
-        <Text></Text>
-        
-        <TouchableOpacity  // NEED TO SEND OUR PICKER VALUE TO SWIPE SCREEN TO ALTER WHAT IS SHOWN
+        <Text>Your selection is: </Text>
+        <View style={{flex: 1, margin: 10, marginTop: 0}}>
+        <TextInput
+          style={styles.input}
+          value={passGenre}
+          onChangeText={(genre) => setGenre(genre)}
+          // setValue={setGenre}
+          // placeholder={'{genreList[selected]}'}
+          // style={styles.inputStyle}
+        />
+
+        <Button
+          title="Start Swiping!"
+          onPress={() =>
+            navigation.navigate('Swipe', {
+              paramKey: passGenre,
+            })
+          }
+        />
+
+
+
+        {/* <TouchableOpacity  // NEED TO SEND OUR PICKER VALUE TO SWIPE SCREEN TO ALTER WHAT IS SHOWN
                 style={styles.button}
                 onPress={() => {
                   navigation.navigate('Swipe');
                 }}
-            >
-                <Text style={{color: "white", fontWeight: "bold", fontSize: 25}}>Start Swiping</Text>
-            </TouchableOpacity>
+            > */}
+                {/* <Text style={{color: "white", fontWeight: "bold", fontSize: 25}}>Start Swiping</Text>
+            </TouchableOpacity> */}
+        </View>
       </View>
     </View>
   );
-}
+  
+};
+
+
+
+
+
 
 
 
@@ -200,6 +229,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: 'white',
   },
+  input: {
+    backgroundColor: 'white',
+    width: '150%',
+    alignSelf: 'center',
+
+    borderColor: '#e8e8e8',
+    borderWidth: 1,
+    borderRadius: 5,
+
+    paddingHorizontal: 10,
+    marginVertical: 5,
+},
   wrapperVertical: {
     width: 250,
     height: 500,
@@ -231,7 +272,21 @@ const styles = StyleSheet.create({
     // marginTop: 180,
 
   },
+  heading: {
+    fontSize: 25,
+    textAlign: 'center',
+    marginVertical: 10,
+  },
+  textStyle: {
+    textAlign: 'center',
+    fontSize: 16,
+    marginVertical: 10,
+  },
+  inputStyle: {
+    width: '80%',
+    height: 44,
+    padding: 10,
+    marginVertical: 10,
+    backgroundColor: '#DBDBD6',
+  },
 });
-
-
-
