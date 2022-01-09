@@ -51,9 +51,11 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
       }
     }
   
-    renderMovieProfile = (movie: MovieProperties, index: number) => {
+    renderMovieProfile = (movie_tuple, index: number) => {
+        console.log(movie_tuple)
+        const [idx, movie] = movie_tuple
         return (
-            <MovieProfileView {...this.state.movies[this.state.movieIndex]} />
+            <MovieProfileView {...this.state.movies[idx][1]} />
         )
     };
   
@@ -68,7 +70,7 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
         if (index == this.state.movies.length-1) {
             let recommend = recommendations(this.state.swipedLeft, this.state.swipedRight)
             this.setState({
-                movies: recommend,
+                movies: Array.from(recommend.entries()),
                 movieIndex: 0,
                 swipedLeft: [],
                 swipedRight: []
@@ -87,7 +89,7 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
         if (index == this.state.movies.length-1) {
             let recommend = recommendations(this.state.swipedLeft, this.state.swipedRight)
             this.setState({
-                movies: recommend,
+                movies: Array.from(recommend.entries()),
                 movieIndex: 0,
                 swipedLeft: [],
                 swipedRight: []
@@ -134,7 +136,7 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
             cardVerticalMargin={80}
             renderCard={this.renderMovieProfile}
             onSwipedAll={() => this.onSwipedAllMovies()}
-            stackSize={1}
+            stackSize={5}
             stackSeparation={15}
             overlayLabels={{
             //   bottom: {

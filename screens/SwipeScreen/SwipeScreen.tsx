@@ -14,7 +14,7 @@ const Swipe = () => {
     return (
 
         <View>
-            <MovieSwiper movies={getRandomMovieList(10)} />
+            <MovieSwiper movies={Array.from(getRandomMovieList(10).entries())} />
         </View>
 
 
