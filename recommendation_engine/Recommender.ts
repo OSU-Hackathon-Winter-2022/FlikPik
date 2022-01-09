@@ -1,6 +1,7 @@
 import recommendation_config from "./recommendation_config_top_250.json"
 import top_movies from '../database/top_250_by_rating.json'
 import GenreSelector from '../components/GenreSelector'
+import {genreString} from "../components/GenreSelector/GenreSelector"
 
 
 let topMovieProfilesList = [];
@@ -12,7 +13,7 @@ for (let movie of top_movies.results) {
         year: movie.description.slice(-5, -1),
         runtime: movie.runtimeStr,
         coverImageURL: movie.image,
-        stars: movie.stars,
+        stars: movie.stars.split(', ').slice(1).join(', '),
         genres: movie.genres,
         rating: movie.contentRating,
         score: movie.imDbRating,
@@ -34,29 +35,33 @@ export function getRandomMovieList(number) {
     let recmovies = [];
     let i = 0;
 
-    // {route.params.paramKey}
-    let selectgenre = 'Drama';
-
     // ##### pass in parameter/variable from GenreSelector
     // ##### use parameter to generate Movie List
-    while(i < number) {
+    let num_tries = 0
+    while(i < number && num_tries < 250) {
         let randIndex = getRandomInt(0, topMovieProfilesList.length);       // won't need this because of the parameter
-
+        let randMovie = topMovieProfilesList[randIndex]
         if (!selected.has(randIndex)) {
-            movies.push(topMovieProfilesList[randIndex]);       // randindex needs to be parameter
-            selected.add(randIndex);        // randindex needs to be parameter
-            i++;
-
+            let selectedGenreInMovie = randMovie.genres.toLowerCase().includes(genreString.toLowerCase());
+            if (genreString != "" && (genreString == "Pick for me!" || selectedGenreInMovie)) {
+                movies.push(randMovie);       // randindex needs to be parameter
+                selected.add(randIndex);        // randindex needs to be parameter
+                i++;
+            } else {
+                num_tries++;
             }
         }
-    // while(i < movies.length) {
-    //     let element = movies[i];
-    //     if ( element == selectgenre ) {
-    //         recmovies.push(element);
-    //         i++;
-    //     }
-    // }
-    return movies
+    }
+    while (i < number) {
+        let randIndex = getRandomInt(0, topMovieProfilesList.length);       // won't need this because of the parameter
+        let randMovie = topMovieProfilesList[randIndex]
+        if (!selected.has(randIndex)) {
+            movies.push(randMovie);       // randindex needs to be parameter
+            selected.add(randIndex);        // randindex needs to be parameter
+            i++;
+        }
+    }
+    return movies;
 }
 
 let id_to_imdb = recommendation_config["id-to-imdb"]

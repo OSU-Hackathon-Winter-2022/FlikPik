@@ -63,8 +63,8 @@ function SwipeTab() {
       })
       }
     >
-      <Tab.Screen name="Swipe" component={SwipeScreen} options={{ headerShown: false }} />
       <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }}/>
+      <Tab.Screen name="Swipe" component={SwipeScreen} options={{ headerShown: false }} initialParams = {{genreString: ""}} />
       <Tab.Screen name="Chat Rooms" component={MessagesScreen} />
       <Tab.Screen name="Matches" component={RecommendationsScreen} initialParams={{movies: matched_movies}} />
       <Tab.Screen name="Settings" component={SettingsScreen} />

@@ -5,16 +5,16 @@ import { MovieSwiper } from '../../components/MovieSwiper';
 import top_movies from '../../database/top_250_by_rating.json'
 import { useNavigation } from '@react-navigation/native';
 import { getRandomMovieList } from '../../recommendation_engine/Recommender'
+import { genreString } from '../../components/GenreSelector/GenreSelector';
 
 
 const Swipe = () => {
-    const navigation = useNavigation();
     let fullMoviesQueue = getRandomMovieList(24);
     let movies = fullMoviesQueue.slice(0, 12);
     let moviesQueue = fullMoviesQueue.slice(12);
     return (
         <View>
-            <MovieSwiper movies={movies} moviesQueue={moviesQueue} />
+            <MovieSwiper movies={movies} moviesQueue={moviesQueue} genreString={genreString} />
         </View>
     );
 };

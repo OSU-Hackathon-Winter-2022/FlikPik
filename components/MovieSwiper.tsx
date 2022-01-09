@@ -5,6 +5,7 @@ import { MovieProperties, MovieProfileView } from './MovieProfileView'
 import { recommendations } from '../recommendation_engine/Recommender'
 import { addMatched, addUnmatched } from '../recommendation_engine/Recommender'
 import { getRandomMovieList } from '../recommendation_engine/Recommender'
+import { genreString } from './GenreSelector/GenreSelector'
 
 const styles = StyleSheet.create({
     container: {
@@ -28,12 +29,14 @@ const styles = StyleSheet.create({
 
 type SwiperProps = {
     movies: Array<Object>,
-    moviesQueue: Array<Object>
+    moviesQueue: Array<Object>,
+    genreString: string
 }
 
 type SwiperState = {
     movies: Array<Object>,
-    moviesQueue: Array<Object>
+    moviesQueue: Array<Object>,
+    genreString: string,
     swipedAllMovies: Boolean,
     swipeDirection: string,
     swipedLeft: Array<Object>,
@@ -46,6 +49,7 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
       this.state = {
         movies: props.movies,
         moviesQueue: props.moviesQueue,
+        genreString: props.genreString,
         swipedAllMovies: false,
         swipeDirection: '',
         swipedLeft: [],
@@ -87,7 +91,18 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
         let movie_details = this.state.movies[index]
         this.state.swipedLeft.push(movie_details)
         addUnmatched(Object.assign({}, movie_details))
-        if (index == this.state.movies.length-3) {
+        if (this.state.genreString != genreString) {
+            let fullMoviesQueue = getRandomMovieList(24);
+            let movies = fullMoviesQueue.slice(0, 12);
+            let moviesQueue = fullMoviesQueue.slice(12);
+            this.setState({
+                genreString: genreString,
+                movies: movies,
+                moviesQueue: moviesQueue,
+                swipedLeft: [],
+                swipedRight: []
+            })
+        } else if (index == this.state.movies.length-3) {
             this.alterMovieStack(recommendations(this.state.swipedLeft, this.state.swipedRight), 10, 0)
             this.setState({
                 swipedLeft: [],
@@ -102,7 +117,18 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
         let movie_details = this.state.movies[index]
         this.state.swipedRight.push(movie_details)
         addMatched(Object.assign({}, movie_details))
-        if (index == this.state.movies.length-3) {
+        if (this.state.genreString != genreString) {
+            let fullMoviesQueue = getRandomMovieList(24);
+            let movies = fullMoviesQueue.slice(0, 12);
+            let moviesQueue = fullMoviesQueue.slice(12);
+            this.setState({
+                genreString: genreString,
+                movies: movies,
+                moviesQueue: moviesQueue,
+                swipedLeft: [],
+                swipedRight: []
+            })
+        } else if (index == this.state.movies.length-3) {
             this.alterMovieStack(recommendations(this.state.swipedLeft, this.state.swipedRight), 10, 0)
             this.setState({
                 swipedLeft: [],
