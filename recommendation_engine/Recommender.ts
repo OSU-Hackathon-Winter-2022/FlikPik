@@ -2,6 +2,7 @@ import recommendation_config from "./recommendation_config_top_250.json"
 import top_movies from '../database/top_250_by_rating.json'
 import GenreSelector from '../components/GenreSelector'
 
+
 let topMovieProfilesList = [];
 let topMovieProfilesObject = {};
 for (let movie of top_movies.results) {
@@ -30,20 +31,31 @@ function getRandomInt(min, max) {
 export function getRandomMovieList(number) {
     let selected = new Set();
     let movies = [];
+    let recmovies = [];
     let i = 0;
 
-    // let genre = '{route.params.paramKey}';
+    // {route.params.paramKey}
+    let selectgenre = 'Drama';
 
     // ##### pass in parameter/variable from GenreSelector
     // ##### use parameter to generate Movie List
     while(i < number) {
         let randIndex = getRandomInt(0, topMovieProfilesList.length);       // won't need this because of the parameter
+
         if (!selected.has(randIndex)) {
             movies.push(topMovieProfilesList[randIndex]);       // randindex needs to be parameter
             selected.add(randIndex);        // randindex needs to be parameter
             i++;
+
+            }
         }
-    }
+    // while(i < movies.length) {
+    //     let element = movies[i];
+    //     if ( element == selectgenre ) {
+    //         recmovies.push(element);
+    //         i++;
+    //     }
+    // }
     return movies
 }
 
@@ -53,6 +65,7 @@ let similarity_matrix = recommendation_config["similarity-matrix"]
 
 const matched_ids = new Set();
 const unmatched_ids = new Set();
+
 
 export const matched_movies = new Set();
 export const unmatched_movies = new Set();
