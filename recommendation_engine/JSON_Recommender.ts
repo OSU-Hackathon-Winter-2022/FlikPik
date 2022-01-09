@@ -1,5 +1,8 @@
 import recommendation_config from "./recommendation_config_top_250.json"
 import top_movies from '../database/top_250_by_rating.json'
+import GenreSelector from '../components/GenreSelector'
+import {genreString} from "../components/GenreSelector/GenreSelector"
+
 
 let topMovieProfilesList = [];
 let topMovieProfilesObject = {};
@@ -10,7 +13,7 @@ for (let movie of top_movies.results) {
         year: movie.description.slice(-5, -1),
         runtime: movie.runtimeStr,
         coverImageURL: movie.image,
-        stars: movie.stars,
+        stars: movie.stars.split(', ').slice(1).join(', '),
         genres: movie.genres,
         rating: movie.contentRating,
         score: movie.imDbRating,
@@ -29,16 +32,36 @@ function getRandomInt(min, max) {
 export function getRandomMovieList(number) {
     let selected = new Set();
     let movies = [];
+    let recmovies = [];
     let i = 0;
-    while(i < number) {
-        let randIndex = getRandomInt(0, topMovieProfilesList.length);
+
+    // ##### pass in parameter/variable from GenreSelector
+    // ##### use parameter to generate Movie List
+    let num_tries = 0
+    while(i < number && num_tries < 250) {
+        let randIndex = getRandomInt(0, topMovieProfilesList.length);       // won't need this because of the parameter
+        let randMovie = topMovieProfilesList[randIndex]
         if (!selected.has(randIndex)) {
-            movies.push(topMovieProfilesList[randIndex]);
-            selected.add(randIndex);
+            let selectedGenreInMovie = randMovie.genres.toLowerCase().includes(genreString.toLowerCase());
+            if (genreString != "" && (genreString == "Pick for me!" || selectedGenreInMovie)) {
+                movies.push(randMovie);       // randindex needs to be parameter
+                selected.add(randIndex);        // randindex needs to be parameter
+                i++;
+            } else {
+                num_tries++;
+            }
+        }
+    }
+    while (i < number) {
+        let randIndex = getRandomInt(0, topMovieProfilesList.length);       // won't need this because of the parameter
+        let randMovie = topMovieProfilesList[randIndex]
+        if (!selected.has(randIndex)) {
+            movies.push(randMovie);       // randindex needs to be parameter
+            selected.add(randIndex);        // randindex needs to be parameter
             i++;
         }
     }
-    return movies
+    return movies;
 }
 
 let id_to_imdb = recommendation_config["id-to-imdb"]
@@ -47,6 +70,7 @@ let similarity_matrix = recommendation_config["similarity-matrix"]
 
 const matched_ids = new Set();
 const unmatched_ids = new Set();
+
 
 export const matched_movies = new Set();
 export const unmatched_movies = new Set();
