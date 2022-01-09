@@ -64,7 +64,7 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
     }
 
     onSwipedLeft = (index) => {
-        let movie_details = this.state.movies[index]
+        let movie_details = this.state.movies[index][1]
         this.state.swipedLeft.push(movie_details)
         addUnmatched(Object.assign({}, movie_details))
         if (index == this.state.movies.length-1) {
@@ -83,7 +83,7 @@ export class MovieSwiper extends Component<SwiperProps, SwiperState> {
     }
 
     onSwipedRight = (index) => {
-        let movie_details = this.state.movies[index]
+        let movie_details = this.state.movies[index][1]
         this.state.swipedRight.push(movie_details)
         addMatched(Object.assign({}, movie_details))
         if (index == this.state.movies.length-1) {
