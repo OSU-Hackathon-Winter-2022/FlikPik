@@ -30,5 +30,5 @@ Android Users
 
 iOS Users
 1. Download [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) and its associated iOS Simulator<br>
-3. Complete the 'Usage with Expo CLI' requirements listed above.<br>
+3. Complete the 'Usage with Expo CLI' requirements listed above<br>
 4. Wait for the project to load on the iOS Simulator and enjoy!<br>
