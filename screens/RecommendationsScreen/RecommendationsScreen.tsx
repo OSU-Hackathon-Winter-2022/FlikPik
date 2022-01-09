@@ -1,8 +1,10 @@
 import React from 'react'
-import { View, Text, StyleSheet, SafeAreaView } from 'react-native'
+import { ScrollView, Button, Text, StyleSheet, SafeAreaView } from 'react-native'
 import { matched_movies } from '../../recommendation_engine/Recommender'
 import GenreSelector from '../../components/GenreSelector'
 import { test_movies, getRandomMovieList } from '../../text'
+
+let colors = ["black", "purple", "red", "blue", "green", "pink", "orange"]
 
 // {route}
 const Recommendations = () => {
@@ -12,11 +14,13 @@ const Recommendations = () => {
     let list = ['empy']
     return (
 
-        <View>
-            <Text style={{ fontSize: 24, alignSelf: 'center'}}>{titles.join('\n')}</Text>
-
-
-        </View>
+        <ScrollView>
+            {titles.map((title, idx) => {
+                return (
+                    <Button title={title} color={colors[idx%colors.length]} style={{ fontSize: 24, alignSelf: 'center'}} />
+                )
+            })}
+        </ScrollView>
 
     //     <SafeAreaView style={{flex: 1}}>
     //     <View style={styles.container}>
