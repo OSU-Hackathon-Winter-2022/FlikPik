@@ -149,7 +149,7 @@ export default function GenreSelector(props) {
   const [selected, setSelected] = React.useState(0);
   const navigation = useNavigation();
 
-  const [passGenre, setGenre] = useState('');
+  const [passGenre, setGenre] = useState(genreList[0]);
 
 
   return (
@@ -180,6 +180,7 @@ export default function GenreSelector(props) {
         <Button
             title="Start Swiping!"
             onPress={() => {
+                genreString = genreList[selected]
                 navigation.navigate('Swipe')
             }}
         />
