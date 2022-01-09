@@ -14,29 +14,28 @@ const Genre = () => {
 
     const navigation = useNavigation();
 
-    const onSwipePressed = () => {
+    const onSelectPressed = () => {
         // console.warn("Swipe session");
         navigation.navigate('Swipe');
     };
 
     return (
         <View style={styles.root}>
-            {/* <Text style={{ fontSize: 24, top: 60, alignSelf: 'center',  paddingBottom: 40}}>
+            <Text style={{ fontSize: 24, top: 20, alignSelf: 'center',  paddingBottom: 40}}>
                 Select a Genre
             </Text>
-            <Text>
-                {'\n'}
-                {'\n'}
-                {'\n'}
 
-            </Text> */}
             <GenreSelector></GenreSelector>
-            {/* <TouchableOpacity  // NEED TO SEND OUR PICKER VALUE TO SWIPE SCREEN TO ALTER WHAT IS SHOWN
-                style={styles.button}
-                onPress={onSwipePressed}
-            >
-                <Text style={{color: "#FFFFFF", fontWeight: "bold", fontSize: 25}}>START SWIPING</Text>
-            </TouchableOpacity> */}
+            {/* <View style={{height: 100}}>
+            <Text>{`Your selection is ${genreList[selected]}`}</Text>
+            <Text></Text>
+            <TouchableOpacity  // NEED TO SEND OUR PICKER VALUE TO SWIPE SCREEN TO ALTER WHAT IS SHOWN
+                    style={styles.button}
+                    onPress={onSelectPressed}
+                >
+                    <Text style={{color: "white", alignItems: 'center',fontWeight: "bold", fontSize: 25}}>Start Swiping</Text>
+                </TouchableOpacity>
+            </View> */}
 
         </View>
     )
@@ -45,19 +44,18 @@ const Genre = () => {
 const styles = StyleSheet.create({
     root: {
         flex: 1,
+        backgroundColor: 'white',
+
     },
     button: {
-        alignItems: "center",
-        flex: 1,
+        // flex: 1,
         backgroundColor: "#880808",
-        padding: 25,
-        paddingTop: 19,
-        paddingLeft: 80,
+        padding: 20,
+        paddingLeft: 120,
         paddingRight: 80,
-        borderRadius: 25,
-        marginTop: 375,
-        marginBottom: 60,
-    }
+        borderRadius: 40,
+        // marginTop: 180,
+      },
 });
 
 export default Genre;

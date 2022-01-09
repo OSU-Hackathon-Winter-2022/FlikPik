@@ -143,11 +143,12 @@ export default function GenreSelector() {
   const navigation = useNavigation();
 
 
-  const onSelectPressed = () => {
-      // console.warn("Swipe session");
-      navigation.navigate('Swipe');
-  };
+  // const onSelectPressed = () => {
+  //     // console.warn("Swipe session");
+  //     navigation.navigate('Swipe');
+  // };
 
+  // const var1 = <Text>{`${genreList[selected]}`}</Text>
 
   return (
     <View style={styles.container}>
@@ -163,17 +164,21 @@ export default function GenreSelector() {
           renderItem={(option) => ItemToRender(option, selected, true)}
           magnet
           selectOnPress
-        //   onTouchStart
         />
+      <Text></Text>
+      <Text></Text>
+      <Text>{`Your selection is ${genreList[selected]}`}</Text>
       </View>
       <View style={{height: 100}}>
-        <Text>{`Your selection is ${genreList[selected]}`}</Text>
         <Text></Text>
         <Text></Text>
         <Text></Text>
+        
         <TouchableOpacity  // NEED TO SEND OUR PICKER VALUE TO SWIPE SCREEN TO ALTER WHAT IS SHOWN
                 style={styles.button}
-                onPress={onSelectPressed}
+                onPress={() => {
+                  navigation.navigate('Swipe');
+                }}
             >
                 <Text style={{color: "white", fontWeight: "bold", fontSize: 25}}>Start Swiping</Text>
             </TouchableOpacity>
@@ -181,6 +186,9 @@ export default function GenreSelector() {
     </View>
   );
 }
+
+
+
 
 const styles = StyleSheet.create({
   container: {
@@ -190,11 +198,11 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'space-evenly',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'white',
   },
   wrapperVertical: {
     width: 250,
-    height: 350,
+    height: 500,
     justifyContent: 'center',
     alignItems: 'center',
     margin: 'auto',
@@ -224,3 +232,6 @@ const styles = StyleSheet.create({
 
   },
 });
+
+
+
