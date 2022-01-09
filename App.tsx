@@ -1,9 +1,10 @@
 
 //      ###############       NEW CODE     #########################
 
-import { StyleSheet, Text, SafeAreaView } from 'react-native';
+import { LogBox, StyleSheet, Text, SafeAreaView } from 'react-native';
 import Navigation from './navigation';
 
+LogBox.ignoreAllLogs();
 
 const App = () => {
   return (
