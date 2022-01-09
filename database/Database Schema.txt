@@ -1,0 +1,34 @@
+### Database Schema ###
+Database JSON is viewable in json_data.json
+
+- Root-level:
+    - Entries for every movie in the db - movie title as key
+    - Entries for all users - user_id as key
+        - List of unswiped movie titles
+        - Map of actors in db with name as key and weight as value (+1/-1 based on swipe)
+        - Map of decades in db with name as key and weight as value (+1/-1 based on swipe)
+        - Map of genres in db with name as key and weight as value (+1/-1 based on swipe)
+        - Map of 'swipe states', with movie title as key and T/F reflecting whether or not the movie has already been swiped on
+        - Map of recommendation scores, with movie title as key and compatibility count reflecting the total of all actors/genres/decade values of that movie
+    - "initial_user_db", a blank template of the full user db, for generating new users in the db
+
+### Assumptions (MVP) ###
+    Database includes top 250 movies from IMDB by rating
+    Database is fixed - no new movies will be added
+    NoSQL db will be better for fast access and updating the recommendation tracking
+
+### TRIGGERS ###
+'User swipe' triggers these actions:
+    Update individual user metadata tally related to movie swiped upon
+        - Actors
+        - Genre
+        - Decade
+    Update 'movie_swipe_state' to record the swipe
+    Remove title from "unswiped_movies"
+
+'Generate recommendation' triggers these actions:
+    Using movie_titles as indices for traversing all of the movies in the db,
+    calculate the respective scores of each movie in the user's movie 
+    metadata, tracking some number of the top movies found
+        Specifically comparing "actors", "genres", "decade", to the user's swipe preferences
+

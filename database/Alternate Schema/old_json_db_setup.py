@@ -3,20 +3,18 @@ import json
  
 def parse_movie_metadata(movie_json):
     """
-    Parses movies from JSON and creates comprehensive JSON files for Firebase.
+    Parses movies from JSON and creates comprehensive JSON files for addition to Firebase.
     """
     data_set = dict()
     genres_dict = dict()
     current_recommendation_scores = dict()
     decades_dict = dict()
     movies_dict = dict()
-    actors_dict = dict()
-    mock_user = dict()
-    unswiped_movies = list()
-    movies_swipe_status = dict()
     
     with open(movie_json) as file:
         top_250_data = json.load(file)
+
+    movies_swipe_status = dict()
 
     for movie in top_250_data["results"]:
         movie_genres = list()
@@ -32,7 +30,6 @@ def parse_movie_metadata(movie_json):
         formatted_title = formatted_title.replace(".","")
         formatted_title = formatted_title.replace(":","")
         movies_swipe_status[formatted_title] = False
-        unswiped_movies.append(formatted_title)
         curr_movie["title"] = movie["title"]
         movies_dict[formatted_title] = True
         # Massage genre data
@@ -41,8 +38,8 @@ def parse_movie_metadata(movie_json):
         formatted_genre = ""
         for genre in genres_list:
             genre = genre.lower()
-            genres_dict[genre] = 0
-            movie_genres.append(genre)
+            genres_dict[genre] = {"mock_user_id" : 0}
+        movie_genres.append(genre)
         current_recommendation_scores[formatted_title] = 0
         curr_movie["genres"] = movie_genres
         curr_movie["genres_text"] = movie["genres"]
@@ -56,7 +53,7 @@ def parse_movie_metadata(movie_json):
             for actor_name in actor_names:
                 actor_name = actor_name.replace(".","")
                 formatted_name += actor_name.lower()
-            actors_dict[formatted_name] = 0
+            data_set[formatted_name] = {"mock_user_id" : 0}
             movie_actors.append(formatted_name)
         curr_movie["actors"] = movie_actors
         curr_movie["actors_text"] = movie["stars"]
@@ -69,7 +66,7 @@ def parse_movie_metadata(movie_json):
         else:
             movie_decade = movie["description"][1:4] + "0"
             movie_year = movie["description"][1:5]
-        decades_dict[movie_decade] = 0
+        decades_dict[movie_decade] = {"mock_user_id" : 0}
         curr_movie["decade"] = movie_decade
         curr_movie["year"] = movie_year
 
@@ -99,21 +96,33 @@ def parse_movie_metadata(movie_json):
         # Add movie plot
         curr_movie["plot"] = movie["plot"]
 
+        # Has movie been swiped on yet?
+        curr_movie["swiped_on"] = False
+
+        # Was movie swiped 'yes' on
+        curr_movie["swipe_direction"] = True
+
+        # Current movie recommendation score
+        curr_movie["recommendation_score"] = {"mock_user_id" : 0}
+
         # Add current movie to data set
         data_set[formatted_title] = curr_movie
 
-    # Initialize user data state
-    mock_user['unswiped_movies'] = unswiped_movies
-    mock_user['actors'] = actors_dict
-    mock_user['decades'] = decades_dict
-    mock_user['genres'] = genres_dict
-    mock_user['movie_swipe_state'] = movies_swipe_status
-    mock_user['recommendation_scores'] = current_recommendation_scores
-    data_set['user_userid'] = mock_user
-    data_set['initial_user_db'] = mock_user
+        # Swiped on movies
+        data_set["movies_swiped_on"] = list()
+
+        # Swiped on actors
+
+    data_set['decades'] = decades_dict
+    data_set['genres'] = genres_dict
+    data_set['movie_titles'] = movies_dict
+    data_set['movie_swipe_state'] = movies_swipe_status
+    data_set['users'] = {"mock_user_id" : "user_info", "movie_swipe_state" : movies_swipe_status, 'current_recommendation_scores' : current_recommendation_scores}
 
     with open('json_data.json', 'w') as outfile:
         json.dump(data_set, outfile)
+
+    return data_set
 
 if __name__ == "__main__":
     parse_movie_metadata("top_250_by_rating.json")
