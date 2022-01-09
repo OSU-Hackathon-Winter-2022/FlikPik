@@ -1,24 +1,29 @@
 import recommendation_config from "./recommendation_config_top_250.json"
-import top_movies from '../database/top_250_by_rating.json'
+import db_json from "../database/json_data_db_sub.json"
+import { database, databaseRef } from "../firebase/firebase-config";
+import { ref, onValue, update, set, get, child, push } from "firebase/database";
+import { getAuth } from 'firebase/auth';
 import GenreSelector from '../components/GenreSelector'
-import {genreString} from "../components/GenreSelector/GenreSelector"
 
+const auth = getAuth();
+const user = auth.currentUser;
 
 let topMovieProfilesList = [];
-let topMovieProfilesObject = {};
-for (let movie of top_movies.results) {
+let topMovieProfilesObject: { [id : string ] : any } = {};
+for (let movie of db_json["movies"]) {
     let movieProfile = {
         id: movie.id,
         title: movie.title,
-        year: movie.description.slice(-5, -1),
-        runtime: movie.runtimeStr,
-        coverImageURL: movie.image,
-        stars: movie.stars.split(', ').slice(1).join(', '),
+        year: movie.year,
+        runtime: movie.runtime,
+        coverImageURL: movie.coverImageURL,
+        stars: movie.stars,
         genres: movie.genres,
-        rating: movie.contentRating,
-        score: movie.imDbRating,
+        rating: movie.rating,
+        score: movie.score,
         plot: movie.plot
     }
+    console.log(movie)
     topMovieProfilesList.push(movieProfile);
     topMovieProfilesObject[movie.id] = movieProfile;
 }
@@ -30,38 +35,41 @@ function getRandomInt(min, max) {
 }
 
 export function getRandomMovieList(number) {
+    
     let selected = new Set();
-    let movies = [];
-    let recmovies = [];
+    let movies: any[] = [];
     let i = 0;
 
-    // ##### pass in parameter/variable from GenreSelector
-    // ##### use parameter to generate Movie List
-    let num_tries = 0
-    while(i < number && num_tries < 250) {
-        let randIndex = getRandomInt(0, topMovieProfilesList.length);       // won't need this because of the parameter
-        let randMovie = topMovieProfilesList[randIndex]
-        if (!selected.has(randIndex)) {
-            let selectedGenreInMovie = randMovie.genres.toLowerCase().includes(genreString.toLowerCase());
-            if (genreString != "" && (genreString == "Pick for me!" || selectedGenreInMovie)) {
-                movies.push(randMovie);       // randindex needs to be parameter
-                selected.add(randIndex);        // randindex needs to be parameter
-                i++;
+    if (user) {
+        const uid = user.uid;
+        get(child(databaseRef, `user_' + uid + '/unswiped_movies`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                let unswipedMoviesList: any[] = snapshot.val();
+                while(i < number) {
+                    let randIndex = getRandomInt(0, unswipedMoviesList.length);       // won't need this because of the parameter
+                    let randTitle = unswipedMoviesList[randIndex];
+                    let randMovie = db_json['movies'][randTitle];
+                    if (!selected.has(randTitle)) {
+                        movies.push(randMovie);       // randindex needs to be parameter
+                        selected.add(randTitle);        // randindex needs to be parameter
+                        i++;
+                    }
+                }
             } else {
-                num_tries++;
+                console.log("No data available");
             }
-        }
+        }).catch((error) => {
+        console.error(error);
+        });
+
+        // let genre = '{route.params.paramKey}';
+        // ##### pass in parameter/variable from GenreSelector
+        // ##### use parameter to generate Movie List
+    } else {
+        console.log("No user is currently logged in.")
     }
-    while (i < number) {
-        let randIndex = getRandomInt(0, topMovieProfilesList.length);       // won't need this because of the parameter
-        let randMovie = topMovieProfilesList[randIndex]
-        if (!selected.has(randIndex)) {
-            movies.push(randMovie);       // randindex needs to be parameter
-            selected.add(randIndex);        // randindex needs to be parameter
-            i++;
-        }
-    }
-    return movies;
+
+    return movies
 }
 
 let id_to_imdb = recommendation_config["id-to-imdb"]
@@ -71,16 +79,69 @@ let similarity_matrix = recommendation_config["similarity-matrix"]
 const matched_ids = new Set();
 const unmatched_ids = new Set();
 
-
 export const matched_movies = new Set();
 export const unmatched_movies = new Set();
 
 export function addMatched(movie) {
-    matched_movies.add(movie)
+    if (user) {
+        const uid = user.uid;
+        get(child(databaseRef, 'user_' + uid)).then((snapshot) => {
+            let user_db = snapshot.val();
+            if (snapshot.exists()) {
+                // Initialize new user's db under their userid
+                const uid = user.uid;
+                if (!("matched_movies" in user_db)) {
+                    const newPostKey = push(child(ref(database), 'user_' + uid)).key;
+                    let newChild = { "matched_movies" : [movie["title"]]};
+                    let updates: { [key: string]: any} = {};
+                    updates['user_' + uid + '/' + newPostKey] = newChild;
+                    update(ref(database), updates)
+                } else {
+                    const postListRef = ref(database, 'user_' + uid + '/matched_movies');
+                    const newPostRef = push(postListRef);
+                    set(newPostRef, movie["title"]);
+                    matched_movies.add(movie)
+            }
+        } else {
+                console.log("No data available");
+            }
+    }).catch((error) => {
+    console.error(error);
+    });
+    } else {
+        console.log("No user is currently logged in.");
+    }
 }
 
 export function addUnmatched(movie) {
-    unmatched_movies.add(movie)
+    if (user) {
+        const uid = user.uid;
+        get(child(databaseRef, 'user_' + uid)).then((snapshot) => {
+            let user_db = snapshot.val();
+            if (snapshot.exists()) {
+                // Initialize new user's db under their userid
+                const uid = user.uid;
+                if (!("unmatched_movies" in user_db)) {
+                    const newPostKey = push(child(ref(database), 'user_' + uid)).key;
+                    let newChild = { "unmatched_movies" : [movie["title"]]};
+                    let updates: { [key: string]: any} = {};
+                    updates['user_' + uid + '/' + newPostKey] = newChild;
+                    update(ref(database), updates)
+                } else {
+                    const postListRef = ref(database, 'user_' + uid + '/unmatched_movies');
+                    const newPostRef = push(postListRef);
+                    set(newPostRef, movie["title"]);
+                    unmatched_movies.add(movie)
+            }
+        } else {
+                console.log("No data available");
+            }
+    }).catch((error) => {
+    console.error(error);
+    });
+    } else {
+        console.log("No user is currently logged in.");
+    }
 }
 
 export function recommendations(disliked_movies, liked_movies) {
@@ -96,7 +157,6 @@ export function recommendations(disliked_movies, liked_movies) {
         dont_add.add(movie.id)
         unmatched_ids.add(movie.id)
     }
-    let recommendation_info = {"matched": liked_movies}
     let new_recommendations = [];
     for (const movie of liked_movies) {
         let sim_scores = Array.from(similarity_matrix[imdb_to_id[movie.id]].entries())
